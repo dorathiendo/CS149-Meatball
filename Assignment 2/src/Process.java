@@ -42,9 +42,9 @@ public class Process {
 	
 	@Override
 	public String toString() {
-		return "Name: " + name + "\n" +
-				"Arrival Time" + arrivalTime + "\n" +
-				"Expected Run Time" + runTime + "\n" +
-				"Priority" + priority + "\n";
+		return "Process: " + name + "\n" +
+				"Arrival Time: " + arrivalTime + "\n" +
+				"Expected Run Time: " + runTime + "\n" +
+				"Priority: " + priority + "\n";
 	}
 }
