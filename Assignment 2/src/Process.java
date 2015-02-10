@@ -23,14 +23,6 @@ public class Process {
 		priority = (int)(Math.random()*(4-1+1)+1);
 	}
 	
-	@Override
-	public String toString() {
-		return "Name: " + name + "\n" +
-				"Arrival Time" + arrivalTime + "\n" +
-				"Expected Run Time" + runTime + "\n" +
-				"Priority" + priority + "\n";
-	}
-	
 	public double getArrivalTime() {
 		return arrivalTime;
 	}
@@ -45,5 +37,13 @@ public class Process {
 	
 	public double getRunTime() {
 		return runTime;
+	}
+	
+	@Override
+	public String toString() {
+		return "Name: " + name + "\n" +
+				"Arrival Time" + arrivalTime + "\n" +
+				"Expected Run Time" + runTime + "\n" +
+				"Priority" + priority + "\n";
 	}
 }
