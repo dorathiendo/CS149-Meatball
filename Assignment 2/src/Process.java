@@ -18,9 +18,10 @@ public class Process {
 	 */
 	public Process(String name) {
 		this.name = name;
+		//(Math.random()*range) + min
+		arrivalTime = (float) (Math.random()*99);
+		runTime = (float) ((Math.random()*(9.9))+0.1);
 		//(Math.random()*(max-min+1))+min
-		arrivalTime = (float) (Math.random()*(99-0+1)+0);
-		runTime = (float) (Math.random()*(10-0.1+1)+0.1);
 		priority = (int) (Math.random()*(4-1+1)+1);
 	}
 	
