@@ -19,26 +19,40 @@ public class FCFSAlgorithm implements Algorithm {
 	 */
 	public FCFSAlgorithm(ArrayList<Process> processes) {
 		readyQueue = processes;
+<<<<<<< HEAD
+		sortProcesses(processes);
 	}
 
 	@Override
-	public float avTurnAroundTime(ArrayList<Process> proc) {
+	public int avTurnAroundTime() {
+		// TODO Auto-generated method stub
+		return 0;
+=======
+		System.out.println(finishTime(processes));
+		printTimeline(processes);
+		System.out.println(processes);
+		System.out.println("Avg turnaround:" + avTurnAroundTime(processes, finishTime(processes)));
+	}
+
+	//test this
+	public float avTurnAroundTime(ArrayList<Process> proc, ArrayList<Float> fTimes) {
 		float turnaroundTime = 0;
 		for(int i = 0; i < proc.size(); i++) {
-			turnaroundTime += proc.get(i).getRunTime() - proc.get(i).getArrivalTime();
+			turnaroundTime += fTimes.get(i) - proc.get(i).getRunTime();
 		}
 		float result = turnaroundTime / (float) proc.size();
 		return result;
+>>>>>>> origin/master
 	}
 
 	@Override
-	public float avWaitingResponse() {
+	public int avWaitingResponse() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public float avResponseTime() {
+	public int avResponseTime() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -53,6 +67,34 @@ public class FCFSAlgorithm implements Algorithm {
 			}
 		});
 		return proc;
+	}
+
+	@Override
+	public void printTimeline(ArrayList<Process> proc) {
+		for(int i = 0; i < proc.size(); i++){
+			System.out.print(proc.get(i).getName());
+		}
+		System.out.println();
+	}
+
+	public ArrayList<Float> finishTime(ArrayList<Process> proc) {
+		ArrayList<Float> finishTimes = new ArrayList<Float>();
+		finishTimes.add(proc.get(0).getRunTime());
+		float time = proc.get(0).getRunTime();
+		for(int i = 1; i < proc.size(); i++) {
+			for(int j = i; j > 0; j--) {
+				time += proc.get(j).getRunTime();
+			}
+			finishTimes.add(time);
+		}
+		return finishTimes;
+	}
+
+
+	@Override
+	public float avTurnAroundTime(ArrayList<Process> proc) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

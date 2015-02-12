@@ -2,8 +2,9 @@ import java.util.ArrayList;
 
 
 public interface Algorithm {
-	float avTurnAroundTime(ArrayList<Process> proc);
-	float avWaitingResponse();
-	float avResponseTime();
+	int avTurnAroundTime();
+	int avWaitingResponse();
+	int avResponseTime();
 	ArrayList<Process> sortProcesses(ArrayList<Process> proc);
+	void printTimeline(ArrayList<Process> proc);
 }
