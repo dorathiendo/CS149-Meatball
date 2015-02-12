@@ -25,7 +25,7 @@ public class Process {
 		priority = (int) (Math.random()*(4-1+1)+1);
 	}
 	
-	public double getArrivalTime() {
+	public float getArrivalTime() {
 		return arrivalTime;
 	}
 	
@@ -37,7 +37,7 @@ public class Process {
 		return priority;
 	}
 	
-	public double getRunTime() {
+	public float getRunTime() {
 		return runTime;
 	}
 	

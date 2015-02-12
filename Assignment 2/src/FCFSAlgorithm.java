@@ -19,23 +19,26 @@ public class FCFSAlgorithm implements Algorithm {
 	 */
 	public FCFSAlgorithm(ArrayList<Process> processes) {
 		readyQueue = processes;
-		sortProcesses(processes);
 	}
 
 	@Override
-	public int avTurnAroundTime() {
+	public float avTurnAroundTime(ArrayList<Process> proc) {
+		float turnaroundTime = 0;
+		for(int i = 0; i < proc.size(); i++) {
+			turnaroundTime += proc.get(i).getRunTime() - proc.get(i).getArrivalTime();
+		}
+		float result = turnaroundTime / (float) proc.size();
+		return result;
+	}
+
+	@Override
+	public float avWaitingResponse() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int avWaitingResponse() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int avResponseTime() {
+	public float avResponseTime() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
