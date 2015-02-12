@@ -4,18 +4,20 @@ import java.util.Comparator;
 
 
 public class RRAlgorithm implements Algorithm {
+
+	private ArrayList<Process> readyQueue;
 	
 	public RRAlgorithm(ArrayList<Process> processes) {
-		sortProcesses(processes);
+		readyQueue = sortProcesses(processes);
 	}
 
 	@Override
-	public float avTurnAroundTime(ArrayList<Process> proc) {
+	public float avTurnAroundTime() {
 		float turnaroundTime = 0;
-		for(int i = 0; i < proc.size(); i++) {
-			turnaroundTime += proc.get(i).getRunTime() - proc.get(i).getArrivalTime();
+		for(int i = 0; i < readyQueue.size(); i++) {
+			turnaroundTime += readyQueue.get(i).getRunTime() - readyQueue.get(i).getArrivalTime();
 		}
-		float result = turnaroundTime / (float) proc.size();
+		float result = turnaroundTime / (float) readyQueue.size();
 		return result;
 	}
 

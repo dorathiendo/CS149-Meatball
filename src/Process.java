@@ -10,6 +10,7 @@ public class Process {
 	private float runTime;
 	private int priority;
 	private float startTime;
+	private float finishTime;
 
 	/**
 	 * Constructor that creates a process with:
@@ -56,6 +57,14 @@ public class Process {
 	
 	public float getStartTime(){
 		return startTime;
+	}
+	
+	public void setFinishTime(float t){
+		finishTime = t;
+	}
+	
+	public float getFinishTime(){
+		return finishTime;
 	}
 	
 	@Override

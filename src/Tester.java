@@ -13,7 +13,7 @@ public class Tester {
 			readyQueue.add(new Process(Character.toString(name)));
 			name++;
 		}
-		
+
 		// sort queue by arrival time
 		Collections.sort(readyQueue, new Comparator<Process>() {
 			public int compare(Process p1, Process p2) {
@@ -22,54 +22,65 @@ public class Tester {
 				return p1.getArrivalTime() < p2.getArrivalTime() ? -1 : 1;
 			}
 		});
-		
+
 		FCFSAlgorithm FCFS = new FCFSAlgorithm(readyQueue);
 		System.out.println("FCFS Timeline: " + FCFS.createTimeline());
-		
+
 		String test = "Arrival Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
 			test += FCFS.getSortedQueue().get(i).getArrivalTime() + " ";
 		}
 		test += "\nBurst Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
 			test += FCFS.getSortedQueue().get(i).getRunTime() + " ";
 		}
 		test += "\nStart Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
 			test += FCFS.getSortedQueue().get(i).getStartTime() + " ";
 		}
-		test += "\nAverage Turnaround Time: " + FCFS.avTurnAroundTime(FCFS.getSortedQueue())
-				+ "\nAverage Wait Time: " +  FCFS.avWaitingResponse() + " \nAverage Response Time: "
+		test += "\nFinish Times: ";
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
+			test += FCFS.getSortedQueue().get(i).getFinishTime() + " ";
+		}
+		test += "\nAverage Turnaround Time: " + FCFS.avTurnAroundTime()
+				+ "\nAverage Wait Time: " + FCFS.avWaitingResponse()
+				+ " \nAverage Response Time: " + FCFS.avResponseTime();
+		System.out.println(test);
+
+		// hard coded processes
+		readyQueue.clear();
+		readyQueue.add(new Process("A", (float) 12, (float) 0, 1));
+		readyQueue.add(new Process("B", (float) 6, (float) 1, 1));
+		readyQueue.add(new Process("C", (float) 9, (float) 4, 1));
+
+		FCFS = new FCFSAlgorithm(readyQueue);
+		System.out.println("\nTEEEESSSST: \nFCFS Timeline: "
+				+ FCFS.createTimeline());
+
+		test = "Arrival Times: ";
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
+			test += FCFS.getSortedQueue().get(i).getArrivalTime() + " ";
+		}
+		test += "\nBurst Times: ";
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
+			test += FCFS.getSortedQueue().get(i).getRunTime() + " ";
+		}
+		test += "\nStart Times: ";
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
+			test += FCFS.getSortedQueue().get(i).getStartTime() + " ";
+		}
+		test += "\nFinish Times: ";
+		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
+			test += FCFS.getSortedQueue().get(i).getFinishTime() + " ";
+		}
+		test += "\nAverage Turnaround Time: Calculated = "
+				+ FCFS.avTurnAroundTime()
+				+ " Actual = 17.33\nAverage Wait Time: Calculated = "
+				+ FCFS.avWaitingResponse()
+				+ ", Actual = 8.33 \nAverage Response Time: "
 				+ FCFS.avResponseTime();
 		System.out.println(test);
-		
-		
-		//hard coded processes
-		readyQueue.clear();
-		readyQueue.add(new Process("A", (float)12, (float)0, 1));
-		readyQueue.add(new Process("B", (float)6, (float)1, 1));
-		readyQueue.add(new Process("C", (float)9, (float)4, 1));
-		
-		FCFS = new FCFSAlgorithm(readyQueue);
-		System.out.println("\nTEEEESSSST: \nFCFS Timeline: " + FCFS.createTimeline());
-		
-		test = "Arrival Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
-			test += FCFS.getSortedQueue().get(i).getArrivalTime() + " ";
-		}
-		test += "\nBurst Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
-			test += FCFS.getSortedQueue().get(i).getRunTime() + " ";
-		}
-		test += "\nStart Times: ";
-		for(int i = 0; i < FCFS.getSortedQueue().size(); i++){
-			test += FCFS.getSortedQueue().get(i).getStartTime() + " ";
-		}
-		test += "\nAverage Turnaround Time: Calculated = " + FCFS.avTurnAroundTime(FCFS.getSortedQueue())
-				+ " Actual = 17.33\nAverage Wait Time: Calculated = " +  FCFS.avWaitingResponse()
-				+ ", Actual = 8.33 \nAverage Response Time: " + FCFS.avResponseTime();
-		System.out.println(test);
-		
+
 	}
 
 }
