@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class SRTAlgorithm implements Algorithm {
 
@@ -17,6 +19,12 @@ public class SRTAlgorithm implements Algorithm {
 	public int avResponseTime() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public ArrayList<Process> sortProcesses(ArrayList<Process> proc) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

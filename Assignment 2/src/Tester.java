@@ -13,6 +13,7 @@ public class Tester {
 			name++;
 		}
 		// sort queue by arrival time
+		// shouldnt we put this in FCFS class?
 		Collections.sort(readyQueue, new Comparator<Process>() {
 			public int compare(Process p1, Process p2) {
 				if (p1.getArrivalTime() == p2.getArrivalTime())
@@ -20,7 +21,6 @@ public class Tester {
 				return p1.getArrivalTime() < p2.getArrivalTime() ? -1 : 1;
 			}
 		});
-		
 		FCFSAlgorithm FCFS = new FCFSAlgorithm(readyQueue);
 	}
 
