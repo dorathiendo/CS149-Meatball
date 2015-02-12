@@ -20,6 +20,7 @@ public class FCFSAlgorithm implements Algorithm {
 	public FCFSAlgorithm(ArrayList<Process> processes) {
 		readyQueue = processes;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		sortProcesses(processes);
 	}
 
@@ -34,6 +35,14 @@ public class FCFSAlgorithm implements Algorithm {
 		System.out.println("Avg turnaround:" + avTurnAroundTime(processes, finishTime(processes)));
 	}
 
+=======
+		System.out.println(finishTime(processes));
+		printTimeline(processes);
+		System.out.println(processes);
+		System.out.println("Avg turnaround:" + avTurnAroundTime(processes, finishTime(processes)));
+	}
+
+>>>>>>> origin/master
 	//test this
 	public float avTurnAroundTime(ArrayList<Process> proc, ArrayList<Float> fTimes) {
 		float turnaroundTime = 0;
