@@ -9,6 +9,7 @@ public class Process {
 	private float arrivalTime;
 	private float runTime;
 	private int priority;
+	private float startTime;
 
 	/**
 	 * Constructor that creates a process with:
@@ -25,7 +26,15 @@ public class Process {
 		priority = (int) (Math.random()*(4-1+1)+1);
 	}
 	
-	public double getArrivalTime() {
+	//to help test
+	public Process(String name, float runTime, float arrivalTime, int priority){
+		this.name = name;
+		this.runTime = runTime;
+		this.arrivalTime = arrivalTime;
+		this.priority = priority;
+	}
+	
+	public float getArrivalTime() {
 		return arrivalTime;
 	}
 	
@@ -37,8 +46,16 @@ public class Process {
 		return priority;
 	}
 	
-	public double getRunTime() {
+	public float getRunTime() {
 		return runTime;
+	}
+	
+	public void setStartTime(float t){
+		startTime = t;
+	}
+	
+	public float getStartTime(){
+		return startTime;
 	}
 	
 	@Override
