@@ -22,6 +22,7 @@ public class Tester {
 			}
 		});
 		FCFSAlgorithm FCFS = new FCFSAlgorithm(readyQueue);
+		SJFAlgorithm SJF = new SJFAlgorithm(readyQueue);
 	}
 
 }

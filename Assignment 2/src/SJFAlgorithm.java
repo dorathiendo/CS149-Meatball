@@ -7,6 +7,8 @@ public class SJFAlgorithm implements Algorithm {
 	
 	public SJFAlgorithm(ArrayList<Process> processes) {
 		sortProcesses(processes);
+		printTimeline(processes);
+		System.out.println(processes);
 	}
 
 	@Override
@@ -41,6 +43,14 @@ public class SJFAlgorithm implements Algorithm {
 			}
 		});
 		return proc;
+	}
+
+	@Override
+	public void printTimeline(ArrayList<Process> proc) {
+		for(int i = 0; i < proc.size(); i++){
+			System.out.print(proc.get(i).getName());
+		}
+		System.out.println();
 	}
 
 }

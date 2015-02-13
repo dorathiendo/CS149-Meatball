@@ -19,13 +19,17 @@ public class FCFSAlgorithm implements Algorithm {
 	 */
 	public FCFSAlgorithm(ArrayList<Process> processes) {
 		readyQueue = processes;
+		System.out.println(finishTime(processes));
+		printTimeline(processes);
+		System.out.println(processes);
+		System.out.println("Avg turnaround:" + avTurnAroundTime(processes, finishTime(processes)));
 	}
 
-	@Override
-	public float avTurnAroundTime(ArrayList<Process> proc) {
+	//test this
+	public float avTurnAroundTime(ArrayList<Process> proc, ArrayList<Float> fTimes) {
 		float turnaroundTime = 0;
 		for(int i = 0; i < proc.size(); i++) {
-			turnaroundTime += proc.get(i).getRunTime() - proc.get(i).getArrivalTime();
+			turnaroundTime += fTimes.get(i) - proc.get(i).getRunTime();
 		}
 		float result = turnaroundTime / (float) proc.size();
 		return result;
@@ -53,6 +57,34 @@ public class FCFSAlgorithm implements Algorithm {
 			}
 		});
 		return proc;
+	}
+
+	@Override
+	public void printTimeline(ArrayList<Process> proc) {
+		for(int i = 0; i < proc.size(); i++){
+			System.out.print(proc.get(i).getName());
+		}
+		System.out.println();
+	}
+
+	public ArrayList<Float> finishTime(ArrayList<Process> proc) {
+		ArrayList<Float> finishTimes = new ArrayList<Float>();
+		finishTimes.add(proc.get(0).getRunTime());
+		float time = proc.get(0).getRunTime();
+		for(int i = 1; i < proc.size(); i++) {
+			for(int j = i; j > 0; j--) {
+				time += proc.get(j).getRunTime();
+			}
+			finishTimes.add(time);
+		}
+		return finishTimes;
+	}
+
+
+	@Override
+	public float avTurnAroundTime(ArrayList<Process> proc) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

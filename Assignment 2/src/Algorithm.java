@@ -6,4 +6,5 @@ public interface Algorithm {
 	float avWaitingResponse();
 	float avResponseTime();
 	ArrayList<Process> sortProcesses(ArrayList<Process> proc);
+	void printTimeline(ArrayList<Process> proc);
 }

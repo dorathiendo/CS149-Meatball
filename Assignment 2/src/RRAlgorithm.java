@@ -37,4 +37,12 @@ public class RRAlgorithm implements Algorithm {
 		return proc;
 	}
 
+	@Override
+	public void printTimeline(ArrayList<Process> proc) {
+		for(int i = 0; i < proc.size(); i++){
+			System.out.print(proc.get(i).getName());
+		}
+		System.out.println();
+	}
+
 }
