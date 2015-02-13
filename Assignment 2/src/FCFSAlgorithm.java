@@ -24,12 +24,12 @@ public class FCFSAlgorithm implements Algorithm {
 	}
 
 	@Override
-	public float avTurnAroundTime(ArrayList<Process> proc) {
+	public float avTurnAroundTime() {
 		float turnaroundTime = 0;
-		for(int i = 0; i < proc.size(); i++) {
-			turnaroundTime += proc.get(i).getRunTime() - proc.get(i).getArrivalTime();
+		for(int i = 0; i < readyQueue.size(); i++) {
+			turnaroundTime += readyQueue.get(i).getFinishTime() - readyQueue.get(i).getArrivalTime();
 		}
-		avTurnAroundTime = turnaroundTime / (float) proc.size();
+		avTurnAroundTime = turnaroundTime / (float) readyQueue.size();
 		return avTurnAroundTime;
 	}
 
@@ -65,7 +65,28 @@ public class FCFSAlgorithm implements Algorithm {
 		return proc;
 	}
 	
-	//just for FCFS, gets start time for each process as well
+	public void printTimeline(ArrayList<Process> proc) {
+		for(int i = 0; i < proc.size(); i++){
+			System.out.print(proc.get(i).getName());
+		}
+		System.out.println();
+	}
+
+	public ArrayList<Float> finishTime(ArrayList<Process> proc) {
+		ArrayList<Float> finishTimes = new ArrayList<Float>();
+		finishTimes.add(proc.get(0).getRunTime());
+		float time = proc.get(0).getRunTime();
+		for(int i = 1; i < proc.size(); i++) {
+			for(int j = i; j > 0; j--) {
+				time += proc.get(j).getRunTime();
+			}
+			finishTimes.add(time);
+		}
+		return finishTimes;
+	}
+	
+	//creates timeline for FCFS but also start time and finish time
+	//doesnt use instance variable
 	public LinkedList<String> createTimeline(){
 		Process curr = readyQueue.get(0); //first process
 		LinkedList<String> timeline = new LinkedList<String>();
@@ -84,6 +105,13 @@ public class FCFSAlgorithm implements Algorithm {
 			readyQueue.get(i).setStartTime(t);
 			timeline.add(curr.getName());
 		}
+
+		//calculate finish times after getting start times
+		for(int i = 0; i < readyQueue.size(); i++){
+			curr = readyQueue.get(i);
+			readyQueue.get(i).setFinishTime(curr.getRunTime()+curr.getStartTime());
+		}
+		
 		return timeline;
 	}
 	
@@ -91,6 +119,7 @@ public class FCFSAlgorithm implements Algorithm {
 	public ArrayList<Process> getSortedQueue(){
 		return readyQueue;
 	}
+	
 	
 //	public void setStartTimes(){;
 //		Process curr = readyQueue.get(0); //first process
