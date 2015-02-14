@@ -3,10 +3,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Queue;
 
 public class FCFSAlgorithm implements Algorithm {
 
-	private ArrayList<Process> readyQueue;
+	private ArrayList<Process> processes;
 	private LinkedList<String> timeline;
 	private float avTurnAroundTime;
 	private float avWaitingResponse;
@@ -19,37 +20,37 @@ public class FCFSAlgorithm implements Algorithm {
 	 * @param processes
 	 */
 	public FCFSAlgorithm(ArrayList<Process> processes) {
-		readyQueue = sortProcesses(processes);
+		processes = sortProcesses(processes);
 		timeline = createTimeline(); //calculates all start times + timeline w/ no spaces
 	}
 
 	@Override
 	public float avTurnAroundTime() {
 		float turnaroundTime = 0;
-		for(int i = 0; i < readyQueue.size(); i++) {
-			turnaroundTime += readyQueue.get(i).getFinishTime() - readyQueue.get(i).getArrivalTime();
+		for(int i = 0; i < processes.size(); i++) {
+			turnaroundTime += processes.get(i).getFinishTime() - processes.get(i).getArrivalTime();
 		}
-		avTurnAroundTime = turnaroundTime / (float) readyQueue.size();
+		avTurnAroundTime = turnaroundTime / (float) processes.size();
 		return avTurnAroundTime;
 	}
 
 	@Override
 	public float avWaitingResponse() {
-		float waitTime = readyQueue.get(0).getStartTime();
-		for(int i = 1; i < readyQueue.size(); i++){
-			waitTime += readyQueue.get(i).getStartTime() - readyQueue.get(i).getArrivalTime();
+		float waitTime = processes.get(0).getStartTime();
+		for(int i = 1; i < processes.size(); i++){
+			waitTime += processes.get(i).getStartTime() - processes.get(i).getArrivalTime();
 		}
-		avWaitingResponse = waitTime / (float) readyQueue.size();
+		avWaitingResponse = waitTime / (float) processes.size();
 		return avWaitingResponse;
 	}
 
 	@Override
 	public float avResponseTime() {
 		float responseTime = 0;
-		for(int i = 0; i < readyQueue.size(); i++){
-			responseTime += readyQueue.get(i).getStartTime();
+		for(int i = 0; i < processes.size(); i++){
+			responseTime += processes.get(i).getStartTime();
 		}
-		avResponseTime = responseTime / (float) readyQueue.size();
+		avResponseTime = responseTime / (float) processes.size();
 		return avResponseTime;
 	}
 
@@ -85,31 +86,58 @@ public class FCFSAlgorithm implements Algorithm {
 		return finishTimes;
 	}
 	
+	/**
+	 * Andres's attempt:
+	 * Run the processor, choosing a process for each quantum.  Create the timeline
+	 * and store statistics as it runs.
+	 * 
+	 * @return
+	 */
+	
+	public void run() {
+		int t = 0; //current quantum
+		Queue<Process> awaitingArrival = new LinkedList<Process>();
+		for(Process p : processes){
+			awaitingArrival.add(new Process(p));
+		}
+		Queue<Process> readyQueue = new LinkedList<Process>();
+		while(t < 100){
+			//move all processes that have arrived to the readyQueue
+			while(awaitingArrival.peek().getArrivalTime() <= t){
+				readyQueue.add(awaitingArrival.remove());
+			}
+			if(readyQueue.isEmpty()) //processor idle
+				timeline.add("-");
+			else {
+			}
+		}
+	}
+	
 	//creates timeline for FCFS but also start time and finish time
 	//doesnt use instance variable
 	public LinkedList<String> createTimeline(){
-		Process curr = readyQueue.get(0); //first process
+		Process curr = processes.get(0); //first process
 		LinkedList<String> timeline = new LinkedList<String>();
 		timeline.add(curr.getName()); //you guys can change this to whatever data structure
 		
 		float t = curr.getArrivalTime(); //first start time
-		readyQueue.get(0).setStartTime(curr.getArrivalTime()); //sets first process
+		processes.get(0).setStartTime(curr.getArrivalTime()); //sets first process
 		
-		for(int i = 1; i < readyQueue.size(); i++){	
+		for(int i = 1; i < processes.size(); i++){	
 			t += curr.getRunTime(); //calculate new start time
-			curr = readyQueue.get(i); //next process
+			curr = processes.get(i); //next process
 			
 			if(t < curr.getArrivalTime()) //if current process starts later
 				t = curr.getArrivalTime();
 			
-			readyQueue.get(i).setStartTime(t);
+			processes.get(i).setStartTime(t);
 			timeline.add(curr.getName());
 		}
 
 		//calculate finish times after getting start times
-		for(int i = 0; i < readyQueue.size(); i++){
-			curr = readyQueue.get(i);
-			readyQueue.get(i).setFinishTime(curr.getRunTime()+curr.getStartTime());
+		for(int i = 0; i < processes.size(); i++){
+			curr = processes.get(i);
+			processes.get(i).setFinishTime(curr.getRunTime()+curr.getStartTime());
 		}
 		
 		return timeline;
@@ -117,7 +145,7 @@ public class FCFSAlgorithm implements Algorithm {
 	
 	//for testing
 	public ArrayList<Process> getSortedQueue(){
-		return readyQueue;
+		return processes;
 	}
 	
 	

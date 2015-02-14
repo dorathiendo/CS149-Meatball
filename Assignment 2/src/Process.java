@@ -11,6 +11,7 @@ public class Process {
 	private int priority;
 	private float startTime;
 	private float finishTime;
+	private float remainingTime;
 
 	/**
 	 * Constructor that creates a process with:
@@ -25,6 +26,7 @@ public class Process {
 		runTime = (float) ((Math.random()*(9.9))+0.1);
 		//(Math.random()*(max-min+1))+min
 		priority = (int) (Math.random()*(4-1+1)+1);
+		remainingTime = runTime;
 	}
 	
 	//to help test
@@ -33,6 +35,19 @@ public class Process {
 		this.runTime = runTime;
 		this.arrivalTime = arrivalTime;
 		this.priority = priority;
+		this.remainingTime = runTime;
+	}
+	
+	/**
+	 * Clone constructor
+	 * @param another
+	 */
+	public Process(Process another){
+		this.name = another.getName();
+		this.runTime = another.getRunTime();
+		this.arrivalTime = another.getArrivalTime();
+		this.priority = another.getPriority();
+		this.remainingTime = runTime;
 	}
 	
 	public float getArrivalTime() {
@@ -74,4 +89,5 @@ public class Process {
 				"Expected Run Time: " + runTime + "\n" +
 				"Priority: " + priority + "\n";
 	}
+	
 }
