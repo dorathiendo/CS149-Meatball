@@ -2,47 +2,34 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
 public class SJFAlgorithm implements Algorithm {
 
-	private ArrayList<Process> readyQueue;
-	
-	public SJFAlgorithm(ArrayList<Process> processes) {
-		readyQueue = sortProcesses(processes);
-	}
+    private ArrayList<Process> readyQueue;
 
-	@Override
-	public float avTurnAroundTime() {
-		float turnaroundTime = 0;
-		for(int i = 0; i < readyQueue.size(); i++) {
-			turnaroundTime += readyQueue.get(i).getRunTime() - readyQueue.get(i).getArrivalTime();
-		}
-		float result = turnaroundTime / (float) readyQueue.size();
-		return result;
-	}
+    public SJFAlgorithm(ArrayList<Process> processes) {
+    }
 
-	@Override
-	public float avWaitingResponse() {
-		// TODO Auto-generated method stub
-		return 0;
+    @Override
+    public float avTurnAroundTime() {
+	float turnaroundTime = 0;
+	for (int i = 0; i < readyQueue.size(); i++) {
+	    turnaroundTime += readyQueue.get(i).getRunTime()
+		    - readyQueue.get(i).getArrivalTime();
 	}
+	float result = turnaroundTime / (float) readyQueue.size();
+	return result;
+    }
 
-	@Override
-	public float avResponseTime() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public float avWaitingResponse() {
+	// TODO Auto-generated method stub
+	return 0;
+    }
 
-	@Override
-	public ArrayList<Process> sortProcesses(ArrayList<Process> proc) {
-		Collections.sort(proc, new Comparator<Process>() {
-			public int compare(Process p1, Process p2) {
-				if (p1.getRunTime() == p2.getRunTime())
-					return 0;
-				return p1.getRunTime() < p2.getRunTime() ? -1 : 1;
-			}
-		});
-		return proc;
-	}
+    @Override
+    public float avResponseTime() {
+	// TODO Auto-generated method stub
+	return 0;
+    }
 
 }
