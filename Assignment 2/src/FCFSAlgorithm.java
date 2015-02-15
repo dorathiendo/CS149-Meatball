@@ -2,53 +2,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class FCFSAlgorithm implements Algorithm {
+public class FCFSAlgorithm extends Algorithm {
 
-	private ArrayList<Process> processes;
-	private LinkedList<String> timeline;
-
-	/**
-	 * Creates an algorithm object that runs the processes sent through the
-	 * parameter.
-	 * 
-	 * @param processesIn
-	 *            the processes sent
-	 */
 	public FCFSAlgorithm(ArrayList<Process> processesIn) {
-		// deep copy of processes
-		processes = new ArrayList<Process>();
-		for (Process p : processesIn)
-			processes.add(new Process(p));
-		timeline = new LinkedList<String>();
-	}
-
-	@Override
-	public float avTurnAroundTime() {
-		float turnaroundTime = 0;
-		for (int i = 0; i < processes.size(); i++) {
-			turnaroundTime += processes.get(i).getFinishTime()
-					- processes.get(i).getArrivalTime();
-		}
-		return turnaroundTime / (float) processes.size();
-	}
-
-	@Override
-	public float avWaitingResponse() {
-		float waitTime = processes.get(0).getStartTime();
-		for (int i = 1; i < processes.size(); i++) {
-			waitTime += processes.get(i).getStartTime()
-					- processes.get(i).getArrivalTime();
-		}
-		return waitTime / (float) processes.size();
-	}
-
-	@Override
-	public float avResponseTime() {
-		float responseTime = 0;
-		for (int i = 0; i < processes.size(); i++) {
-			responseTime += processes.get(i).getStartTime();
-		}
-		return responseTime / (float) processes.size();
+		super(processesIn);
 	}
 
 	/**
@@ -91,13 +48,6 @@ public class FCFSAlgorithm implements Algorithm {
 			}
 			t++;
 		}
-		System.out.println(timeline);
-	}
-
-	// for testing
-	@Override
-	public ArrayList<Process> getProcesses() {
-		return processes;
 	}
 
 }

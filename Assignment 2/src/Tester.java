@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.ListIterator;
 
 public class Tester {
 
@@ -58,8 +57,8 @@ public class Tester {
 	    name++;
 	}
 	sort(processes);
-	FCFSAlgorithm alg = new FCFSAlgorithm(processes);
-	alg.run();
+	Algorithm alg = new SRTAlgorithm(processes);
+	System.out.println(alg.getTimeline());
 	printProcesses(processes);
 	printStatistics(alg);
 	
@@ -73,7 +72,7 @@ public class Tester {
 
 	System.out.println();
 	alg = new FCFSAlgorithm(processes);
-	alg.run();
+	System.out.println(alg.getTimeline());
 	printProcesses(processes);
 	printStatistics(alg);
     }
