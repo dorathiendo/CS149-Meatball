@@ -7,7 +7,7 @@ public class Tester {
 
 	public static void main(String[] args) {
 		ArrayList<Process> readyQueue = new ArrayList<>();
-		int numProcesses = 10; // Will find a better number later
+		int numProcesses = 22; // Will find a better number later
 		char name = 'A';
 		for (int i = 0; i < numProcesses; i++) {
 			readyQueue.add(new Process(Character.toString(name)));
@@ -25,7 +25,7 @@ public class Tester {
 
 		FCFSAlgorithm FCFS = new FCFSAlgorithm(readyQueue);
 		FCFS.run();
-		System.out.println("FCFS Timeline: " + FCFS.createTimeline());
+//		System.out.println("FCFS Timeline: " + FCFS.createTimeline());
 
 		String test = "Arrival Times: ";
 		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {
@@ -55,8 +55,9 @@ public class Tester {
 		readyQueue.add(new Process("C", (float) 9, (float) 4, 1));
 
 		FCFS = new FCFSAlgorithm(readyQueue);
-		System.out.println("\nTEEEESSSST: \nFCFS Timeline: "
-				+ FCFS.createTimeline());
+		FCFS.run();
+//		System.out.println("\nTEEEESSSST: \nFCFS Timeline: "
+//				+ FCFS.createTimeline());
 
 		test = "Arrival Times: ";
 		for (int i = 0; i < FCFS.getSortedQueue().size(); i++) {

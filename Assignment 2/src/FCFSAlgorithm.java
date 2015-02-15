@@ -110,19 +110,26 @@ public class FCFSAlgorithm implements Algorithm {
 		Queue<Process> readyQueue = new LinkedList<Process>();
 		int t = 0; // current quantum
 		while (!readyQueue.isEmpty() || !awaitingArrival.isEmpty()) {
-			while (!awaitingArrival.isEmpty() && 
-					awaitingArrival.peek().getArrivalTime() <= t) {
+			while (!awaitingArrival.isEmpty()
+					&& awaitingArrival.peek().getArrivalTime() <= t) {
 				// move all processes that have arrived to the readyQueue
 				readyQueue.add(awaitingArrival.remove());
 			}
 			if (readyQueue.isEmpty()) // processor idle
 				timeline.add("-");
-			else { //run process in front of queue for 1 quantum
+			else { // run process in front of queue for 1 quantum
 				Process curr = readyQueue.peek();
-				timeline.add(curr.getName());
-				if (curr.getStartTime() == -1)
+				if (curr.getStartTime() == -1) {
+					if (t > 99) { // no process should START after 99, remove processes that are left
+						for (Process p : readyQueue)
+							processes.remove(p);
+						break;
+					}
 					curr.setStartTime(t);
-				curr.run(t); //this updates remaining time and finish time
+				}
+				timeline.add(curr.getName());
+				curr.run(t); // this updates remaining time and finish time of
+								// the process
 				if (curr.getRemainingTime() == 0) {
 					readyQueue.remove();
 				}
