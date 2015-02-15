@@ -5,4 +5,5 @@ public interface Algorithm {
 	float avResponseTime();
 	float avWaitingResponse();
 	void run();
+	ArrayList<Process> getProcesses();
 }

@@ -95,7 +95,8 @@ public class FCFSAlgorithm implements Algorithm {
 	}
 
 	// for testing
-	public ArrayList<Process> getSortedQueue() {
+	@Override
+	public ArrayList<Process> getProcesses() {
 		return processes;
 	}
 
