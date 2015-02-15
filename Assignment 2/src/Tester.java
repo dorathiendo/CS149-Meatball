@@ -24,6 +24,7 @@ public class Tester {
 		});
 
 		FCFSAlgorithm FCFS = new FCFSAlgorithm(readyQueue);
+		FCFS.run();
 		System.out.println("FCFS Timeline: " + FCFS.createTimeline());
 
 		String test = "Arrival Times: ";
