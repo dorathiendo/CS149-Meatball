@@ -9,9 +9,6 @@ public class FCFSAlgorithm implements Algorithm {
 
     private ArrayList<Process> processes;
     private LinkedList<String> timeline;
-    private float avTurnAroundTime;
-    private float avWaitingResponse;
-    private float avResponseTime;
 
     /**
      * Creates an algorithm object that runs the processes sent through the
@@ -35,8 +32,7 @@ public class FCFSAlgorithm implements Algorithm {
 	    turnaroundTime += processes.get(i).getFinishTime()
 		    - processes.get(i).getArrivalTime();
 	}
-	avTurnAroundTime = turnaroundTime / (float) processes.size();
-	return avTurnAroundTime;
+	return turnaroundTime / (float) processes.size();
     }
 
     @Override
@@ -46,8 +42,7 @@ public class FCFSAlgorithm implements Algorithm {
 	    waitTime += processes.get(i).getStartTime()
 		    - processes.get(i).getArrivalTime();
 	}
-	avWaitingResponse = waitTime / (float) processes.size();
-	return avWaitingResponse;
+	return waitTime / (float) processes.size();
     }
 
     @Override
@@ -56,13 +51,12 @@ public class FCFSAlgorithm implements Algorithm {
 	for (int i = 0; i < processes.size(); i++) {
 	    responseTime += processes.get(i).getStartTime();
 	}
-	avResponseTime = responseTime / (float) processes.size();
-	return avResponseTime;
+	return responseTime / (float) processes.size();
     }
 
     /**
-     * Run the processor, choosing a process for each quantum.
-     * Create the timeline and store statistics as it runs.
+     * Run the processor, choosing a process for each quantum. Create the
+     * timeline and store statistics as it runs.
      */
     public void run() {
 	Queue<Process> awaitingArrival = new LinkedList<Process>();
