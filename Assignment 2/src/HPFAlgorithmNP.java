@@ -1,11 +1,11 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
+import java.util.Map;
 import java.util.Queue;
 
-public class SJFAlgorithm implements Algorithm {
+public class HPFAlgorithmNP implements Algorithm {
 
 	private ArrayList<Process> processes;
 	private LinkedList<String> timeline;
@@ -17,7 +17,7 @@ public class SJFAlgorithm implements Algorithm {
 	 * @param processesIn
 	 *            the processes sent
 	 */
-	public SJFAlgorithm(ArrayList<Process> processesIn) {
+	public HPFAlgorithmNP(ArrayList<Process> processesIn) {
 		// deep copy of processes
 		processes = new ArrayList<Process>();
 		for (Process p : processesIn)
@@ -53,6 +53,18 @@ public class SJFAlgorithm implements Algorithm {
 		}
 		return responseTime / (float) processes.size();
 	}
+	
+	/**
+	 * 
+	 * @return true if empty
+	 */
+	public Boolean isQueueEmpty(ArrayList<Queue<Process>> q){
+		for(int i = 0; i < 4; i++){
+			if(!q.get(i).isEmpty())
+				return false;			
+		}
+		return true;
+	}
 
 	/**
 	 * Run the processor, choosing a process for each quantum. Create the
@@ -63,37 +75,42 @@ public class SJFAlgorithm implements Algorithm {
 		for (Process p : processes) {
 			awaitingArrival.add(p);
 		}
-		
-		//shortest job time first
-		Comparator<Process> comp = new Comparator<Process>(){
-			@Override
-			public int compare(Process p1, Process p2) {
-				if (p1.getRunTime() == p2.getRunTime()){
-					return 0;
-				}
-				return p1.getRunTime() < p2.getRunTime() ? -1 : 1;
-			}			
-		};
-		PriorityQueue<Process> readyQueue = new PriorityQueue<Process>(20, comp);
+
+		ArrayList<Queue<Process>> priorityQueues = new ArrayList<>();
+		priorityQueues.add(new LinkedList<Process>()); //lowest
+		priorityQueues.add(new LinkedList<Process>());
+		priorityQueues.add(new LinkedList<Process>());
+		priorityQueues.add(new LinkedList<Process>()); //highest
 
 		int t = 0; // current quantum
-		while (!readyQueue.isEmpty() || !awaitingArrival.isEmpty()) {
+		int name = 0;
+		Process curr = null;
+		while (!isQueueEmpty(priorityQueues) || !awaitingArrival.isEmpty()) {
 			// move all processes that have arrived to the readyQueue
 			while (!awaitingArrival.isEmpty()
 					&& awaitingArrival.peek().getArrivalTime() <= t) {
-				readyQueue.add(awaitingArrival.remove());
+				for(int i = 0; i<4; i++){
+					if(awaitingArrival.peek().getPriority() == (i+1)){
+						curr = awaitingArrival.remove();
+						priorityQueues.get(i).add(curr);
+						name = i;
+						break;
+					}
+				}
 			}
-			if (readyQueue.isEmpty()){ // processor idle
+			if (isQueueEmpty(priorityQueues)){
 				timeline.add("-");
 				t++;
 			}
 			else { // run process in the front of queue for 1 quantum
-				Process curr = readyQueue.peek();
 				if (curr.getStartTime() == -1) {
 					if (t > 99) { // no process should START after 99, remove
 						// processes that are left
-						for (Process p : readyQueue)
-							processes.remove(p);
+						for(Queue<Process> q : priorityQueues){
+							for(Process p : q){
+								processes.remove(p);
+							}
+						}
 						break;
 					}
 					curr.setStartTime(t);
@@ -103,7 +120,7 @@ public class SJFAlgorithm implements Algorithm {
 					curr.executeProcess(t); // this updates remaining time and
 					t++;
 				}
-				readyQueue.remove();
+				priorityQueues.get(name).remove(curr);
 			}
 		}
 		System.out.println(timeline);
