@@ -27,13 +27,21 @@ public class Tester {
 	for (Process p: list) {
 	    s += String.format(" %-6.2f ", p.getRunTime());
 	}
+	s += "\nPriority:    ";
+	for (Process p: list) {
+	    s += String.format("   %2d   ", p.getPriority());
+	}
 	s += "\n";
 	System.out.print(s);
     }
 
     public static void printStatistics(Algorithm alg) {
 	ArrayList<Process> list = alg.getProcesses();
-	String s = "Start Times: ";
+	String s = "Processes:   ";
+	for (int i = 0; i < list.size(); i++){
+	    s += " " + list.get(i).getName() + "      ";
+	}
+	s += "\nStart Times: ";
 	for (int i = 0; i < list.size(); i++) {
 	    s += String.format(" %-6.2f ", list.get(i).getStartTime());
 	}
@@ -57,7 +65,7 @@ public class Tester {
 	    name++;
 	}
 	sort(processes);
-	Algorithm alg = new SRTAlgorithm(processes);
+	Algorithm alg = new HPFAlgorithmNP(processes);
 	System.out.println(alg.getTimeline());
 	printProcesses(processes);
 	printStatistics(alg);
@@ -68,10 +76,11 @@ public class Tester {
 	processes.add(new Process("B", (float) 6, (float) 1, 1));
 	processes.add(new Process("C", (float) 9, (float) 4, 1));
 	processes.add(new Process("D", (float) 4, (float) 1, 1));
+	processes.add(new Process("E", (float) 5, (float) 0, 1));
 	sort(processes);
 
 	System.out.println();
-	alg = new FCFSAlgorithm(processes);
+	alg = new RRAlgorithm(processes);
 	System.out.println(alg.getTimeline());
 	printProcesses(processes);
 	printStatistics(alg);

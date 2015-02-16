@@ -1,23 +1,13 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class HPFAlgorithmNP extends Algorithm {
 
 	public HPFAlgorithmNP(ArrayList<Process> processesIn) {
 		super(processesIn);
-	}
-
-	/**
-	 * 
-	 * @return true if empty
-	 */
-	public Boolean isQueueEmpty(ArrayList<Queue<Process>> q) {
-		for (int i = 0; i < 4; i++) {
-			if (!q.get(i).isEmpty())
-				return false;
-		}
-		return true;
 	}
 
 	/**
@@ -30,40 +20,37 @@ public class HPFAlgorithmNP extends Algorithm {
 			awaitingArrival.add(p);
 		}
 
-		ArrayList<Queue<Process>> priorityQueues = new ArrayList<>();
-		priorityQueues.add(new LinkedList<Process>()); // lowest
-		priorityQueues.add(new LinkedList<Process>());
-		priorityQueues.add(new LinkedList<Process>());
-		priorityQueues.add(new LinkedList<Process>()); // highest
+		// shortest job time first
+		Comparator<Process> comp = new Comparator<Process>() {
+			@Override
+			public int compare(Process p1, Process p2) {
+				if (p1.getPriority() == p2.getPriority()) {
+					if (p1.getArrivalTime() == p2.getArrivalTime())
+						return 0;
+					return p1.getArrivalTime() < p2.getArrivalTime() ? -1 : 1;
+				}
+				return p1.getPriority() > p2.getPriority() ? -1 : 1;
+			}
+		};
+		PriorityQueue<Process> readyQueue = new PriorityQueue<Process>(20, comp);
 
 		int t = 0; // current quantum
-		int name = 0;
-		Process curr = null;
-		while (!isQueueEmpty(priorityQueues) || !awaitingArrival.isEmpty()) {
+		while (!readyQueue.isEmpty() || !awaitingArrival.isEmpty()) {
 			// move all processes that have arrived to the readyQueue
 			while (!awaitingArrival.isEmpty()
 					&& awaitingArrival.peek().getArrivalTime() <= t) {
-				for (int i = 0; i < 4; i++) {
-					if (awaitingArrival.peek().getPriority() == (i + 1)) {
-						curr = awaitingArrival.remove();
-						priorityQueues.get(i).add(curr);
-						name = i;
-						break;
-					}
-				}
+				readyQueue.add(awaitingArrival.remove());
 			}
-			if (isQueueEmpty(priorityQueues)) {
+			if (readyQueue.isEmpty()) { // processor idle
 				timeline.add("-");
 				t++;
 			} else { // run process in the front of queue for 1 quantum
+				Process curr = readyQueue.peek();
 				if (curr.getStartTime() == -1) {
 					if (t > 99) { // no process should START after 99, remove
 						// processes that are left
-						for (Queue<Process> q : priorityQueues) {
-							for (Process p : q) {
-								processes.remove(p);
-							}
-						}
+						for (Process p : readyQueue)
+							processes.remove(p);
 						break;
 					}
 					curr.setStartTime(t);
@@ -73,7 +60,7 @@ public class HPFAlgorithmNP extends Algorithm {
 					curr.executeProcess(t); // this updates remaining time and
 					t++;
 				}
-				priorityQueues.get(name).remove(curr);
+				readyQueue.remove();
 			}
 		}
 	}

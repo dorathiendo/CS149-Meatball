@@ -29,13 +29,18 @@ public class RRAlgorithm extends Algorithm {
 				timeline.add("-");
 			else { // run process in the front of queue for 1 quantum
 				Process curr = readyQueue.peek();
-				if (curr.getStartTime() == -1) {
-					if (t > 99) { // no process should START after 99, remove
-						// processes that are left
-						for (Process p : readyQueue)
-							processes.remove(p);
-						break;
+				if (t > 99) {
+					// get to next unfinished, but started, process
+					while (!readyQueue.isEmpty() && curr.getStartTime() == -1) {
+						processes.remove(readyQueue.remove());
+						curr = readyQueue.peek();
+
 					}
+					// break if no more processes
+					if (curr == null)
+						break;
+				}
+				if (curr.getStartTime() == -1) {
 					curr.setStartTime(t);
 				}
 				timeline.add(curr.getName());
