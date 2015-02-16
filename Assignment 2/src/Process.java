@@ -12,6 +12,7 @@ public class Process {
 	private float startTime; // -1 represents not started
 	private float finishTime; // -1 represents unfinished
 	private float remainingTime;
+	private float latestRun; //-1 represents not started
 
 	/**
 	 * Constructor that creates a process with: -a randomly generated arrival
@@ -64,6 +65,7 @@ public class Process {
 	 *            calculate finish time if necessary.
 	 */
 	public void executeProcess(int time) {
+		latestRun = time;
 		if (remainingTime > 1) {
 			remainingTime--;
 		} else {
@@ -106,6 +108,10 @@ public class Process {
 
 	public float getRemainingTime() {
 		return remainingTime;
+	}
+	
+	public float getLatestRun() {
+		return latestRun;
 	}
 
 	@Override

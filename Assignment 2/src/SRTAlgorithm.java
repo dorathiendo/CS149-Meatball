@@ -57,7 +57,7 @@ public class SRTAlgorithm extends Algorithm {
 				if (curr.getStartTime() == -1) {
 					curr.setStartTime(t);
 				}
-				timeline.add(curr.getName() + "=" + t);
+				timeline.add(curr.getName());
 				curr.executeProcess(t); // this updates remaining time and
 				// finish time of
 				// the process

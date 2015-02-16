@@ -65,16 +65,16 @@ public class HPFAlgorithmNP extends Algorithm {
 		}
 	}
 	
-	public void printQueueStats(){
+	public void printQueueStats() {
 		ArrayList<ArrayList<Process>> lists = new ArrayList<ArrayList<Process>>();
 		lists.add(0, null);
 		for (int i = 1; i <= 4; i++)
 			lists.add(i, new ArrayList<Process>());
-		for (Process p : processes){
+		for (Process p : processes) {
 			lists.get(p.getPriority()).add(p);
 		}
 		System.out.println("Priority-specific Statistics:");
-		for (int i = 4; i >= 1; i--){
+		for (int i = 4; i >= 1; i--) {
 			ArrayList<Process> curr = lists.get(i);
 			float turnaroundTime = 0;
 			float waitTime = 0;
@@ -95,10 +95,11 @@ public class HPFAlgorithmNP extends Algorithm {
 			turnaroundTime = turnaroundTime / (float) curr.size();
 			waitTime = waitTime / (float) curr.size();
 			responseTime = responseTime / (float) curr.size();
-			System.out.println("Priority " + i + ":\n" +
-					"\tAverage Turnaround Time: " + turnaroundTime +
-					"\n\tAverage Wait Time: " + waitTime +
-					"\n\tAverage Response Time:" + responseTime);
+			System.out.println("Priority " + i + ":"
+					+ "\n\tThroughput: " + curr.size()
+					+ "\n\tAverage Turnaround Time: " + turnaroundTime
+					+ "\n\tAverage Wait Time: " + waitTime
+					+ "\n\tAverage Response Time:" + responseTime);
 		}
 	}
 
