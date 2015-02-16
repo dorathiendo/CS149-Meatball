@@ -65,10 +65,11 @@ public class Tester {
 	    name++;
 	}
 	sort(processes);
-	Algorithm alg = new HPFAlgorithmNP(processes);
+	HPFAlgorithmNP alg = new HPFAlgorithmNP(processes);
 	System.out.println(alg.getTimeline());
 	printProcesses(processes);
 	printStatistics(alg);
+	alg.printQueueStats();
 	
 	// hard coded processes
 	processes.clear();
@@ -80,10 +81,10 @@ public class Tester {
 	sort(processes);
 
 	System.out.println();
-	alg = new RRAlgorithm(processes);
-	System.out.println(alg.getTimeline());
+	Algorithm alg2 = new RRAlgorithm(processes);
+	System.out.println(alg2.getTimeline());
 	printProcesses(processes);
-	printStatistics(alg);
+	printStatistics(alg2);
     }
 
 }
