@@ -1,0 +1,330 @@
+Run 1:
+
+Processes:    Y       L       C       W       P       F       K       B       U       H       G       A       J       T       R       N       I       Q       S       Z       V       X       D       M       O       E      
+ArrivalTimes: 7.58    10.78   13.08   13.38   21.52   22.44   28.92   30.25   37.43   43.62   48.99   49.88   50.32   51.89   54.06   58.72   58.73   61.29   67.59   71.64   72.53   74.90   76.70   83.12   88.75   89.25  
+Burst Times:  4.26    9.03    7.23    5.02    5.63    9.14    5.94    8.53    7.79    6.83    6.84    9.40    0.49    8.89    2.14    3.85    0.24    3.34    5.60    5.68    2.90    3.83    4.24    9.09    7.75    3.02   
+Priority:        3       2       4       4       2       2       4       4       3       3       4       2       2       4       3       2       1       2       1       4       1       3       2       1       1       4   
+
+FCFS:
+[-, -, -, -, -, -, -, -, Y, Y, Y, Y, Y, L, L, L, L, L, L, L, L, L, L, C, C, C, C, C, C, C, C, W, W, W, W, W, W, P, P, P, P, P, P, F, F, F, F, F, F, F, F, F, F, K, K, K, K, K, K, B, B, B, B, B, B, B, B, B, U, U, U, U, U, U, U, U, H, H, H, H, H, H, H, G, G, G, G, G, G, G, A, A, A, A, A, A, A, A, A, A]
+Processes:    Y       L       C       W       P       F       K       B       U       H       G       A      
+Start Times:  8.00    13.00   23.00   31.00   37.00   43.00   53.00   59.00   68.00   76.00   83.00   90.00  
+Finish Times: 12.26   22.03   30.23   36.02   42.63   52.14   58.94   67.53   75.79   82.83   89.84   99.40  
+Throughput per 100 Quanta: 12.0
+Average Turnaround Time: Calculated = 28.480322
+Average Wait Time: Calculated = 21.344484
+Average Response Time: 21.344484
+
+RR:
+[-, -, -, -, -, -, -, -, Y, Y, Y, L, Y, L, W, C, Y, L, W, C, L, W, P, F, C, L, W, P, F, K, C, B, L, W, P, F, K, C, U, B, L, W, P, F, H, K, C, U, B, G, A, J, T, L, P, R, F, H, K, I, N, C, Q, U, B, G, A, T, S, L, P, R, Z, V, F, X, H, D, K, N, C, Q, U, B, M, G, A, T, S, O, E, L, R, Z, V, F, X, H, D, K, N, Q, U, B, M, G, A, T, S, O, E, Z, V, F, X, H, D, N, Q, U, B, M, G, A, T, S, O, E, Z, F, X, H, D, U, B, M, G, A, T, S, O, E, Z, F, H, D, U, B, M, G, A, T, S, O, Z, M, A, T, O, M, A, T, O, M, A, O, M, M]
+Processes:    Y       L       C       W       P       F       K       B       U       H       G       A       J       T       R       N       I       Q       S       Z       V       X       D       M       O       E      
+Start Times:  8.00    11.00   15.00   14.00   22.00   23.00   29.00   31.00   38.00   44.00   49.00   50.00   51.00   52.00   55.00   60.00   59.00   62.00   68.00   72.00   73.00   75.00   77.00   84.00   89.00   90.00  
+Finish Times: 16.26   91.03   80.23   41.02   70.63   143.14  99.94   147.53  146.79  144.83  149.84  164.40  51.49   161.89  92.14   117.85  59.24   118.34  152.60  154.68  112.90  130.83  145.24  167.09  165.75  141.02 
+Throughput per 100 Quanta: 15.476191
+Average Turnaround Time: Calculated = 68.436134
+Average Wait Time: Calculated = 62.79445
+Average Response Time: 0.52522236
+
+SJF:
+[-, -, -, -, -, -, -, -, Y, Y, Y, Y, Y, L, L, L, L, L, L, L, L, L, L, W, W, W, W, W, W, P, P, P, P, P, P, K, K, K, K, K, K, C, C, C, C, C, C, C, C, H, H, H, H, H, H, H, J, R, R, R, I, N, N, N, N, Q, Q, Q, Q, S, S, S, S, S, S, V, V, V, X, X, X, X, D, D, D, D, D, Z, Z, Z, Z, Z, Z, E, E, E, E, G, G, G, G, G, G, G]
+Processes:    Y       L       C       W       P       K       H       G       J       R       N       I       Q       S       Z       V       X       D       E      
+Start Times:  8.00    13.00   41.00   23.00   29.00   35.00   49.00   97.00   56.00   57.00   61.00   60.00   65.00   69.00   87.00   75.00   78.00   82.00   93.00  
+Finish Times: 12.26   22.03   48.23   28.02   34.63   40.94   55.83   103.84  56.49   59.14   64.85   60.24   68.34   74.60   92.68   77.90   81.83   86.24   96.02  
+Throughput per 100 Quanta: 18.26923
+Average Turnaround Time: Calculated = 12.657859
+Average Wait Time: Calculated = 8.126658
+Average Response Time: 8.126659
+
+SRT:
+[-, -, -, -, -, -, -, -, Y, Y, Y, Y, Y, L, W, W, W, W, W, W, C, C, C, C, C, C, C, C, P, P, P, P, P, P, K, K, K, K, K, K, U, U, U, U, U, U, U, U, H, H, H, J, H, H, H, H, R, R, R, I, N, N, N, N, Q, Q, Q, Q, S, S, S, S, S, S, V, V, V, X, X, X, X, D, D, D, D, D, Z, Z, Z, Z, Z, Z, E, E, E, E, G, G, G, G, G, G, G, L, L, L, L, L, L, L, L, L]
+Processes:    Y       L       C       W       P       K       U       H       G       J       R       N       I       Q       S       Z       V       X       D       E      
+Start Times:  8.00    13.00   20.00   14.00   28.00   34.00   40.00   48.00   96.00   51.00   56.00   60.00   59.00   64.00   68.00   86.00   74.00   77.00   81.00   92.00  
+Finish Times: 12.26   111.03  27.23   19.02   33.63   39.94   47.79   55.83   102.84  51.49   58.14   63.85   59.24   67.34   73.60   91.68   76.90   80.83   85.24   95.02  
+Throughput per 100 Quanta: 17.857143
+Average Turnaround Time: Calculated = 14.593094
+Average Wait Time: Calculated = 9.89893
+Average Response Time: 5.398931
+
+HPF Non-preemptive:
+[-, -, -, -, -, -, -, -, Y, Y, Y, Y, Y, L, L, L, L, L, L, L, L, L, L, C, C, C, C, C, C, C, C, W, W, W, W, W, W, K, K, K, K, K, K, B, B, B, B, B, B, B, B, B, G, G, G, G, G, G, G, T, T, T, T, T, T, T, T, T, U, U, U, U, U, U, U, U, Z, Z, Z, Z, Z, Z, H, H, H, H, H, H, H, R, R, R, E, E, E, E, X, X, X, X]
+Processes:    Y       L       C       W       K       B       U       H       G       T       R       Z       X       E      
+Start Times:  8.00    13.00   23.00   31.00   37.00   43.00   68.00   82.00   52.00   59.00   89.00   76.00   96.00   92.00  
+Finish Times: 12.26   22.03   30.23   36.02   42.94   51.53   75.79   88.83   58.84   67.89   91.14   81.68   99.83   95.02  
+Throughput per 100 Quanta: 14.0
+Average Turnaround Time: Calculated = 19.87442
+Average Wait Time: Calculated = 13.802316
+Average Response Time: 13.802318
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 8
+	Average Turnaround Time: 14.59309
+	Average Wait Time: 8.200348
+	Average Response Time:8.200349
+Priority 3:
+	Throughput: 5
+	Average Turnaround Time: 30.04881
+	Average Wait Time: 25.081406
+	Average Response Time:25.081406
+Priority 2:
+	Throughput: 1
+	Average Turnaround Time: 11.253097
+	Average Wait Time: 2.2226486
+	Average Response Time:2.2226477
+Priority 1:
+	Throughput: 0
+	Average Turnaround Time: NaN
+	Average Wait Time: NaN
+	Average Response Time:NaN
+
+HPF preemptive:
+[-, -, -, -, -, -, -, -, Y, Y, Y, Y, Y, L, C, W, C, W, C, W, C, W, C, W, C, W, C, C, P, K, K, B, K, B, K, B, K, B, K, B, B, B, B, B, U, H, U, H, U, G, G, G, T, G, T, G, T, G, T, G, T, T, T, T, T, R, H, U, R, H, U, R, Z, Z, Z, Z, Z, Z, X, H, U, X, H, U, X, H, U, X, Q, J, E, E, E, E, N, A, D, F, L, P, Q, N, A, D, F, L, P, Q, N, A, D, F, L, P, Q, N, A, D, F, L, P, A, D, F, L, P, A, F, L, A, F, L, A, F, L, A, F, L, A, F]
+Processes:    Y       L       C       W       P       F       K       B       U       H       G       A       J       T       R       N       Q       Z       X       D       E      
+Start Times:  8.00    13.00   14.00   15.00   28.00   97.00   29.00   31.00   44.00   45.00   49.00   95.00   89.00   52.00   65.00   94.00   88.00   72.00   78.00   96.00   90.00  
+Finish Times: 12.26   137.03  27.23   25.02   125.63  139.14  38.94   43.53   86.79   85.83   59.84   138.40  89.49   64.89   71.14   115.85  114.34  77.68   87.83   122.24  93.02  
+Throughput per 100 Quanta: 15.000001
+Average Turnaround Time: Calculated = 39.974678
+Average Wait Time: Calculated = 34.208244
+Average Response Time: 13.113011
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 8
+	Average Turnaround Time: 10.343089
+	Average Wait Time: 3.9503472
+	Average Response Time:0.5753486
+Priority 3:
+	Throughput: 5
+	Average Turnaround Time: 25.248812
+	Average Wait Time: 20.281406
+	Average Response Time:4.4814053
+Priority 2:
+	Throughput: 8
+	Average Turnaround Time: 78.80993
+	Average Wait Time: 73.170425
+	Average Response Time:31.045427
+Priority 1:
+	Throughput: 0
+	Average Turnaround Time: NaN
+	Average Wait Time: NaN
+	Average Response Time:NaN
+
+--
+
+Run 2:
+
+Processes:    S       T       Z       B       M       X       R       Q       P       U       G       V       K       N       C       E       W       O       H       L       J       Y       F       I       D       A      
+ArrivalTimes: 2.11    8.93    10.09   22.35   28.28   31.38   32.83   34.53   35.46   35.95   38.41   39.11   39.92   44.37   48.03   53.01   53.08   55.61   62.37   64.02   64.31   65.36   67.17   80.26   87.93   92.52  
+Burst Times:  3.33    8.99    3.13    9.21    9.03    7.37    7.08    7.82    7.59    8.70    5.54    2.08    0.13    6.34    4.22    7.26    9.00    9.50    9.92    5.98    8.62    5.91    4.38    6.58    2.98    6.39   
+Priority:        1       4       3       1       3       4       1       4       1       3       2       4       4       2       3       1       4       1       2       1       3       4       3       1       3       4   
+
+FCFS:
+[-, -, -, S, S, S, S, -, -, T, T, T, T, T, T, T, T, T, Z, Z, Z, Z, -, B, B, B, B, B, B, B, B, B, B, M, M, M, M, M, M, M, M, M, M, X, X, X, X, X, X, X, X, R, R, R, R, R, R, R, R, Q, Q, Q, Q, Q, Q, Q, Q, P, P, P, P, P, P, P, P, U, U, U, U, U, U, U, U, U, G, G, G, G, G, G, V, V, V, K, N, N, N, N, N, N, N]
+Processes:    S       T       Z       B       M       X       R       Q       P       U       G       V       K       N      
+Start Times:  3.00    9.00    18.00   23.00   33.00   43.00   51.00   59.00   67.00   75.00   84.00   90.00   93.00   94.00  
+Finish Times: 6.33    17.99   21.13   32.21   42.03   50.37   58.08   66.82   74.59   83.70   89.54   92.08   93.13   100.34 
+Throughput per 100 Quanta: 13.861386
+Average Turnaround Time: Calculated = 30.329739
+Average Wait Time: Calculated = 24.162622
+Average Response Time: 24.162622
+
+RR:
+[-, -, -, S, S, S, S, -, -, T, T, Z, T, Z, T, Z, T, Z, T, T, T, T, -, B, B, B, B, B, B, M, B, M, X, R, B, Q, U, P, M, G, K, V, X, R, B, N, Q, U, P, C, M, G, V, X, W, E, O, R, B, N, Q, U, P, H, C, J, Y, L, F, M, G, V, X, W, E, O, R, N, Q, U, P, I, H, C, J, Y, L, F, D, M, G, X, W, A, E, O, R, N, Q, U, P, I, H, C, J, Y, L, F, D, M, G, X, W, A, E, O, R, N, Q, U, P, I, H, C, J, Y, L, F, D, M, G, X, W, A, E, O, R, N, Q, U, P, I, H, J, Y, L, F, M, X, W, A, E, O, R, N, Q, U, P, I, H, J, Y, L, M, W, A, E, O, U, I, H, J, W, A, E, O, I, H, J, W, A, O, H, J, O, H]
+Processes:    S       T       Z       B       M       X       R       Q       P       U       G       V       K       N       C       E       W       O       H       L       J       Y       F       I       D       A      
+Start Times:  3.00    9.00    11.00   23.00   29.00   32.00   33.00   35.00   37.00   36.00   39.00   41.00   40.00   45.00   49.00   55.00   54.00   56.00   63.00   67.00   65.00   66.00   68.00   81.00   88.00   93.00  
+Finish Times: 6.33    21.99   17.13   58.21   163.03  148.37  153.08  155.82  157.59  168.70  130.54  71.08   40.13   154.34  123.22  174.26  180.00  184.50  185.92  162.98  183.62  161.91  146.38  176.58  128.98  180.39 
+Throughput per 100 Quanta: 13.978495
+Average Turnaround Time: Calculated = 86.06506
+Average Wait Time: Calculated = 79.638885
+Average Response Time: 0.7927369
+
+SJF:
+[-, -, -, S, S, S, S, -, -, T, T, T, T, T, T, T, T, T, Z, Z, Z, Z, -, B, B, B, B, B, B, B, B, B, B, R, R, R, R, R, R, R, R, K, V, V, V, G, G, G, G, G, G, C, C, C, C, C, N, N, N, N, N, N, N, E, E, E, E, E, E, E, E, F, F, F, F, F, Y, Y, Y, Y, Y, Y, L, L, L, L, L, L, D, D, D, I, I, I, I, I, I, I, A, A, A, A, A, A, A]
+Processes:    S       T       Z       B       R       G       V       K       N       C       E       L       Y       F       I       D       A      
+Start Times:  3.00    9.00    18.00   23.00   33.00   45.00   42.00   41.00   56.00   51.00   63.00   82.00   76.00   71.00   91.00   88.00   98.00  
+Finish Times: 6.33    17.99   21.13   32.21   40.08   50.54   44.08   41.13   62.34   55.22   70.26   87.98   81.91   75.38   97.58   90.98   104.39 
+Throughput per 100 Quanta: 16.190477
+Average Turnaround Time: Calculated = 10.771104
+Average Wait Time: Calculated = 5.504833
+Average Response Time: 5.504833
+
+SRT:
+[-, -, -, S, S, S, S, -, -, T, T, Z, Z, Z, Z, T, T, T, T, T, T, T, -, B, B, B, B, B, B, B, B, B, B, R, R, R, R, R, R, R, R, K, V, V, V, G, G, G, G, G, G, C, C, C, C, C, N, N, N, N, N, N, N, E, E, E, E, E, E, E, E, F, F, F, F, F, Y, Y, Y, Y, Y, Y, L, L, L, L, L, L, D, D, D, I, I, I, I, I, I, I, A, A, A, A, A, A, A]
+Processes:    S       T       Z       B       R       G       V       K       N       C       E       L       Y       F       I       D       A      
+Start Times:  3.00    9.00    11.00   23.00   33.00   45.00   42.00   41.00   56.00   51.00   63.00   82.00   76.00   71.00   91.00   88.00   98.00  
+Finish Times: 6.33    21.99   14.13   32.21   40.08   50.54   44.08   41.13   62.34   55.22   70.26   87.98   81.91   75.38   97.58   90.98   104.39 
+Throughput per 100 Quanta: 16.190477
+Average Turnaround Time: Calculated = 10.594633
+Average Wait Time: Calculated = 5.3283625
+Average Response Time: 5.093068
+
+HPF Non-preemptive:
+[-, -, -, S, S, S, S, -, -, T, T, T, T, T, T, T, T, T, Z, Z, Z, Z, -, B, B, B, B, B, B, B, B, B, B, X, X, X, X, X, X, X, X, Q, Q, Q, Q, Q, Q, Q, Q, V, V, V, K, M, M, M, M, M, M, M, M, M, M, W, W, W, W, W, W, W, W, W, Y, Y, Y, Y, Y, Y, U, U, U, U, U, U, U, U, U, C, C, C, C, C, J, J, J, J, J, J, J, J, J]
+Processes:    S       T       Z       B       M       X       Q       U       V       K       C       W       J       Y      
+Start Times:  3.00    9.00    18.00   23.00   53.00   33.00   41.00   78.00   49.00   52.00   87.00   63.00   92.00   72.00  
+Finish Times: 6.33    17.99   21.13   32.21   62.03   40.37   48.82   86.70   51.08   52.13   91.22   72.00   100.62  77.91  
+Throughput per 100 Quanta: 13.861386
+Average Turnaround Time: Calculated = 19.792606
+Average Wait Time: Calculated = 13.539983
+Average Response Time: 13.539983
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 7
+	Average Turnaround Time: 12.567635
+	Average Wait Time: 6.669596
+	Average Response Time:6.6695967
+Priority 3:
+	Throughput: 5
+	Average Turnaround Time: 35.00882
+	Average Wait Time: 28.267178
+	Average Response Time:28.267181
+Priority 2:
+	Throughput: 0
+	Average Turnaround Time: NaN
+	Average Wait Time: NaN
+	Average Response Time:NaN
+Priority 1:
+	Throughput: 2
+	Average Turnaround Time: 7.03948
+	Average Wait Time: 0.76834416
+	Average Response Time:0.7683437
+
+HPF preemptive:
+[-, -, -, S, S, S, S, -, -, T, T, T, T, T, T, T, T, T, Z, Z, Z, Z, -, B, B, B, B, B, B, M, M, M, X, X, X, Q, X, Q, X, Q, V, K, X, Q, V, X, Q, V, X, Q, Q, Q, C, U, W, W, W, W, W, W, W, W, W, M, C, J, Y, Y, Y, Y, Y, Y, F, U, M, C, J, F, U, M, C, J, F, U, M, C, J, F, D, U, M, J, F, A, A, A, A, A, A, A, D, U, M, J, D, U, M, J, U, J, U, J, B, B, B, B]
+Processes:    S       T       Z       B       M       X       Q       U       V       K       C       W       J       Y       F       D       A      
+Start Times:  3.00    9.00    18.00   23.00   29.00   32.00   35.00   53.00   40.00   41.00   52.00   54.00   65.00   66.00   72.00   88.00   93.00  
+Finish Times: 6.33    17.99   21.13   115.21  106.03  48.37   51.82   110.70  47.08   41.13   85.22   63.00   111.62  71.91   92.38   104.98  99.39  
+Throughput per 100 Quanta: 14.655172
+Average Turnaround Time: Calculated = 27.2487
+Average Wait Time: Calculated = 21.290276
+Average Response Time: 2.4667463
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 8
+	Average Turnaround Time: 9.48057
+	Average Wait Time: 3.5208633
+	Average Response Time:0.64586294
+Priority 3:
+	Throughput: 7
+	Average Turnaround Time: 41.47205
+	Average Wait Time: 35.60444
+	Average Response Time:5.033015
+Priority 2:
+	Throughput: 0
+	Average Turnaround Time: NaN
+	Average Wait Time: NaN
+	Average Response Time:NaN
+Priority 1:
+	Throughput: 2
+	Average Turnaround Time: 48.53948
+	Average Wait Time: 42.268345
+	Average Response Time:0.7683437
+
+--
+
+Run 3: 
+
+Processes:    X       T       D       V       Y       A       P       O       S       C       L       J       E       N       K       Q       Z       G       H       U       W       I       M       B       R       F      
+ArrivalTimes: 11.83   14.85   15.60   22.17   25.61   29.91   31.00   32.77   35.03   35.55   39.99   43.92   47.98   53.03   53.68   54.17   54.68   54.70   55.84   57.48   60.17   66.67   83.34   86.32   88.16   97.49  
+Burst Times:  2.68    2.40    4.71    9.33    3.25    7.80    3.72    2.09    5.51    2.16    9.38    5.66    3.77    9.07    1.76    5.59    9.35    9.13    6.71    8.70    2.71    3.94    0.29    5.10    9.08    6.02   
+Priority:        4       1       1       1       3       4       4       1       1       4       1       4       3       2       1       3       1       2       2       1       3       2       1       4       4       2   
+
+FCFS:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, T, T, D, D, D, D, D, V, V, V, V, V, V, V, V, V, V, Y, Y, Y, Y, A, A, A, A, A, A, A, A, P, P, P, P, O, O, O, S, S, S, S, S, S, C, C, C, L, L, L, L, L, L, L, L, L, L, J, J, J, J, J, J, E, E, E, E, N, N, N, N, N, N, N, N, N, N, K, K, Q, Q, Q, Q, Q, Q, Z, Z, Z, Z, Z, Z, Z, Z, Z, Z]
+Processes:    X       T       D       V       Y       A       P       O       S       C       L       J       E       N       K       Q       Z      
+Start Times:  12.00   15.00   18.00   23.00   33.00   37.00   45.00   49.00   52.00   58.00   61.00   71.00   77.00   81.00   91.00   93.00   99.00  
+Finish Times: 14.68   17.40   22.71   32.33   36.25   44.80   48.72   51.09   57.51   60.16   70.38   76.66   80.77   90.07   92.76   98.59   108.35 
+Throughput per 100 Quanta: 15.596331
+Average Turnaround Time: Calculated = 23.614841
+Average Wait Time: Calculated = 18.42436
+Average Response Time: 18.42436
+
+RR:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, D, T, D, T, D, D, D, V, V, V, Y, V, Y, V, A, Y, P, O, V, A, C, S, Y, P, L, O, V, A, J, C, S, P, E, L, O, V, A, J, K, G, H, Z, U, Q, N, W, C, S, P, E, L, I, V, A, J, K, G, H, Z, U, Q, N, W, S, E, L, I, V, M, A, J, B, G, R, H, Z, U, Q, N, W, S, E, F, L, I, A, J, B, G, R, H, Z, U, Q, N, S, F, L, I, A, J, B, G, R, H, Z, U, Q, N, F, L, B, G, R, H, Z, U, Q, N, F, L, B, G, R, H, Z, U, N, F, L, B, G, R, Z, U, N, F, L, G, R, Z, U, N, F, G, R, Z, N, R, R]
+Processes:    X       T       D       V       Y       A       P       O       S       C       L       J       E       N       K       Q       Z       G       H       U       W       I       M       B       R       F      
+Start Times:  12.00   15.00   16.00   23.00   26.00   30.00   32.00   33.00   37.00   36.00   40.00   44.00   48.00   60.00   54.00   59.00   57.00   55.00   56.00   58.00   61.00   67.00   84.00   87.00   89.00   98.00  
+Finish Times: 14.68   19.40   22.71   83.33   38.25   115.80  64.72   50.09   111.51  62.16   153.38  116.66  97.77   163.07  71.76   133.59  162.35  160.13  140.71  157.70  95.71   114.94  84.29   146.10  165.08  159.02 
+Throughput per 100 Quanta: 15.662651
+Average Turnaround Time: Calculated = 55.882595
+Average Wait Time: Calculated = 50.501144
+Average Response Time: 0.96268487
+
+SJF:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, T, T, D, D, D, D, D, V, V, V, V, V, V, V, V, V, V, O, O, O, C, C, C, Y, Y, Y, Y, P, P, P, P, S, S, S, S, S, S, E, E, E, E, K, K, Q, Q, Q, Q, Q, Q, W, W, W, I, I, I, I, J, J, J, J, J, J, H, H, H, H, H, H, H, M, A, A, A, A, A, A, A, A, B, B, B, B, B, B]
+Processes:    X       T       D       V       Y       A       P       O       S       C       J       E       K       Q       H       W       I       M       B      
+Start Times:  12.00   15.00   18.00   23.00   39.00   86.00   43.00   33.00   47.00   36.00   72.00   53.00   57.00   59.00   78.00   65.00   68.00   85.00   94.00  
+Finish Times: 14.68   17.40   22.71   32.33   42.25   93.80   46.72   35.09   52.51   38.16   77.66   56.77   58.76   64.59   84.71   67.71   71.94   85.29   99.10  
+Throughput per 100 Quanta: 19.0
+Average Turnaround Time: Calculated = 13.459796
+Average Wait Time: Calculated = 9.292875
+Average Response Time: 9.292875
+
+SRT:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, T, T, D, D, D, D, D, V, V, V, Y, Y, Y, Y, V, V, P, O, O, O, C, C, C, P, P, P, V, V, V, V, V, S, E, E, E, E, S, S, K, K, S, S, S, Q, Q, W, W, W, Q, Q, Q, Q, I, I, I, I, J, J, J, J, J, J, H, H, H, H, H, H, M, H, A, B, B, B, B, B, B, A, A, A, A, A, A, A]
+Processes:    X       T       D       V       Y       A       P       O       S       C       J       E       K       Q       H       W       I       M       B      
+Start Times:  12.00   15.00   18.00   23.00   26.00   86.00   32.00   33.00   47.00   36.00   72.00   48.00   54.00   59.00   78.00   61.00   68.00   84.00   87.00  
+Finish Times: 14.68   17.40   22.71   46.33   29.25   99.80   41.72   35.09   58.51   38.16   77.66   51.77   55.76   67.59   85.71   63.71   71.94   84.29   92.10  
+Throughput per 100 Quanta: 19.0
+Average Turnaround Time: Calculated = 13.038745
+Average Wait Time: Calculated = 8.871823
+Average Response Time: 6.977086
+
+HPF Non-preemptive:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, T, T, D, D, D, D, D, V, V, V, V, V, V, V, V, V, V, A, A, A, A, A, A, A, A, P, P, P, P, C, C, C, J, J, J, J, J, J, Y, Y, Y, Y, E, E, E, E, Q, Q, Q, Q, Q, Q, W, W, W, N, N, N, N, N, N, N, N, N, N, G, G, G, G, G, G, G, G, G, G, B, B, B, B, B, B, R, R, R, R, R, R, R, R, R, R]
+Processes:    X       T       D       V       Y       A       P       C       J       E       N       Q       G       W       B       R      
+Start Times:  12.00   15.00   18.00   23.00   54.00   33.00   41.00   45.00   48.00   58.00   71.00   62.00   81.00   68.00   91.00   97.00  
+Finish Times: 14.68   17.40   22.71   32.33   57.25   40.80   44.72   47.16   53.66   61.77   80.07   67.59   90.13   70.71   96.10   106.08 
+Throughput per 100 Quanta: 14.953271
+Average Turnaround Time: Calculated = 14.260267
+Average Wait Time: Calculated = 8.875496
+Average Response Time: 8.875496
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 7
+	Average Turnaround Time: 10.929003
+	Average Wait Time: 5.757801
+	Average Response Time:5.757801
+Priority 3:
+	Throughput: 4
+	Average Turnaround Time: 17.346067
+	Average Wait Time: 13.516382
+	Average Response Time:13.516382
+Priority 2:
+	Throughput: 2
+	Average Turnaround Time: 31.236336
+	Average Wait Time: 22.132784
+	Average Response Time:22.132786
+Priority 1:
+	Throughput: 3
+	Average Turnaround Time: 6.6014404
+	Average Wait Time: 1.1240786
+	Average Response Time:1.1240784
+
+HPF preemptive:
+[-, -, -, -, -, -, -, -, -, -, -, -, X, X, X, T, D, T, D, T, D, D, D, V, V, V, Y, Y, Y, Y, A, A, P, A, P, A, C, P, A, C, P, A, C, A, J, A, J, J, J, J, J, E, E, E, E, Q, Q, Q, Q, Q, Q, W, W, W, G, H, N, I, G, H, N, I, G, H, N, I, G, H, N, I, G, H, N, G, H, N, G, B, B, R, B, R, B, R, B, R, B, R, R, R, R, R, R, H, N, G, N, G, N, G, N, V, V, V, V, V, V, V]
+Processes:    X       T       D       V       Y       A       P       C       J       E       N       Q       G       H       W       I       B       R      
+Start Times:  12.00   15.00   16.00   23.00   26.00   30.00   32.00   36.00   44.00   51.00   66.00   55.00   64.00   65.00   61.00   67.00   87.00   89.00  
+Finish Times: 14.68   19.40   22.71   117.33  29.25   45.80   40.72   42.16   50.66   54.77   110.07  60.59   109.13  103.71  63.71   79.94   96.10   102.08 
+Throughput per 100 Quanta: 15.254237
+Average Turnaround Time: Calculated = 20.294304
+Average Wait Time: Calculated = 14.916219
+Average Response Time: 2.3051076
+Priority-specific Statistics:
+Priority 4:
+	Throughput: 7
+	Average Turnaround Time: 9.357574
+	Average Wait Time: 4.186373
+	Average Response Time:0.47208664
+Priority 3:
+	Throughput: 4
+	Average Turnaround Time: 5.0960674
+	Average Wait Time: 1.2663825
+	Average Response Time:1.2663827
+Priority 2:
+	Throughput: 4
+	Average Turnaround Time: 43.151466
+	Average Wait Time: 35.93739
+	Average Response Time:7.9373903
+Priority 1:
+	Throughput: 3
+	Average Turnaround Time: 35.60144
+	Average Wait Time: 30.124079
+	Average Response Time:0.45741177
