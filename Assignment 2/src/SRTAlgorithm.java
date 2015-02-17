@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * Shortest Remaining Time algorithm
+ *
+ */
 public class SRTAlgorithm extends Algorithm {
 
 	public SRTAlgorithm(ArrayList<Process> processesIn) {

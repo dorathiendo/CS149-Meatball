@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * Hightest Priority First Algorithm, Non-preemptive
+ *
+ */
 public class HPFAlgorithmNP extends Algorithm {
 
 	public HPFAlgorithmNP(ArrayList<Process> processesIn) {
@@ -65,6 +69,10 @@ public class HPFAlgorithmNP extends Algorithm {
 		}
 	}
 	
+	/**
+	 * Prints the statistics of the the process's throughput, average turnaround time, 
+	 * average wait time, and average response time.
+	 */
 	public void printQueueStats() {
 		ArrayList<ArrayList<Process>> lists = new ArrayList<ArrayList<Process>>();
 		lists.add(0, null);

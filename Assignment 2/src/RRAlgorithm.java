@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Round Robin algorithm 
+ *
+ */
 public class RRAlgorithm extends Algorithm {
 
 	public RRAlgorithm(ArrayList<Process> processesIn) {

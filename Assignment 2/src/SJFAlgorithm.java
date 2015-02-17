@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * Shortest Job First algorithm
+ *
+ */
 public class SJFAlgorithm extends Algorithm {
 
 	public SJFAlgorithm(ArrayList<Process> processesIn) {

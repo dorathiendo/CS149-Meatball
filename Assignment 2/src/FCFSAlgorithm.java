@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * First Come First Serve algorithm
+ *
+ */
 public class FCFSAlgorithm extends Algorithm {
 
 	public FCFSAlgorithm(ArrayList<Process> processesIn) {

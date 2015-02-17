@@ -20,7 +20,11 @@ public abstract class Algorithm {
 		timeline = new LinkedList<String>();
 		run();
 	}
-
+	
+	/**
+	 * Gets the average turnaround time of the algorithm.
+	 * @return the average turnaround time. 
+	 */
 	public float avTurnAroundTime() {
 		float turnaroundTime = 0;
 		for (int i = 0; i < processes.size(); i++) {
@@ -29,7 +33,11 @@ public abstract class Algorithm {
 		}
 		return turnaroundTime / (float) processes.size();
 	}
-
+	
+	/**
+	 * Gets the average wait time of the algorithm.
+	 * @return the average wait time.
+	 */
 	public float avWaitingResponse() {
 		float waitTime = 0;
 		for (int i = 0; i < processes.size(); i++) {
@@ -39,7 +47,11 @@ public abstract class Algorithm {
 		}
 		return waitTime / (float) processes.size();
 	}
-
+	
+	/**
+	 * Gets the average response time of the algorithm.
+	 * @return the average response time.
+	 */
 	public float avResponseTime() {
 		float responseTime = 0;
 		for (int i = 0; i < processes.size(); i++) {
@@ -48,13 +60,24 @@ public abstract class Algorithm {
 		}
 		return responseTime / (float) processes.size();
 	}
-
+	
+	/**
+	 * Runs the algorithm with the processes. 
+	 */
 	public abstract void run();
-
+	
+	/**
+	 * Gets the processes used.
+	 * @return the list of processes
+	 */
 	public ArrayList<Process> getProcesses() {
 		return processes;
 	}
-
+	
+	/**
+	 * Returns the list of processes (timeline) in the order they were run.
+	 * @return the timeline. 
+	 */
 	public LinkedList<String> getTimeline() {
 		return timeline;
 	}

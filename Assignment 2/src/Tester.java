@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * Main class to run processes.
+ *
+ */
 public class Tester {
 
 	public static void sort(ArrayList<Process> processes) {
@@ -100,21 +104,6 @@ public class Tester {
 		System.out.println(alg3.getTimeline());
 		printStatistics(alg3);
 		alg3.printQueueStats();
-
-		// hard coded processes
-//		processes.clear();
-//		processes.add(new Process("A", (float) 12, (float) 0, 1));
-//		processes.add(new Process("B", (float) 6, (float) 1, 1));
-//		processes.add(new Process("C", (float) 9, (float) 4, 1));
-//		processes.add(new Process("D", (float) 4, (float) 1, 1));
-//		processes.add(new Process("E", (float) 5, (float) 0, 1));
-//		sort(processes);
-//
-//		System.out.println();
-//		Algorithm alg2 = new RRAlgorithm(processes);
-//		System.out.println(alg2.getTimeline());
-//		printProcesses(processes);
-//		printStatistics(alg2);
 	}
 
 }
