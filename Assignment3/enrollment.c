@@ -24,7 +24,7 @@ typedef struct
 struct itimerval profTimer;  // professor's office hour timer
 time_t startTime;
 
-const char* priorities[] = {'GS', 'RS', 'EE'};
+const char* priorities[] = {"GS", "RS", "EE"};
 int section_enrollment[SECTIONS_COUNT]; //number of students enrolled
 int section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY]; //IDs of enrolled students
 Student queues[QUEUES_COUNT][STUDENT_COUNT]; //Queue of Students for each priority
@@ -97,6 +97,7 @@ void studentArrives(int id)
 void *student(void *param)
 {
     int id = *((int *) param);
+    //printf("ID: %d", id);
 
     // Students will arrive at random times during the office hour.
     sleep(rand()%DURATION);
@@ -110,26 +111,30 @@ void *queue(void *param)
 {
     int priority = *((int *) param);
     do {
-        sem_wait(&queue_sem[priority]);
+        sem_wait(&(queue_sem[priority]));
         pthread_mutex_lock(&queue_mutex[priority]);
         //critical region: move student from queue to class
         int processingTime;
-        if(param == 0)
+        if(priority == 0)
             processingTime = rand()%2 + 1;
-        else if(param == 1)
+        else if(priority == 1)
             processingTime = rand()%3 + 2;
         else 
             processingTime = rand()%4 + 3;
         sleep(processingTime);
-        Student s = queues[priority][heads[priority]];
+        Student s;
+        s.id = queues[priority][heads[priority]].id;
+        s.section = queues[priority][heads[priority]].section;
         heads[priority]++;
         section_list[s.section][section_enrollment[s.section]] = s.id;
         section_enrollment[s.section]++;
         pthread_mutex_unlock(&queue_mutex[priority]);
         char event[80];
-        sprintf(event, "Student %d enrolled in section %d", s.id, s.section + 1);//change to enrolled in section x
+        sprintf(event, "Student %d.%s enrolled in section %d", s.id,
+            priorities[priority], s.section + 1);
         print(event);
     } while (!timesUp);
+    return NULL;
 }
 
 void timerHandler(int signal)
