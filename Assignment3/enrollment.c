@@ -21,11 +21,15 @@ typedef struct
     int section;
 } Student;
 
+struct itimerval profTimer;  // professor's office hour timer
+time_t startTime;
+
 const char* priorities[] = {'GS', 'RS', 'EE'};
-int section_enrollment[SECTIONS_COUNT];
-int section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY];
-int queue_size[QUEUES_COUNT];
-Student queues[QUEUES_COUNT][STUDENT_COUNT];
+int section_enrollment[SECTIONS_COUNT]; //number of students enrolled
+int section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY]; //IDs of enrolled students
+Student queues[QUEUES_COUNT][STUDENT_COUNT]; //Queue of Students for each priority
+int heads[] = {0, 0, 0}; //heads of the queues
+int tails[] = {0, 0, 0}; //tails of the queues
 
 pthread_mutex_t section_mutex[SECTIONS_COUNT];
 pthread_mutex_t queue_mutex[QUEUES_COUNT];
@@ -34,23 +38,37 @@ pthread_mutex_t printMutex;
 sem_t queue_sem[QUEUES_COUNT];
 
 int timesUp = 0;
+int firstPrint = 1;
 
-// The student thread.
-void *student(void *param)
+
+
+void print(char *event)
 {
-    int id = *((int *) param);
+    time_t now;
+    time(&now);
+    double elapsed = difftime(now, startTime);
+    int min = 0;
+    int sec = (int) elapsed;
+    if (sec >= 60) {
+        min++;
+        sec -= 60;
+    }
+    // Acquire the mutex lock to protect the printing.
+    pthread_mutex_lock(&printMutex);
 
-    // Students will arrive at random times during the office hour.
-    sleep(rand()%DURATION);
-    studentArrives(id);
-
-    return NULL;
+    if (firstPrint) {
+        printf("TIME | EVENT\n");
+        firstPrint = 0;
+    }
+    // Elapsed time.
+    printf("%1d:%02d | %s\n", min, sec, event);
+    // Release the mutex lock.
+    pthread_mutex_unlock(&printMutex);
 }
 
 void studentArrives(int id)
 {
     char event[80];
-    arrivalsCount++;
     int priority = rand()%3;
     int section = (rand()%4);
     //section = 3 if student will take any section
@@ -66,35 +84,65 @@ void studentArrives(int id)
     s.id = id;
     s.section = section;
     pthread_mutex_lock(&queue_mutex[priority]);
-    queues[priority][queue_size[priority]] = s;
-    queue_size[priority]++;
+    queues[priority][tails[priority]] = s;
+    tails[priority]++;
     pthread_mutex_unlock(&queue_mutex[priority]);
     sprintf(event, "Student %d placed in the %s queue", s.id, priorities[priority]);
     print(event);
 
-    sem_post(%queue_sem[priority]);
+    sem_post(&queue_sem[priority]);
+}
+
+// The student thread.
+void *student(void *param)
+{
+    int id = *((int *) param);
+
+    // Students will arrive at random times during the office hour.
+    sleep(rand()%DURATION);
+    studentArrives(id);
+
+    return NULL;
 }
 
 // The queue thread.
 void *queue(void *param)
 {
     int priority = *((int *) param);
-    if(!timesUp) {
+    do {
         sem_wait(&queue_sem[priority]);
-        //TODO: wait random amount of time
         pthread_mutex_lock(&queue_mutex[priority]);
         //critical region: move student from queue to class
+        int processingTime;
+        if(param == 0)
+            processingTime = rand()%2 + 1;
+        else if(param == 1)
+            processingTime = rand()%3 + 2;
+        else 
+            processingTime = rand()%4 + 3;
+        sleep(processingTime);
+        Student s = queues[priority][heads[priority]];
+        heads[priority]++;
+        section_list[s.section][section_enrollment[s.section]] = s.id;
+        section_enrollment[s.section]++;
         pthread_mutex_unlock(&queue_mutex[priority]);
         char event[80];
-        sprintf(event, "Professor meets with student %d",  meetingId);//change to enrolled in section x
+        sprintf(event, "Student %d enrolled in section %d", s.id, s.section + 1);//change to enrolled in section x
         print(event);
-    }
+    } while (!timesUp);
+}
+
+void timerHandler(int signal)
+{
+    timesUp = 1;  // office hour is over
 }
 
 int main(int argc, char *argv[])
 {
 	int students[STUDENT_COUNT];
     int i;
+    srand(time(0));
+    time(&startTime);
 	// Initialize the mutexes and the semaphore.
     for (i = 0; i < SECTIONS_COUNT; i++)
     {
@@ -107,12 +155,9 @@ int main(int argc, char *argv[])
     }
     pthread_mutex_init(&printMutex, NULL);
 
-    srand(time(0));
-    time(&startTime);
-
 	// Create the student threads.
     for (i = 0; i < STUDENT_COUNT; i++) {
-        studentIds[i] = ID_BASE + i;
+        students[i] = ID_BASE + i;
         pthread_t studentThreadId;
         pthread_attr_t studentAttr;
         pthread_attr_init(&studentAttr);
@@ -124,5 +169,10 @@ int main(int argc, char *argv[])
         pthread_attr_t queueAttr;
         pthread_attr_init(&queueAttr);
         pthread_create(&queueThreadId, &queueAttr, queue, &i);
+        pthread_join(queueThreadId, NULL);
     }
+    signal(SIGALRM, timerHandler);
+
+
+    return 0;
 }
