@@ -87,7 +87,7 @@ void studentArrives(int id)
     queues[priority][tails[priority]] = s;
     tails[priority]++;
     pthread_mutex_unlock(&queue_mutex[priority]);
-    sprintf(event, "Student %d placed in the %s queue", s.id, priorities[priority]);
+    sprintf(event, "Student #%d.%s arrives.", s.id, priorities[priority]);
     print(event);
 
     sem_post(&queue_sem[priority]);
@@ -122,15 +122,13 @@ void *queue(void *param)
         else 
             processingTime = rand()%4 + 3;
         sleep(processingTime);
-        Student s;
-        s.id = queues[priority][heads[priority]].id;
-        s.section = queues[priority][heads[priority]].section;
+        Student s = queues[priority][heads[priority]];
         heads[priority]++;
         section_list[s.section][section_enrollment[s.section]] = s.id;
         section_enrollment[s.section]++;
         pthread_mutex_unlock(&queue_mutex[priority]);
         char event[80];
-        sprintf(event, "Student %d.%s enrolled in section %d", s.id,
+        sprintf(event, "Student #%d.%s enrolled in section %d", s.id,
             priorities[priority], s.section + 1);
         print(event);
     } while (!timesUp);
@@ -148,6 +146,7 @@ int main(int argc, char *argv[])
     int i;
     srand(time(0));
     time(&startTime);
+
 	// Initialize the mutexes and the semaphore.
     for (i = 0; i < SECTIONS_COUNT; i++)
     {
@@ -156,7 +155,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < QUEUES_COUNT; i++)
     {
         pthread_mutex_init(&queue_mutex[i], NULL);
-        sem_init(&queue_sem[i], 0, 0);
+        sem_init(&(queue_sem[i]), 0, 0);
     }
     pthread_mutex_init(&printMutex, NULL);
 
@@ -168,16 +167,27 @@ int main(int argc, char *argv[])
         pthread_attr_init(&studentAttr);
         pthread_create(&studentThreadId, &studentAttr, student, &students[i]);
     }
-    // Create threads for each queue.
-    for (i = 0; i < QUEUES_COUNT; i++) {
-        pthread_t queueThreadId;
-        pthread_attr_t queueAttr;
-        pthread_attr_init(&queueAttr);
-        pthread_create(&queueThreadId, &queueAttr, queue, &i);
-        pthread_join(queueThreadId, NULL);
-    }
-    signal(SIGALRM, timerHandler);
 
+    // Create threads for each queue.
+    pthread_attr_t queueAttr;
+    pthread_attr_init(&queueAttr);
+
+    i = 0;
+    pthread_t queueThreadId0;
+    pthread_create(&queueThreadId0, &queueAttr, queue, &i);
+    
+    i++;
+    pthread_t queueThreadId1;
+    pthread_create(&queueThreadId1, &queueAttr, queue, &i);
+
+    i++;
+    pthread_t queueThreadId2;
+    pthread_create(&queueThreadId2, &queueAttr, queue, &i);
+    
+    signal(SIGALRM, timerHandler);
+    pthread_join(queueThreadId0, NULL);
+    pthread_join(queueThreadId1, NULL);
+    pthread_join(queueThreadId2, NULL);
 
     return 0;
 }
