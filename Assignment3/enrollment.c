@@ -19,9 +19,10 @@ typedef struct
 {
     int id;
     int section;
+	int priority;
+	int turnaround;
 } Student;
 
-struct itimerval profTimer;  // professor's office hour timer
 time_t startTime;
 
 const char* priorities[] = {"GS", "RS", "EE"};
@@ -39,8 +40,6 @@ sem_t queue_sem[QUEUES_COUNT];
 
 int timesUp = 0;
 int firstPrint = 1;
-
-
 
 void print(char *event)
 {
@@ -83,11 +82,12 @@ void studentArrives(int id)
     Student s;
     s.id = id;
     s.section = section;
-    pthread_mutex_lock(&queue_mutex[priority]);
-    queues[priority][tails[priority]] = s;
-    tails[priority]++;
-    pthread_mutex_unlock(&queue_mutex[priority]);
-    sprintf(event, "Student #%d.%s arrives.", s.id, priorities[priority]);
+	s.priority = priority;
+    pthread_mutex_lock(&queue_mutex[s.priority]);
+    queues[s.priority][tails[s.priority]] = s;
+    tails[s.priority]++;
+    pthread_mutex_unlock(&queue_mutex[s.priority]);
+    sprintf(event, "Student #%d.%s arrives.", s.id, priorities[s.priority]);
     print(event);
 
     sem_post(&queue_sem[priority]);
@@ -135,6 +135,18 @@ void *queue(void *param)
     return NULL;
 }
 
+int sectionFull(int section) //3 = checks all sections
+{
+	if (section == 3)
+	{
+		return sectionFull(0) && sectionFull(1) && sectionFull(2);
+	}
+	if ()
+	{
+	}
+	return 0; // not full
+}
+
 void timerHandler(int signal)
 {
     timesUp = 1;  // office hour is over
@@ -169,20 +181,23 @@ int main(int argc, char *argv[])
     }
 
     // Create threads for each queue.
-    pthread_attr_t queueAttr;
-    pthread_attr_init(&queueAttr);
-
-    i = 0;
+    int GS = 0;
+	pthread_attr_t queueAttr0;
+    pthread_attr_init(&queueAttr0);
     pthread_t queueThreadId0;
-    pthread_create(&queueThreadId0, &queueAttr, queue, &i);
+    pthread_create(&queueThreadId0, &queueAttr0, queue, &GS);
     
-    i++;
+    int RS = 1;
+	pthread_attr_t queueAttr1;
+    pthread_attr_init(&queueAttr1);
     pthread_t queueThreadId1;
-    pthread_create(&queueThreadId1, &queueAttr, queue, &i);
+    pthread_create(&queueThreadId1, &queueAttr1, queue, &RS);
 
-    i++;
+    int EE = 2;
+	pthread_attr_t queueAttr2;
+    pthread_attr_init(&queueAttr2);
     pthread_t queueThreadId2;
-    pthread_create(&queueThreadId2, &queueAttr, queue, &i);
+    pthread_create(&queueThreadId2, &queueAttr2, queue, &EE);
     
     signal(SIGALRM, timerHandler);
     pthread_join(queueThreadId0, NULL);
