@@ -21,14 +21,19 @@ typedef struct
     int section;
     int priority;
     int turnaround;
+    time_t start;
+    time_t finish;
 } Student;
 
+struct itimerval timer;  // professor's office hour timer
 time_t startTime;
 
 const char* priorities[] = {"GS", "RS", "EE"};
 int section_enrollment[SECTIONS_COUNT]; //number of students enrolled
 Student section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY]; //IDs of enrolled students
 Student queues[QUEUES_COUNT][STUDENT_COUNT]; //Queue of Students for each priority
+Student dropped[STUDENT_COUNT];
+int dropped_count = 0;
 
 int heads[] = {0, 0, 0}; //heads of the queues
 int tails[] = {0, 0, 0}; //tails of the queues
@@ -85,6 +90,7 @@ void studentArrives(int id)
     s.id = id;
     s.section = section;
     s.priority = priority;
+    time(&s.start);
     pthread_mutex_lock(&queue_mutex[s.priority]);
     queues[s.priority][tails[s.priority]] = s;
     tails[s.priority]++;
@@ -112,46 +118,51 @@ void *student(void *param)
 void *queue(void *param)
 {
     int priority = *((int *) param);
-	
+    timer.it_value.tv_sec = DURATION;
+    setitimer(ITIMER_REAL, &timer, NULL);
+    
     do {
-		//2.if all sections full, then empty queue
-		
-
-        sem_wait(&(queue_sem[priority]));
         //critical region: move student from queue to class
-		int processingTime;
-            if (priority == 0)
-                processingTime = rand()%2 + 1;
-            else if (priority == 1)
-                processingTime = rand()%3 + 2;
-            else 
-                processingTime = rand()%4 + 3;
-        sleep(processingTime);
-		Student s = queues[priority][heads[priority]];
-		heads[priority]++;
+        if(!timesUp)
+        {
+            sem_wait(&(queue_sem[priority]));
+            int processingTime;
+                if (priority == 0)
+                    processingTime = rand()%2 + 1;
+                else if (priority == 1)
+                    processingTime = rand()%3 + 2;
+                else 
+                    processingTime = rand()%4 + 3;
+            sleep(processingTime);
+            Student s = queues[priority][heads[priority]];
+            heads[priority]++;
 
-        pthread_mutex_lock(&queue_mutex[s.section]);      
-		
-        if (section_enrollment[s.section] < STUDENT_MAX_CAPACITY){
+            pthread_mutex_lock(&queue_mutex[s.section]);      
             
-            section_list[s.section][section_enrollment[s.section]] = s;
-            section_enrollment[s.section]++;
-			totalStudentProcessed++;
-            char event[80];
-            sprintf(event, "Student #%d.%s enrolled in section %d (size = %d)", s.id,
-                priorities[priority], s.section + 1, section_enrollment[s.section]);
-            print(event);
+            if (section_enrollment[s.section] < STUDENT_MAX_CAPACITY){
+                
+                section_list[s.section][section_enrollment[s.section]] = s;
+                section_enrollment[s.section]++;
+                totalStudentProcessed++;
+                time(&s.finish);
+                char event[80];
+                sprintf(event, "Student #%d.%s enrolled in section %d (size = %d)", s.id,
+                    priorities[priority], s.section + 1, section_enrollment[s.section]);
+                print(event);
+            }
+            else {
+                totalStudentProcessed++;
+                dropped[dropped_count] = s;
+                dropped_count++;
+                char event[80];
+                sprintf(event, "Student #%d.%s was dropped trying to join section %d", s.id,
+                    priorities[priority], s.section + 1);
+                print(event);
+            }
+            pthread_mutex_unlock(&queue_mutex[s.section]);
         }
-        else {
-			totalStudentProcessed++;
-            char event[80];
-            sprintf(event, "Student #%d.%s was dropped trying to join section %d", s.id,
-                priorities[priority], s.section + 1);
-            print(event);
-        }
-        pthread_mutex_unlock(&queue_mutex[s.section]);
-    } while (totalStudentProcessed < STUDENT_COUNT); 
-	
+    } while (!timesUp); 
+    
     return NULL;
 }
 
@@ -223,6 +234,8 @@ int main(int argc, char *argv[])
     pthread_t queueThreadId2;
     pthread_create(&queueThreadId2, &queueAttr2, queue, &EE);
     
+    signal(SIGALRM, timerHandler);
+
     pthread_join(queueThreadId0, NULL);
     pthread_join(queueThreadId1, NULL);
     pthread_join(queueThreadId2, NULL);
@@ -240,11 +253,13 @@ int main(int argc, char *argv[])
         printf("\n");
     }
 
-    // What was the turnaround time for each student (from arrival time to being enrolled or dropped).
-    
-    // The average turnaround time of each queue.
-    
-    // Who could not enroll and was dropped.
+    printf("Students Dropped:\n");
+    for (i = 0; i < dropped_count; i++)
+    {
+        printf("#%d.%s ", dropped[i].id, priorities[dropped[i].priority]);
+    }
 
+    // What was the turnaround time for each student (from arrival time to being enrolled or dropped).
+    // The average turnaround time of each queue.
     return 0;
 }
