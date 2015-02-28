@@ -13,21 +13,21 @@
 #define QUEUES_COUNT 3
 #define STUDENT_MAX_CAPACITY 20
 
-#define DURATION 120
+#define DURATION 30
 
 typedef struct
 {
     int id;
     int section;
-	int priority;
-	int turnaround;
+    int priority;
+    int turnaround;
 } Student;
 
 time_t startTime;
 
 const char* priorities[] = {"GS", "RS", "EE"};
 int section_enrollment[SECTIONS_COUNT]; //number of students enrolled
-int section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY]; //IDs of enrolled students
+Student section_list[SECTIONS_COUNT][STUDENT_MAX_CAPACITY]; //All enrolled students
 Student queues[QUEUES_COUNT][STUDENT_COUNT]; //Queue of Students for each priority
 int heads[] = {0, 0, 0}; //heads of the queues
 int tails[] = {0, 0, 0}; //tails of the queues
@@ -82,7 +82,7 @@ void studentArrives(int id)
     Student s;
     s.id = id;
     s.section = section;
-	s.priority = priority;
+    s.priority = priority;
     pthread_mutex_lock(&queue_mutex[s.priority]);
     queues[s.priority][tails[s.priority]] = s;
     tails[s.priority]++;
@@ -124,42 +124,39 @@ void *queue(void *param)
         sleep(processingTime);
         Student s = queues[priority][heads[priority]];
         heads[priority]++;
-        section_list[s.section][section_enrollment[s.section]] = s.id;
+        section_list[s.section][section_enrollment[s.section]] = s;
         section_enrollment[s.section]++;
         pthread_mutex_unlock(&queue_mutex[priority]);
         char event[80];
         sprintf(event, "Student #%d.%s enrolled in section %d", s.id,
             priorities[priority], s.section + 1);
         print(event);
-    } while (!timesUp);
+    } while ((tails[priority] != heads[priority]) 
+        || !sectionFull(3)); //runs when queues still have students OR when sections arent full
     return NULL;
 }
 
 int sectionFull(int section) //3 = checks all sections
 {
-	if (section == 3)
-	{
-		return sectionFull(0) && sectionFull(1) && sectionFull(2);
-	}
-	if ()
-	{
-	}
-	return 0; // not full
-}
-
-void timerHandler(int signal)
-{
-    timesUp = 1;  // office hour is over
+    if (section == 3)
+    {
+        return (sectionFull(0) && sectionFull(1) && sectionFull(2));
+    }
+    if (section_enrollment[section] >= STUDENT_MAX_CAPACITY)
+    {
+        return 1; // full
+    }
+    return 0; // not full
 }
 
 int main(int argc, char *argv[])
 {
-	int students[STUDENT_COUNT];
+    int students[STUDENT_COUNT];
     int i;
     srand(time(0));
     time(&startTime);
 
-	// Initialize the mutexes and the semaphore.
+    // Initialize the mutexes and the semaphore.
     for (i = 0; i < SECTIONS_COUNT; i++)
     {
         pthread_mutex_init(&section_mutex[i], NULL);
@@ -171,7 +168,7 @@ int main(int argc, char *argv[])
     }
     pthread_mutex_init(&printMutex, NULL);
 
-	// Create the student threads.
+    // Create the student threads.
     for (i = 0; i < STUDENT_COUNT; i++) {
         students[i] = ID_BASE + i;
         pthread_t studentThreadId;
@@ -182,27 +179,38 @@ int main(int argc, char *argv[])
 
     // Create threads for each queue.
     int GS = 0;
-	pthread_attr_t queueAttr0;
+    pthread_attr_t queueAttr0;
     pthread_attr_init(&queueAttr0);
     pthread_t queueThreadId0;
     pthread_create(&queueThreadId0, &queueAttr0, queue, &GS);
     
     int RS = 1;
-	pthread_attr_t queueAttr1;
+    pthread_attr_t queueAttr1;
     pthread_attr_init(&queueAttr1);
     pthread_t queueThreadId1;
     pthread_create(&queueThreadId1, &queueAttr1, queue, &RS);
 
     int EE = 2;
-	pthread_attr_t queueAttr2;
+    pthread_attr_t queueAttr2;
     pthread_attr_init(&queueAttr2);
     pthread_t queueThreadId2;
     pthread_create(&queueThreadId2, &queueAttr2, queue, &EE);
     
-    signal(SIGALRM, timerHandler);
     pthread_join(queueThreadId0, NULL);
     pthread_join(queueThreadId1, NULL);
     pthread_join(queueThreadId2, NULL);
+
+    // Print all students enrolled in each section.
+    int j;
+    for (i = 0; i < SECTIONS_COUNT; i++)
+    {
+        printf("\nStudents enrolled in Section %d:\n", i+1);
+        for (j = 0; j < section_enrollment[i]; j++)
+        {
+            Student s = section_list[i][j];
+            printf("#%d.%s ", s.id, s.priority);
+        }
+    }
 
     return 0;
 }
