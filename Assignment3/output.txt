@@ -1,0 +1,247 @@
+TIME | EVENT
+0:00 | Student #107.GS arrives.
+0:00 | Student #121.GS arrives.
+0:00 | Student #175.GS arrives.
+0:00 | Student #107.GS is being processed in GS queue.
+0:01 | Student #111.GS arrives.
+0:01 | Student #107.GS enrolled in section 2.
+0:01 | Student #121.GS is being processed in GS queue.
+0:02 | Student #121.GS enrolled in section 1.
+0:02 | Student #175.GS is being processed in GS queue.
+0:03 | Student #175.GS enrolled in section 3.
+0:03 | Student #111.GS is being processed in GS queue.
+0:04 | Student #111.GS enrolled in section 1.
+0:05 | Student #150.GS arrives.
+0:05 | Student #150.GS is being processed in GS queue.
+0:07 | Student #150.GS enrolled in section 2.
+0:10 | Student #122.RS arrives.
+0:10 | Student #122.RS is being processed in RS queue.
+0:12 | Student #102.RS arrives.
+0:13 | Student #162.EE arrives.
+0:13 | Student #162.EE is being processed in EE queue.
+0:13 | Student #122.RS enrolled in section 1.
+0:13 | Student #102.RS is being processed in RS queue.
+0:14 | Student #106.GS arrives.
+0:14 | Student #130.EE arrives.
+0:14 | Student #161.RS arrives.
+0:14 | Student #106.GS is being processed in GS queue.
+0:16 | Student #102.RS enrolled in section 2.
+0:16 | Student #161.RS is being processed in RS queue.
+0:16 | Student #106.GS enrolled in section 1.
+0:17 | Student #112.GS arrives.
+0:17 | Student #162.EE enrolled in section 1.
+0:17 | Student #130.EE is being processed in EE queue.
+0:17 | Student #112.GS is being processed in GS queue.
+0:18 | Student #161.RS enrolled in section 1.
+0:19 | Student #112.GS enrolled in section 1.
+0:21 | Student #158.EE arrives.
+0:22 | Student #142.RS arrives.
+0:22 | Student #142.RS is being processed in RS queue.
+0:22 | Student #130.EE enrolled in section 1.
+0:22 | Student #158.EE is being processed in EE queue.
+0:23 | Student #169.RS arrives.
+0:24 | Student #143.RS arrives.
+0:24 | Student #142.RS enrolled in section 2.
+0:24 | Student #169.RS is being processed in RS queue.
+0:27 | Student #169.RS enrolled in section 1.
+0:27 | Student #143.RS is being processed in RS queue.
+0:28 | Student #126.RS arrives.
+0:28 | Student #158.EE enrolled in section 1.
+0:30 | Student #141.GS arrives.
+0:30 | Student #141.GS is being processed in GS queue.
+0:30 | Student #143.RS enrolled in section 1.
+0:30 | Student #126.RS is being processed in RS queue.
+0:31 | Student #117.RS arrives.
+0:32 | Student #140.GS arrives.
+0:32 | Student #141.GS enrolled in section 2.
+0:32 | Student #140.GS is being processed in GS queue.
+0:33 | Student #126.RS enrolled in section 2.
+0:33 | Student #117.RS is being processed in RS queue.
+0:34 | Student #174.EE arrives.
+0:34 | Student #174.EE is being processed in EE queue.
+0:34 | Student #140.GS enrolled in section 3.
+0:35 | Student #114.GS arrives.
+0:35 | Student #114.GS is being processed in GS queue.
+0:36 | Student #124.EE arrives.
+0:37 | Student #114.GS enrolled in section 3.
+0:37 | Student #117.RS enrolled in section 2.
+0:39 | Student #174.EE enrolled in section 3.
+0:39 | Student #124.EE is being processed in EE queue.
+0:40 | Student #173.GS arrives.
+0:40 | Student #173.GS is being processed in GS queue.
+0:41 | Student #132.RS arrives.
+0:41 | Student #132.RS is being processed in RS queue.
+0:42 | Student #127.RS arrives.
+0:42 | Student #173.GS enrolled in section 1.
+0:42 | Student #124.EE enrolled in section 1.
+0:43 | Student #157.GS arrives.
+0:43 | Student #165.RS arrives.
+0:43 | Student #157.GS is being processed in GS queue.
+0:43 | Student #132.RS enrolled in section 1.
+0:43 | Student #127.RS is being processed in RS queue.
+0:44 | Student #157.GS enrolled in section 2.
+0:47 | Student #119.EE arrives.
+0:47 | Student #119.EE is being processed in EE queue.
+0:47 | Student #172.EE arrives.
+0:47 | Student #127.RS enrolled in section 1.
+0:47 | Student #165.RS is being processed in RS queue.
+0:48 | Student #118.GS arrives.
+0:48 | Student #134.RS arrives.
+0:48 | Student #168.GS arrives.
+0:48 | Student #118.GS is being processed in GS queue.
+0:49 | Student #144.EE arrives.
+0:49 | Student #118.GS enrolled in section 1.
+0:49 | Student #168.GS is being processed in GS queue.
+0:50 | Student #138.GS arrives.
+0:50 | Student #119.EE enrolled in section 1.
+0:50 | Student #172.EE is being processed in EE queue.
+0:50 | Student #156.EE arrives.
+0:50 | Student #165.RS enrolled in section 1.
+0:50 | Student #134.RS is being processed in RS queue.
+0:51 | Student #131.RS arrives.
+0:51 | Student #168.GS enrolled in section 1.
+0:51 | Student #138.GS is being processed in GS queue.
+0:52 | Student #125.RS arrives.
+0:52 | Student #148.EE arrives.
+0:52 | Student #138.GS enrolled in section 3.
+0:53 | Student #172.EE enrolled in section 1.
+0:53 | Student #144.EE is being processed in EE queue.
+0:54 | Student #134.RS enrolled in section 3.
+0:54 | Student #131.RS is being processed in RS queue.
+0:56 | Student #131.RS enrolled in section 3.
+0:56 | Student #125.RS is being processed in RS queue.
+0:57 | Student #108.RS arrives.
+0:57 | Student #144.EE was dropped trying to join section 1
+0:57 | Student #156.EE is being processed in EE queue.
+0:58 | Student #113.GS arrives.
+0:58 | Student #113.GS is being processed in GS queue.
+0:59 | Student #167.GS arrives.
+0:59 | Student #125.RS was dropped trying to join section 1
+0:59 | Student #108.RS is being processed in RS queue.
+1:00 | Student #120.GS arrives.
+1:00 | Student #151.RS arrives.
+1:00 | Student #113.GS enrolled in section 2.
+1:00 | Student #167.GS is being processed in GS queue.
+1:01 | Student #128.GS arrives.
+1:01 | Student #167.GS was dropped trying to join section 1
+1:01 | Student #120.GS is being processed in GS queue.
+1:01 | Student #108.RS was dropped trying to join section 1
+1:01 | Student #151.RS is being processed in RS queue.
+1:02 | Student #156.EE was dropped trying to join section 1
+1:02 | Student #148.EE is being processed in EE queue.
+1:02 | Student #120.GS was dropped trying to join section 1
+1:02 | Student #128.GS is being processed in GS queue.
+1:03 | Student #133.GS arrives.
+1:03 | Student #128.GS enrolled in section 2.
+1:03 | Student #133.GS is being processed in GS queue.
+1:04 | Student #164.EE arrives.
+1:04 | Student #133.GS enrolled in section 2.
+1:04 | Student #151.RS enrolled in section 2.
+1:05 | Student #148.EE enrolled in section 3.
+1:05 | Student #164.EE is being processed in EE queue.
+1:08 | Student #164.EE enrolled in section 2.
+1:11 | Student #163.EE arrives.
+1:11 | Student #163.EE is being processed in EE queue.
+1:12 | Student #145.EE arrives.
+1:12 | Student #146.RS arrives.
+1:12 | Student #146.RS is being processed in RS queue.
+1:13 | Student #129.EE arrives.
+1:15 | Student #139.RS arrives.
+1:15 | Student #135.RS arrives.
+1:15 | Student #163.EE enrolled in section 2.
+1:15 | Student #145.EE is being processed in EE queue.
+1:16 | Student #146.RS enrolled in section 2.
+1:16 | Student #139.RS is being processed in RS queue.
+1:18 | Student #101.EE arrives.
+1:18 | Student #139.RS enrolled in section 3.
+1:18 | Student #135.RS is being processed in RS queue.
+1:19 | Student #115.EE arrives.
+1:21 | Student #137.EE arrives.
+1:21 | Student #149.GS arrives.
+1:21 | Student #149.GS is being processed in GS queue.
+1:21 | Student #145.EE enrolled in section 2.
+1:21 | Student #129.EE is being processed in EE queue.
+1:21 | Student #135.RS enrolled in section 3.
+1:22 | Student #149.GS enrolled in section 2.
+1:24 | Student #105.GS arrives.
+1:24 | Student #105.GS is being processed in GS queue.
+1:25 | Student #105.GS enrolled in section 3.
+1:25 | Student #129.EE enrolled in section 3.
+1:25 | Student #101.EE is being processed in EE queue.
+1:28 | Student #154.EE arrives.
+1:28 | Student #101.EE was dropped trying to join section 1
+1:28 | Student #115.EE is being processed in EE queue.
+1:28 | Student #147.EE arrives.
+1:29 | Student #171.RS arrives.
+1:29 | Student #171.RS is being processed in RS queue.
+1:31 | Student #152.RS arrives.
+1:31 | Student #110.GS arrives.
+1:31 | Student #110.GS is being processed in GS queue.
+1:32 | Student #115.EE enrolled in section 2.
+1:32 | Student #110.GS enrolled in section 3.
+1:32 | Student #137.EE is being processed in EE queue.
+1:33 | Student #159.EE arrives.
+1:33 | Student #171.RS enrolled in section 2.
+1:33 | Student #152.RS is being processed in RS queue.
+1:36 | Student #152.RS enrolled in section 3.
+1:37 | Student #137.EE enrolled in section 2.
+1:37 | Student #147.EE is being processed in EE queue.
+1:39 | Student #103.GS arrives.
+1:39 | Student #103.GS is being processed in GS queue.
+1:40 | Student #103.GS was dropped trying to join section 1
+1:41 | Student #147.EE enrolled in section 3.
+1:41 | Student #154.EE is being processed in EE queue.
+1:42 | Student #109.GS arrives.
+1:42 | Student #109.GS is being processed in GS queue.
+1:43 | Student #109.GS enrolled in section 3.
+1:46 | Student #154.EE was dropped trying to join section 1
+1:46 | Student #159.EE is being processed in EE queue.
+1:47 | Student #104.EE arrives.
+1:50 | Student #160.EE arrives.
+1:50 | Student #170.EE arrives.
+1:51 | Student #159.EE was dropped trying to join section 2
+1:51 | Student #104.EE is being processed in EE queue.
+1:52 | Student #136.RS arrives.
+1:52 | Student #136.RS is being processed in RS queue.
+1:53 | Student #155.GS arrives.
+1:53 | Student #155.GS is being processed in GS queue.
+1:54 | Student #136.RS was dropped trying to join section 2
+1:54 | Student #155.GS was dropped trying to join section 2
+1:55 | Student #153.RS arrives.
+1:55 | Student #166.RS arrives.
+1:55 | Student #153.RS is being processed in RS queue.
+1:55 | Student #104.EE enrolled in section 3.
+1:55 | Student #160.EE is being processed in EE queue.
+1:57 | Student #123.EE arrives.
+1:58 | Student #116.EE arrives.
+1:58 | Student #153.RS enrolled in section 3.
+1:58 | Student #166.RS is being processed in RS queue.
+2:01 | Student #166.RS was dropped trying to join section 2
+2:01 | Student #160.EE enrolled in section 3.
+2:01 | Student #170.EE is being processed in EE queue.
+2:07 | Student #170.EE was dropped trying to join section 2
+2:07 | Student #123.EE is being processed in EE queue.
+2:11 | Student #123.EE enrolled in section 3.
+2:11 | Student #116.EE is being processed in EE queue.
+2:16 | Student #116.EE was dropped trying to join section 3
+
+Section 1 Enrollment (size = 20):
+#121.GS #111.GS #122.RS #106.GS #162.EE #161.RS #112.GS #130.EE #169.RS #158.EE #143.RS #173.GS #124.EE #132.RS #127.RS #118.GS #119.EE #165.RS #168.GS #172.EE 
+
+Section 2 Enrollment (size = 20):
+#107.GS #150.GS #102.RS #142.RS #141.GS #126.RS #117.RS #157.GS #113.GS #128.GS #133.GS #151.RS #164.EE #163.EE #146.RS #145.EE #149.GS #115.EE #171.RS #137.EE 
+
+Section 3 Enrollment (size = 20):
+#175.GS #140.GS #114.GS #174.EE #138.GS #134.RS #131.RS #148.EE #139.RS #135.RS #105.GS #129.EE #110.GS #152.RS #147.EE #109.GS #104.EE #153.RS #160.EE #123.EE 
+
+Students Dropped (size = 15):
+#144.EE #125.RS #167.GS #108.RS #156.EE #120.GS #101.EE #103.GS #154.EE #159.EE #136.RS #155.GS #166.RS #170.EE #116.EE 
+
+Student Turnaround Times:
+[#107.GS: 0:01] [#121.GS: 0:02] [#175.GS: 0:03] [#111.GS: 0:03] [#150.GS: 0:02] [#122.RS: 0:03] [#102.RS: 0:04] [#106.GS: 0:02] [#162.EE: 0:04] [#161.RS: 0:04] [#112.GS: 0:02] [#130.EE: 0:08] [#142.RS: 0:02] [#169.RS: 0:04] [#158.EE: 0:07] [#143.RS: 0:06] [#141.GS: 0:02] [#126.RS: 0:05] [#140.GS: 0:02] [#114.GS: 0:02] [#117.RS: 0:06] [#174.EE: 0:05] [#173.GS: 0:02] [#124.EE: 0:06] [#132.RS: 0:02] [#157.GS: 0:01] [#127.RS: 0:05] [#118.GS: 0:01] [#119.EE: 0:03] [#165.RS: 0:07] [#168.GS: 0:03] [#138.GS: 0:02] [#172.EE: 0:06] [#134.RS: 0:06] [#131.RS: 0:05] [#144.EE: 0:08] [#125.RS: 0:07] [#113.GS: 0:02] [#167.GS: 0:02] [#108.RS: 0:04] [#156.EE: 0:12] [#120.GS: 0:02] [#128.GS: 0:02] [#133.GS: 0:01] [#151.RS: 0:04] [#148.EE: 0:13] [#164.EE: 0:04] [#163.EE: 0:04] [#146.RS: 0:04] [#139.RS: 0:03] [#145.EE: 0:09] [#135.RS: 0:06] [#149.GS: 0:01] [#105.GS: 0:01] [#129.EE: 0:12] [#101.EE: 0:10] [#115.EE: 0:13] [#110.GS: 0:01] [#171.RS: 0:04] [#152.RS: 0:05] [#137.EE: 0:16] [#103.GS: 0:01] [#147.EE: 0:13] [#109.GS: 0:01] [#154.EE: 0:18] [#159.EE: 0:18] [#136.RS: 0:02] [#155.GS: 0:01] [#104.EE: 0:08] [#153.RS: 0:03] [#166.RS: 0:06] [#160.EE: 0:11] [#170.EE: 0:17] [#123.EE: 0:14] [#116.EE: 0:18] 
+
+Average Turnaround Times:
+GS Queue: 0:01
+RS Queue: 0:04
+EE Queue: 0:10
+

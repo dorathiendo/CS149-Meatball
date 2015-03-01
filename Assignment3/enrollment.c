@@ -39,7 +39,6 @@ int dropped_count = 0, counter = 0, totalStudentProcessed = 0;
 
 int heads[] = {0, 0, 0}, tails[] = {0, 0, 0}; //heads/tails of the queues
 
-
 pthread_mutex_t section_mutex[SECTIONS_COUNT];
 pthread_mutex_t queue_mutex[QUEUES_COUNT];
 pthread_mutex_t printMutex;
@@ -150,10 +149,11 @@ void *queue(void *param)
             queue_total[priority]++;
             heads[priority]++;
             
+            sleep(processingTime);
+            pthread_mutex_lock(&queue_mutex[s.section]);      
+            
             if (!sectionFull(s.section))
             {
-                sleep(processingTime);
-                pthread_mutex_lock(&queue_mutex[s.section]);      
                 section_list[s.section][section_enrollment[s.section]] = s;
                 section_enrollment[s.section]++;
                 totalStudentProcessed++;
@@ -167,7 +167,6 @@ void *queue(void *param)
                 sprintf(event, "Student #%d.%s enrolled in section %d.", s.id,
                     priorities[priority], s.section + 1);
                 print(event);
-                pthread_mutex_unlock(&queue_mutex[s.section]);
             }
             else
             {
@@ -177,17 +176,15 @@ void *queue(void *param)
 
                 time(&s.finish);
                 s.turnaround = convertTime(s.finish) - convertTime(s.start);
-
-                char event[80];
-                sprintf(event, "Student #%d.%s was dropped trying to join section %d", s.id,
-                    priorities[priority], s.section + 1);
-                print(event);
-
-                s.section = -1; //dropped
                 all_students[counter] = s;
                 counter++;
-            }
 
+                char event[80];
+                sprintf(event, "Student #%d.%s was dropped trying to join section %d",
+                    s.id, priorities[priority], s.section + 1);
+                print(event);
+            }
+            pthread_mutex_unlock(&queue_mutex[s.section]);
         }
     } while (!timesUp || heads[priority] != tails[priority]);  
     
