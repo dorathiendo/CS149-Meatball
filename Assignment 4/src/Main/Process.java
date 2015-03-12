@@ -18,9 +18,11 @@ public class Process {
 		size = SIZES[rand.nextInt(SIZES.length)];
 		duration = DURATIONS[rand.nextInt(DURATIONS.length)];
 	}
-
-	public void setName(char name) {
-		this.name = name;
+	
+	public Process(Process p){
+		this.name = p.getName();
+		this.size = p.getSize();
+		this.duration = p.getDuration();
 	}
 
 	public char getName() {
