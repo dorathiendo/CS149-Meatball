@@ -14,6 +14,7 @@ public class FirstFit extends Algorithm{
 
 	@Override
 	public void run() {
+		
 		index = 0;
 		while(time < 0){
 			
