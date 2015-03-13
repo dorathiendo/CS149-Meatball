@@ -21,7 +21,7 @@ public class FirstFit extends Algorithm {
 				holeSize++;
 				i++;
 			}
-			if (p.getSize() < holeSize){
+			if (p.getSize() <= holeSize){
 				return holeStart;
 			} 
 			holeSize = 0;

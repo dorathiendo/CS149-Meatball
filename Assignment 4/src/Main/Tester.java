@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Tester {
 
-	private static final int NUM_PROCESSES = 50;
+	private static final int NUM_PROCESSES = 120;
 	private static LinkedList<Process> queue = new LinkedList<Process>();
 	
 	public static void main(String[] args){
@@ -14,7 +14,7 @@ public class Tester {
 		char tmp = 'A';
 		for(int i = 0; i<NUM_PROCESSES; i++){
 			queue.add(new Process(tmp));
-			tmp++;
+			tmp = (char) ('A' + (char) (i%26));
 		}
 		
 		FirstFit firstfit = new FirstFit(queue);
