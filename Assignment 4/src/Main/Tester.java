@@ -5,20 +5,20 @@ import java.util.*;
 public class Tester {
 
 	private static final int NUM_PROCESSES = 50;
-	private static ArrayList<Process> blocks = new ArrayList<Process>();
 	private static LinkedList<Process> queue = new LinkedList<Process>();
 	
 	public static void main(String[] args){
 		System.out.println("Entering Tester");
 		
 		//add processes to queue
-		char tmp = 'a';
+		char tmp = 'A';
 		for(int i = 0; i<NUM_PROCESSES; i++){
 			queue.add(new Process(tmp));
 			tmp++;
 		}
 		
 		FirstFit firstfit = new FirstFit(queue);
+		firstfit.run();
 		
 		
 		
