@@ -18,7 +18,10 @@ public class Tester {
 		}
 		
 		FirstFit firstfit = new FirstFit(queue);
-		firstfit.run();
+//		firstfit.run();
+		
+		NextFit nextfit = new NextFit(queue);
+		nextfit.run();
 		
 		
 		
