@@ -12,12 +12,12 @@ public class FirstFit extends Algorithm {
 		int i = 0;
 		int holeStart = 0;
 		int holeSize = 0;
-		while (i < 100) {
-			while (i < 100 && bitmap[i] != '.') {
+		while (i < bitmap.length) {
+			while (i < bitmap.length && bitmap[i] != '.') {
 				i++;
 			}
 			holeStart = i;
-			while (i < 100 && bitmap[i] == '.') {
+			while (i < bitmap.length && bitmap[i] == '.') {
 				holeSize++;
 				i++;
 			}
