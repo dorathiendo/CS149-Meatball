@@ -1,4 +1,4 @@
-package Main;
+
 
 import java.util.*;
 
@@ -11,10 +11,10 @@ public class Tester {
 		System.out.println("Entering Tester");
 		
 		//add processes to queue
-		char tmp = 'A';
+		char tmp;
 		for(int i = 0; i<NUM_PROCESSES; i++){
-			queue.add(new Process(tmp));
 			tmp = (char) ('A' + (char) (i%26));
+			queue.add(new Process(tmp));
 		}
 		
 		FirstFit firstfit = new FirstFit(queue);
