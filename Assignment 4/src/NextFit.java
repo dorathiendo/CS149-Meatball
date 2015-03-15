@@ -1,36 +1,48 @@
 import java.util.LinkedList;
 
-
-
 public class NextFit extends Algorithm {
-	
+
 	private int index = 0;
-	
+
 	public NextFit(LinkedList<Process> processesIn) {
 		super(processesIn);
 	}
 
 	public int findHoleIndex(Process p) {
-		int holeStart = index;  //56
+		int start = index;
+		int holeStart = index;
 		int holeSize = 0;
-		for (int i = 0; i < bitmap.length; i++){
-			while (i < bitmap.length && bitmap[index] != '.') {
-				index = (index + 1) % 100;
-				i++;
+		//check for suitable hole between current index and end of bitmap
+		while (index < bitmap.length) {
+			while (index < bitmap.length && bitmap[index] != '.') {
+				index++;
 			}
 			holeStart = index;
-			
-			while (i < bitmap.length && bitmap[index] == '.') {
+			while (index < bitmap.length && bitmap[index] == '.') {
 				holeSize++;
-				index = (index + 1) % 100;
-				i++;
+				index++;
 			}
-			
-			if (p.getSize() <= holeSize){
-				index = holeStart;
-				System.out.println("HOLE STARTS AT: " + holeStart);
+			if (p.getSize() <= holeSize) {
+				index = holeStart + p.getSize();
 				return holeStart;
-			} 
+			}
+			holeSize = 0;
+		}
+		//check for suitable hole between start of bitmap original location
+		index = 0;
+		while (index < start) {
+			while (index < start && bitmap[index] != '.') {
+				index++;
+			}
+			holeStart = index;
+			while (index < start && bitmap[index] == '.') {
+				holeSize++;
+				index++;
+			}
+			if (p.getSize() <= holeSize) {
+				index = holeStart + p.getSize();
+				return holeStart;
+			}
 			holeSize = 0;
 		}
 		return -1;
