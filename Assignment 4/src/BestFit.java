@@ -3,36 +3,32 @@ import java.util.LinkedList;
 
 
 public class BestFit extends Algorithm {
-	
-	private int nextHole = 0;
-	
+		
 	public BestFit(LinkedList<Process> processesIn) {
 		super(processesIn);
 	}
 
 	public int findHoleIndex(Process p) {
 		int i = 0;
-		int holeStart = nextHole;
+		int bestFitStart = -1;  //the current smallest suitable hole start
+		int bestFitSize = 101; //the current smallest suitable hole size
+		int holeStart = 0;
 		int holeSize = 0;
-		while (i < 100) {
-			while (i < 100 && bitmap[i] != '.') {
+		while (i < bitmap.length) {
+			while (i < bitmap.length && bitmap[i] != '.') {
 				i++;
 			}
 			holeStart = i;
-			while (i < 100 && bitmap[i] == '.') {
-				if(holeStart >= 100)
-					holeStart = 0;
-				else
-					holeSize++;
+			while (i < bitmap.length && bitmap[i] == '.') {
+				holeSize++;
 				i++;
 			}
-			if (p.getSize() <= holeSize){
-				nextHole = holeStart;
-				// System.out.println("HOLE STARTS AT: " + holeStart);
-				return holeStart;
+			if (p.getSize() <= holeSize  && holeSize < bestFitSize){
+				bestFitSize = holeSize;
+				bestFitStart = holeStart;
 			} 
 			holeSize = 0;
 		}
-		return -1;
+		return bestFitStart;
 	}
 }
