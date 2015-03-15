@@ -21,7 +21,13 @@ public class Tester {
 		//firstfit.run();
 		
 		NextFit nextfit = new NextFit(queue);
-		nextfit.run();
+		//nextfit.run();
+		
+		BestFit bestfit = new BestFit(queue);
+		//bestfit.run();
+		
+		WorstFit worstfit = new WorstFit(queue);
+		worstfit.run();
 		
 		
 		
