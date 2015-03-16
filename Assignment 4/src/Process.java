@@ -60,7 +60,7 @@ public class Process {
 
 	@Override
 	public String toString() {
-		return "Process: " + name + "\nSize: " + size + "\nDuration: "
-				+ duration;
+		return "[Process: " + name + ", Size: " + size + ", Duration: "
+				+ duration + "]";
 	}
 }

@@ -79,7 +79,7 @@ public abstract class Algorithm {
 		System.out.println(b + "\n");
 	}
 
-	public int getNumberOfProcesses() {
+	public int getSwapCount() {
 		return swapCount;
 	}
 
