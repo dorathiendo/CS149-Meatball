@@ -41,6 +41,18 @@ public class Tester {
 			if (pageReferences[i] == -1)
 				pageReferences[i] = 9;
 		}
+		
+		String p = "";
+		for (int i = 0; i<NUM_REFERENCES; i++)
+			p += pageReferences[i] + " ";
+		System.out.println(p);
+		
+		RandomPick randompick = new RandomPick(pageReferences);
+//		randompick.run();
+		
+		FIFO fifo = new FIFO(pageReferences);
+		fifo.run();
+		
 	}
 
 }
