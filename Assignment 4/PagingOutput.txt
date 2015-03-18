@@ -1,0 +1,2596 @@
+0 1 6 7 7 6 8 8 9 8 0 1 1 1 0 0 9 8 9 0 1 9 8 9 3 2 8 8 7 1 7 6 9 8 7 7 4 4 3 2 7 6 5 4 4 6 7 4 4 3 7 7 7 8 7 3 6 3 4 3 6 0 9 0 9 9 7 8 8 7 6 5 4 3 8 8 7 8 2 1 1 2 0 9 8 8 9 9 0 3 4 3 3 2 8 9 1 9 6 6 
+
+Random Pick: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+6: 0 1 6   	Page -1 replaced by Page 6
+7: 0 1 6 7 	Page -1 replaced by Page 7
+7: 0 1 6 7 
+6: 0 1 6 7 
+8: 0 1 6 8 	Page 7 replaced by Page 8
+8: 0 1 6 8 
+9: 0 9 6 8 	Page 1 replaced by Page 9
+8: 0 9 6 8 
+0: 0 9 6 8 
+1: 0 9 6 1 	Page 8 replaced by Page 1
+1: 0 9 6 1 
+1: 0 9 6 1 
+0: 0 9 6 1 
+0: 0 9 6 1 
+9: 0 9 6 1 
+8: 8 9 6 1 	Page 0 replaced by Page 8
+9: 8 9 6 1 
+0: 8 9 0 1 	Page 6 replaced by Page 0
+1: 8 9 0 1 
+9: 8 9 0 1 
+8: 8 9 0 1 
+9: 8 9 0 1 
+3: 8 3 0 1 	Page 9 replaced by Page 3
+2: 8 2 0 1 	Page 3 replaced by Page 2
+8: 8 2 0 1 
+8: 8 2 0 1 
+7: 7 2 0 1 	Page 8 replaced by Page 7
+1: 7 2 0 1 
+7: 7 2 0 1 
+6: 7 2 0 6 	Page 1 replaced by Page 6
+9: 7 2 9 6 	Page 0 replaced by Page 9
+8: 7 8 9 6 	Page 2 replaced by Page 8
+7: 7 8 9 6 
+7: 7 8 9 6 
+4: 7 4 9 6 	Page 8 replaced by Page 4
+4: 7 4 9 6 
+3: 7 4 3 6 	Page 9 replaced by Page 3
+2: 7 2 3 6 	Page 4 replaced by Page 2
+7: 7 2 3 6 
+6: 7 2 3 6 
+5: 5 2 3 6 	Page 7 replaced by Page 5
+4: 5 4 3 6 	Page 2 replaced by Page 4
+4: 5 4 3 6 
+6: 5 4 3 6 
+7: 5 4 3 7 	Page 6 replaced by Page 7
+4: 5 4 3 7 
+4: 5 4 3 7 
+3: 5 4 3 7 
+7: 5 4 3 7 
+7: 5 4 3 7 
+7: 5 4 3 7 
+8: 5 8 3 7 	Page 4 replaced by Page 8
+7: 5 8 3 7 
+3: 5 8 3 7 
+6: 5 6 3 7 	Page 8 replaced by Page 6
+3: 5 6 3 7 
+4: 4 6 3 7 	Page 5 replaced by Page 4
+3: 4 6 3 7 
+6: 4 6 3 7 
+0: 0 6 3 7 	Page 4 replaced by Page 0
+9: 0 6 9 7 	Page 3 replaced by Page 9
+0: 0 6 9 7 
+9: 0 6 9 7 
+9: 0 6 9 7 
+7: 0 6 9 7 
+8: 0 6 9 8 	Page 7 replaced by Page 8
+8: 0 6 9 8 
+7: 0 6 9 7 	Page 8 replaced by Page 7
+6: 0 6 9 7 
+5: 0 5 9 7 	Page 6 replaced by Page 5
+4: 0 4 9 7 	Page 5 replaced by Page 4
+3: 3 4 9 7 	Page 0 replaced by Page 3
+8: 3 4 9 8 	Page 7 replaced by Page 8
+8: 3 4 9 8 
+7: 7 4 9 8 	Page 3 replaced by Page 7
+8: 7 4 9 8 
+2: 7 4 2 8 	Page 9 replaced by Page 2
+1: 7 4 1 8 	Page 2 replaced by Page 1
+1: 7 4 1 8 
+2: 2 4 1 8 	Page 7 replaced by Page 2
+0: 2 4 1 0 	Page 8 replaced by Page 0
+9: 9 4 1 0 	Page 2 replaced by Page 9
+8: 9 4 1 8 	Page 0 replaced by Page 8
+8: 9 4 1 8 
+9: 9 4 1 8 
+9: 9 4 1 8 
+0: 9 4 0 8 	Page 1 replaced by Page 0
+3: 3 4 0 8 	Page 9 replaced by Page 3
+4: 3 4 0 8 
+3: 3 4 0 8 
+3: 3 4 0 8 
+2: 3 2 0 8 	Page 4 replaced by Page 2
+8: 3 2 0 8 
+9: 9 2 0 8 	Page 3 replaced by Page 9
+1: 9 2 1 8 	Page 0 replaced by Page 1
+9: 9 2 1 8 
+6: 9 2 1 6 	Page 8 replaced by Page 6
+6: 9 2 1 6 
+Hit Count: 55
+
+FIFO: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+6: 0 1 6   	Page -1 replaced by Page 6
+7: 0 1 6 7 	Page -1 replaced by Page 7
+7: 0 1 6 7 
+6: 0 1 6 7 
+8: 8 1 6 7 	Page 0 replaced by Page 8
+8: 8 1 6 7 
+9: 8 9 6 7 	Page 1 replaced by Page 9
+8: 8 9 6 7 
+0: 8 9 0 7 	Page 6 replaced by Page 0
+1: 8 9 0 1 	Page 7 replaced by Page 1
+1: 8 9 0 1 
+1: 8 9 0 1 
+0: 8 9 0 1 
+0: 8 9 0 1 
+9: 8 9 0 1 
+8: 8 9 0 1 
+9: 8 9 0 1 
+0: 8 9 0 1 
+1: 8 9 0 1 
+9: 8 9 0 1 
+8: 8 9 0 1 
+9: 8 9 0 1 
+3: 3 9 0 1 	Page 8 replaced by Page 3
+2: 3 2 0 1 	Page 9 replaced by Page 2
+8: 3 2 8 1 	Page 0 replaced by Page 8
+8: 3 2 8 1 
+7: 3 2 8 7 	Page 1 replaced by Page 7
+1: 1 2 8 7 	Page 3 replaced by Page 1
+7: 1 2 8 7 
+6: 1 6 8 7 	Page 2 replaced by Page 6
+9: 1 6 9 7 	Page 8 replaced by Page 9
+8: 1 6 9 8 	Page 7 replaced by Page 8
+7: 7 6 9 8 	Page 1 replaced by Page 7
+7: 7 6 9 8 
+4: 7 4 9 8 	Page 6 replaced by Page 4
+4: 7 4 9 8 
+3: 7 4 3 8 	Page 9 replaced by Page 3
+2: 7 4 3 2 	Page 8 replaced by Page 2
+7: 7 4 3 2 
+6: 6 4 3 2 	Page 7 replaced by Page 6
+5: 6 5 3 2 	Page 4 replaced by Page 5
+4: 6 5 4 2 	Page 3 replaced by Page 4
+4: 6 5 4 2 
+6: 6 5 4 2 
+7: 6 5 4 7 	Page 2 replaced by Page 7
+4: 6 5 4 7 
+4: 6 5 4 7 
+3: 3 5 4 7 	Page 6 replaced by Page 3
+7: 3 5 4 7 
+7: 3 5 4 7 
+7: 3 5 4 7 
+8: 3 8 4 7 	Page 5 replaced by Page 8
+7: 3 8 4 7 
+3: 3 8 4 7 
+6: 3 8 6 7 	Page 4 replaced by Page 6
+3: 3 8 6 7 
+4: 3 8 6 4 	Page 7 replaced by Page 4
+3: 3 8 6 4 
+6: 3 8 6 4 
+0: 0 8 6 4 	Page 3 replaced by Page 0
+9: 0 9 6 4 	Page 8 replaced by Page 9
+0: 0 9 6 4 
+9: 0 9 6 4 
+9: 0 9 6 4 
+7: 0 9 7 4 	Page 6 replaced by Page 7
+8: 0 9 7 8 	Page 4 replaced by Page 8
+8: 0 9 7 8 
+7: 0 9 7 8 
+6: 6 9 7 8 	Page 0 replaced by Page 6
+5: 6 5 7 8 	Page 9 replaced by Page 5
+4: 6 5 4 8 	Page 7 replaced by Page 4
+3: 6 5 4 3 	Page 8 replaced by Page 3
+8: 8 5 4 3 	Page 6 replaced by Page 8
+8: 8 5 4 3 
+7: 8 7 4 3 	Page 5 replaced by Page 7
+8: 8 7 4 3 
+2: 8 7 2 3 	Page 4 replaced by Page 2
+1: 8 7 2 1 	Page 3 replaced by Page 1
+1: 8 7 2 1 
+2: 8 7 2 1 
+0: 0 7 2 1 	Page 8 replaced by Page 0
+9: 0 9 2 1 	Page 7 replaced by Page 9
+8: 0 9 8 1 	Page 2 replaced by Page 8
+8: 0 9 8 1 
+9: 0 9 8 1 
+9: 0 9 8 1 
+0: 0 9 8 1 
+3: 0 9 8 3 	Page 1 replaced by Page 3
+4: 4 9 8 3 	Page 0 replaced by Page 4
+3: 4 9 8 3 
+3: 4 9 8 3 
+2: 4 2 8 3 	Page 9 replaced by Page 2
+8: 4 2 8 3 
+9: 4 2 9 3 	Page 8 replaced by Page 9
+1: 4 2 9 1 	Page 3 replaced by Page 1
+9: 4 2 9 1 
+6: 6 2 9 1 	Page 4 replaced by Page 6
+6: 6 2 9 1 
+Hit Count: 51
+
+LFU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+6: 0 1 6   	Page -1 replaced by Page 6
+7: 0 1 6 7 	Page -1 replaced by Page 7
+7: 0 1 6 7 
+6: 0 1 6 7 
+8: 8 1 6 7 	Page 0 replaced by Page 8
+8: 8 1 6 7 
+9: 8 9 6 7 	Page 1 replaced by Page 9
+8: 8 9 6 7 
+0: 8 0 6 7 	Page 9 replaced by Page 0
+1: 8 1 6 7 	Page 0 replaced by Page 1
+1: 8 1 6 7 
+1: 8 1 6 7 
+0: 8 1 0 7 	Page 6 replaced by Page 0
+0: 8 1 0 7 
+9: 8 1 0 9 	Page 7 replaced by Page 9
+8: 8 1 0 9 
+9: 8 1 0 9 
+0: 8 1 0 9 
+1: 8 1 0 9 
+9: 8 1 0 9 
+8: 8 1 0 9 
+9: 8 1 0 9 
+3: 3 1 0 9 	Page 8 replaced by Page 3
+2: 2 1 0 9 	Page 3 replaced by Page 2
+8: 8 1 0 9 	Page 2 replaced by Page 8
+8: 8 1 0 9 
+7: 8 7 0 9 	Page 1 replaced by Page 7
+1: 8 1 0 9 	Page 7 replaced by Page 1
+7: 8 1 7 9 	Page 0 replaced by Page 7
+6: 8 1 6 9 	Page 7 replaced by Page 6
+9: 8 1 6 9 
+8: 8 1 6 9 
+7: 8 1 7 9 	Page 6 replaced by Page 7
+7: 8 1 7 9 
+4: 8 4 7 9 	Page 1 replaced by Page 4
+4: 8 4 7 9 
+3: 8 3 7 9 	Page 4 replaced by Page 3
+2: 8 2 7 9 	Page 3 replaced by Page 2
+7: 8 2 7 9 
+6: 8 6 7 9 	Page 2 replaced by Page 6
+5: 8 5 7 9 	Page 6 replaced by Page 5
+4: 8 4 7 9 	Page 5 replaced by Page 4
+4: 8 4 7 9 
+6: 8 6 7 9 	Page 4 replaced by Page 6
+7: 8 6 7 9 
+4: 8 4 7 9 	Page 6 replaced by Page 4
+4: 8 4 7 9 
+3: 8 3 7 9 	Page 4 replaced by Page 3
+7: 8 3 7 9 
+7: 8 3 7 9 
+7: 8 3 7 9 
+8: 8 3 7 9 
+7: 8 3 7 9 
+3: 8 3 7 9 
+6: 8 6 7 9 	Page 3 replaced by Page 6
+3: 8 3 7 9 	Page 6 replaced by Page 3
+4: 8 4 7 9 	Page 3 replaced by Page 4
+3: 8 4 7 3 	Page 9 replaced by Page 3
+6: 8 4 7 6 	Page 3 replaced by Page 6
+0: 8 0 7 6 	Page 4 replaced by Page 0
+9: 8 9 7 6 	Page 0 replaced by Page 9
+0: 8 0 7 6 	Page 9 replaced by Page 0
+9: 8 9 7 6 	Page 0 replaced by Page 9
+9: 8 9 7 6 
+7: 8 9 7 6 
+8: 8 9 7 6 
+8: 8 9 7 6 
+7: 8 9 7 6 
+6: 8 9 7 6 
+5: 8 9 7 5 	Page 6 replaced by Page 5
+4: 8 9 7 4 	Page 5 replaced by Page 4
+3: 8 9 7 3 	Page 4 replaced by Page 3
+8: 8 9 7 3 
+8: 8 9 7 3 
+7: 8 9 7 3 
+8: 8 9 7 3 
+2: 8 9 7 2 	Page 3 replaced by Page 2
+1: 8 9 7 1 	Page 2 replaced by Page 1
+1: 8 9 7 1 
+2: 8 9 7 2 	Page 1 replaced by Page 2
+0: 8 9 7 0 	Page 2 replaced by Page 0
+9: 8 9 7 0 
+8: 8 9 7 0 
+8: 8 9 7 0 
+9: 8 9 7 0 
+9: 8 9 7 0 
+0: 8 9 7 0 
+3: 8 9 7 3 	Page 0 replaced by Page 3
+4: 8 9 7 4 	Page 3 replaced by Page 4
+3: 8 9 7 3 	Page 4 replaced by Page 3
+3: 8 9 7 3 
+2: 8 9 7 2 	Page 3 replaced by Page 2
+8: 8 9 7 2 
+9: 8 9 7 2 
+1: 8 9 7 1 	Page 2 replaced by Page 1
+9: 8 9 7 1 
+6: 8 9 7 6 	Page 1 replaced by Page 6
+6: 8 9 7 6 
+Hit Count: 51
+
+MFU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+6: 0 1 6   	Page -1 replaced by Page 6
+7: 0 1 6 7 	Page -1 replaced by Page 7
+7: 0 1 6 7 
+6: 0 1 6 7 
+8: 0 1 8 7 	Page 6 replaced by Page 8
+8: 0 1 8 7 
+9: 0 1 9 7 	Page 8 replaced by Page 9
+8: 0 1 9 8 	Page 7 replaced by Page 8
+0: 0 1 9 8 
+1: 0 1 9 8 
+1: 0 1 9 8 
+1: 0 1 9 8 
+0: 0 1 9 8 
+0: 0 1 9 8 
+9: 0 1 9 8 
+8: 0 1 9 8 
+9: 0 1 9 8 
+0: 0 1 9 8 
+1: 0 1 9 8 
+9: 0 1 9 8 
+8: 0 1 9 8 
+9: 0 1 9 8 
+3: 3 1 9 8 	Page 0 replaced by Page 3
+2: 3 2 9 8 	Page 1 replaced by Page 2
+8: 3 2 9 8 
+8: 3 2 9 8 
+7: 3 2 9 7 	Page 8 replaced by Page 7
+1: 3 2 1 7 	Page 9 replaced by Page 1
+7: 3 2 1 7 
+6: 3 2 6 7 	Page 1 replaced by Page 6
+9: 3 2 6 9 	Page 7 replaced by Page 9
+8: 3 2 6 8 	Page 9 replaced by Page 8
+7: 3 2 6 7 	Page 8 replaced by Page 7
+7: 3 2 6 7 
+4: 3 2 6 4 	Page 7 replaced by Page 4
+4: 3 2 6 4 
+3: 3 2 6 4 
+2: 3 2 6 4 
+7: 3 2 7 4 	Page 6 replaced by Page 7
+6: 3 2 6 4 	Page 7 replaced by Page 6
+5: 3 2 5 4 	Page 6 replaced by Page 5
+4: 3 2 5 4 
+4: 3 2 5 4 
+6: 3 2 5 6 	Page 4 replaced by Page 6
+7: 3 2 5 7 	Page 6 replaced by Page 7
+4: 3 2 5 4 	Page 7 replaced by Page 4
+4: 3 2 5 4 
+3: 3 2 5 4 
+7: 3 2 5 7 	Page 4 replaced by Page 7
+7: 3 2 5 7 
+7: 3 2 5 7 
+8: 3 2 5 8 	Page 7 replaced by Page 8
+7: 3 2 5 7 	Page 8 replaced by Page 7
+3: 3 2 5 7 
+6: 3 2 5 6 	Page 7 replaced by Page 6
+3: 3 2 5 6 
+4: 3 2 5 4 	Page 6 replaced by Page 4
+3: 3 2 5 4 
+6: 3 2 5 6 	Page 4 replaced by Page 6
+0: 3 2 5 0 	Page 6 replaced by Page 0
+9: 9 2 5 0 	Page 3 replaced by Page 9
+0: 9 2 5 0 
+9: 9 2 5 0 
+9: 9 2 5 0 
+7: 7 2 5 0 	Page 9 replaced by Page 7
+8: 8 2 5 0 	Page 7 replaced by Page 8
+8: 8 2 5 0 
+7: 7 2 5 0 	Page 8 replaced by Page 7
+6: 6 2 5 0 	Page 7 replaced by Page 6
+5: 6 2 5 0 
+4: 4 2 5 0 	Page 6 replaced by Page 4
+3: 3 2 5 0 	Page 4 replaced by Page 3
+8: 8 2 5 0 	Page 3 replaced by Page 8
+8: 8 2 5 0 
+7: 7 2 5 0 	Page 8 replaced by Page 7
+8: 8 2 5 0 	Page 7 replaced by Page 8
+2: 8 2 5 0 
+1: 1 2 5 0 	Page 8 replaced by Page 1
+1: 1 2 5 0 
+2: 1 2 5 0 
+0: 1 2 5 0 
+9: 9 2 5 0 	Page 1 replaced by Page 9
+8: 8 2 5 0 	Page 9 replaced by Page 8
+8: 8 2 5 0 
+9: 9 2 5 0 	Page 8 replaced by Page 9
+9: 9 2 5 0 
+0: 9 2 5 0 
+3: 3 2 5 0 	Page 9 replaced by Page 3
+4: 3 2 5 4 	Page 0 replaced by Page 4
+3: 3 2 5 4 
+3: 3 2 5 4 
+2: 3 2 5 4 
+8: 8 2 5 4 	Page 3 replaced by Page 8
+9: 9 2 5 4 	Page 8 replaced by Page 9
+1: 1 2 5 4 	Page 9 replaced by Page 1
+9: 9 2 5 4 	Page 1 replaced by Page 9
+6: 6 2 5 4 	Page 9 replaced by Page 6
+6: 6 2 5 4 
+Hit Count: 50
+
+LRU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+6: 0 1 6   	Page -1 replaced by Page 6
+7: 0 1 6 7 	Page -1 replaced by Page 7
+7: 0 1 6 7 
+6: 0 1 6 7 
+8: 8 1 6 7 	Page 0 replaced by Page 8
+8: 8 1 6 7 
+9: 8 9 6 7 	Page 1 replaced by Page 9
+8: 8 9 6 7 
+0: 8 9 6 0 	Page 7 replaced by Page 0
+1: 8 9 1 0 	Page 6 replaced by Page 1
+1: 8 9 1 0 
+1: 8 9 1 0 
+0: 8 9 1 0 
+0: 8 9 1 0 
+9: 8 9 1 0 
+8: 8 9 1 0 
+9: 8 9 1 0 
+0: 8 9 1 0 
+1: 8 9 1 0 
+9: 8 9 1 0 
+8: 8 9 1 0 
+9: 8 9 1 0 
+3: 8 9 1 3 	Page 0 replaced by Page 3
+2: 8 9 2 3 	Page 1 replaced by Page 2
+8: 8 9 2 3 
+8: 8 9 2 3 
+7: 8 7 2 3 	Page 9 replaced by Page 7
+1: 8 7 2 1 	Page 3 replaced by Page 1
+7: 8 7 2 1 
+6: 8 7 6 1 	Page 2 replaced by Page 6
+9: 9 7 6 1 	Page 8 replaced by Page 9
+8: 9 7 6 8 	Page 1 replaced by Page 8
+7: 9 7 6 8 
+7: 9 7 6 8 
+4: 9 7 4 8 	Page 6 replaced by Page 4
+4: 9 7 4 8 
+3: 3 7 4 8 	Page 9 replaced by Page 3
+2: 3 7 4 2 	Page 8 replaced by Page 2
+7: 3 7 4 2 
+6: 3 7 6 2 	Page 4 replaced by Page 6
+5: 5 7 6 2 	Page 3 replaced by Page 5
+4: 5 7 6 4 	Page 2 replaced by Page 4
+4: 5 7 6 4 
+6: 5 7 6 4 
+7: 5 7 6 4 
+4: 5 7 6 4 
+4: 5 7 6 4 
+3: 3 7 6 4 	Page 5 replaced by Page 3
+7: 3 7 6 4 
+7: 3 7 6 4 
+7: 3 7 6 4 
+8: 3 7 8 4 	Page 6 replaced by Page 8
+7: 3 7 8 4 
+3: 3 7 8 4 
+6: 3 7 8 6 	Page 4 replaced by Page 6
+3: 3 7 8 6 
+4: 3 7 4 6 	Page 8 replaced by Page 4
+3: 3 7 4 6 
+6: 3 7 4 6 
+0: 3 0 4 6 	Page 7 replaced by Page 0
+9: 3 0 9 6 	Page 4 replaced by Page 9
+0: 3 0 9 6 
+9: 3 0 9 6 
+9: 3 0 9 6 
+7: 7 0 9 6 	Page 3 replaced by Page 7
+8: 7 0 9 8 	Page 6 replaced by Page 8
+8: 7 0 9 8 
+7: 7 0 9 8 
+6: 7 6 9 8 	Page 0 replaced by Page 6
+5: 7 6 5 8 	Page 9 replaced by Page 5
+4: 7 6 5 4 	Page 8 replaced by Page 4
+3: 3 6 5 4 	Page 7 replaced by Page 3
+8: 3 8 5 4 	Page 6 replaced by Page 8
+8: 3 8 5 4 
+7: 3 8 7 4 	Page 5 replaced by Page 7
+8: 3 8 7 4 
+2: 3 8 7 2 	Page 4 replaced by Page 2
+1: 1 8 7 2 	Page 3 replaced by Page 1
+1: 1 8 7 2 
+2: 1 8 7 2 
+0: 1 8 0 2 	Page 7 replaced by Page 0
+9: 1 9 0 2 	Page 8 replaced by Page 9
+8: 8 9 0 2 	Page 1 replaced by Page 8
+8: 8 9 0 2 
+9: 8 9 0 2 
+9: 8 9 0 2 
+0: 8 9 0 2 
+3: 8 9 0 3 	Page 2 replaced by Page 3
+4: 4 9 0 3 	Page 8 replaced by Page 4
+3: 4 9 0 3 
+3: 4 9 0 3 
+2: 4 2 0 3 	Page 9 replaced by Page 2
+8: 4 2 8 3 	Page 0 replaced by Page 8
+9: 9 2 8 3 	Page 4 replaced by Page 9
+1: 9 2 8 1 	Page 3 replaced by Page 1
+9: 9 2 8 1 
+6: 9 6 8 1 	Page 2 replaced by Page 6
+6: 9 6 8 1 
+Hit Count: 53
+
+
+0 1 2 8 7 6 0 1 4 5 6 6 7 6 5 5 3 3 2 0 4 3 0 1 9 9 6 5 4 7 7 4 5 7 8 7 8 9 0 1 1 2 7 2 2 2 0 8 1 3 1 0 6 6 7 7 7 7 6 7 7 7 8 8 6 8 9 9 9 9 0 9 1 1 2 3 3 3 7 7 7 7 8 9 1 1 2 9 6 3 2 2 3 4 9 8 8 0 0 0 
+
+Random Pick: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+2: 0 1 2   	Page -1 replaced by Page 2
+8: 0 1 2 8 	Page -1 replaced by Page 8
+7: 0 1 2 7 	Page 8 replaced by Page 7
+6: 0 1 2 6 	Page 7 replaced by Page 6
+0: 0 1 2 6 
+1: 0 1 2 6 
+4: 0 1 4 6 	Page 2 replaced by Page 4
+5: 0 1 4 5 	Page 6 replaced by Page 5
+6: 0 1 6 5 	Page 4 replaced by Page 6
+6: 0 1 6 5 
+7: 0 1 6 7 	Page 5 replaced by Page 7
+6: 0 1 6 7 
+5: 0 5 6 7 	Page 1 replaced by Page 5
+5: 0 5 6 7 
+3: 0 3 6 7 	Page 5 replaced by Page 3
+3: 0 3 6 7 
+2: 0 3 2 7 	Page 6 replaced by Page 2
+0: 0 3 2 7 
+4: 0 4 2 7 	Page 3 replaced by Page 4
+3: 0 4 3 7 	Page 2 replaced by Page 3
+0: 0 4 3 7 
+1: 0 1 3 7 	Page 4 replaced by Page 1
+9: 0 1 9 7 	Page 3 replaced by Page 9
+9: 0 1 9 7 
+6: 6 1 9 7 	Page 0 replaced by Page 6
+5: 6 1 9 5 	Page 7 replaced by Page 5
+4: 6 1 4 5 	Page 9 replaced by Page 4
+7: 7 1 4 5 	Page 6 replaced by Page 7
+7: 7 1 4 5 
+4: 7 1 4 5 
+5: 7 1 4 5 
+7: 7 1 4 5 
+8: 7 1 8 5 	Page 4 replaced by Page 8
+7: 7 1 8 5 
+8: 7 1 8 5 
+9: 7 9 8 5 	Page 1 replaced by Page 9
+0: 0 9 8 5 	Page 7 replaced by Page 0
+1: 0 1 8 5 	Page 9 replaced by Page 1
+1: 0 1 8 5 
+2: 0 1 8 2 	Page 5 replaced by Page 2
+7: 0 1 7 2 	Page 8 replaced by Page 7
+2: 0 1 7 2 
+2: 0 1 7 2 
+2: 0 1 7 2 
+0: 0 1 7 2 
+8: 8 1 7 2 	Page 0 replaced by Page 8
+1: 8 1 7 2 
+3: 8 3 7 2 	Page 1 replaced by Page 3
+1: 8 3 7 1 	Page 2 replaced by Page 1
+0: 8 0 7 1 	Page 3 replaced by Page 0
+6: 8 6 7 1 	Page 0 replaced by Page 6
+6: 8 6 7 1 
+7: 8 6 7 1 
+7: 8 6 7 1 
+7: 8 6 7 1 
+7: 8 6 7 1 
+6: 8 6 7 1 
+7: 8 6 7 1 
+7: 8 6 7 1 
+7: 8 6 7 1 
+8: 8 6 7 1 
+8: 8 6 7 1 
+6: 8 6 7 1 
+8: 8 6 7 1 
+9: 8 6 9 1 	Page 7 replaced by Page 9
+9: 8 6 9 1 
+9: 8 6 9 1 
+9: 8 6 9 1 
+0: 8 6 0 1 	Page 9 replaced by Page 0
+9: 8 6 9 1 	Page 0 replaced by Page 9
+1: 8 6 9 1 
+1: 8 6 9 1 
+2: 2 6 9 1 	Page 8 replaced by Page 2
+3: 2 3 9 1 	Page 6 replaced by Page 3
+3: 2 3 9 1 
+3: 2 3 9 1 
+7: 2 7 9 1 	Page 3 replaced by Page 7
+7: 2 7 9 1 
+7: 2 7 9 1 
+7: 2 7 9 1 
+8: 8 7 9 1 	Page 2 replaced by Page 8
+9: 8 7 9 1 
+1: 8 7 9 1 
+1: 8 7 9 1 
+2: 8 7 2 1 	Page 9 replaced by Page 2
+9: 8 7 2 9 	Page 1 replaced by Page 9
+6: 6 7 2 9 	Page 8 replaced by Page 6
+3: 6 3 2 9 	Page 7 replaced by Page 3
+2: 6 3 2 9 
+2: 6 3 2 9 
+3: 6 3 2 9 
+4: 6 3 4 9 	Page 2 replaced by Page 4
+9: 6 3 4 9 
+8: 6 8 4 9 	Page 3 replaced by Page 8
+8: 6 8 4 9 
+0: 0 8 4 9 	Page 6 replaced by Page 0
+0: 0 8 4 9 
+0: 0 8 4 9 
+Hit Count: 54
+
+FIFO: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+2: 0 1 2   	Page -1 replaced by Page 2
+8: 0 1 2 8 	Page -1 replaced by Page 8
+7: 7 1 2 8 	Page 0 replaced by Page 7
+6: 7 6 2 8 	Page 1 replaced by Page 6
+0: 7 6 0 8 	Page 2 replaced by Page 0
+1: 7 6 0 1 	Page 8 replaced by Page 1
+4: 4 6 0 1 	Page 7 replaced by Page 4
+5: 4 5 0 1 	Page 6 replaced by Page 5
+6: 4 5 6 1 	Page 0 replaced by Page 6
+6: 4 5 6 1 
+7: 4 5 6 7 	Page 1 replaced by Page 7
+6: 4 5 6 7 
+5: 4 5 6 7 
+5: 4 5 6 7 
+3: 3 5 6 7 	Page 4 replaced by Page 3
+3: 3 5 6 7 
+2: 3 2 6 7 	Page 5 replaced by Page 2
+0: 3 2 0 7 	Page 6 replaced by Page 0
+4: 3 2 0 4 	Page 7 replaced by Page 4
+3: 3 2 0 4 
+0: 3 2 0 4 
+1: 1 2 0 4 	Page 3 replaced by Page 1
+9: 1 9 0 4 	Page 2 replaced by Page 9
+9: 1 9 0 4 
+6: 1 9 6 4 	Page 0 replaced by Page 6
+5: 1 9 6 5 	Page 4 replaced by Page 5
+4: 4 9 6 5 	Page 1 replaced by Page 4
+7: 4 7 6 5 	Page 9 replaced by Page 7
+7: 4 7 6 5 
+4: 4 7 6 5 
+5: 4 7 6 5 
+7: 4 7 6 5 
+8: 4 7 8 5 	Page 6 replaced by Page 8
+7: 4 7 8 5 
+8: 4 7 8 5 
+9: 4 7 8 9 	Page 5 replaced by Page 9
+0: 0 7 8 9 	Page 4 replaced by Page 0
+1: 0 1 8 9 	Page 7 replaced by Page 1
+1: 0 1 8 9 
+2: 0 1 2 9 	Page 8 replaced by Page 2
+7: 0 1 2 7 	Page 9 replaced by Page 7
+2: 0 1 2 7 
+2: 0 1 2 7 
+2: 0 1 2 7 
+0: 0 1 2 7 
+8: 8 1 2 7 	Page 0 replaced by Page 8
+1: 8 1 2 7 
+3: 8 3 2 7 	Page 1 replaced by Page 3
+1: 8 3 1 7 	Page 2 replaced by Page 1
+0: 8 3 1 0 	Page 7 replaced by Page 0
+6: 6 3 1 0 	Page 8 replaced by Page 6
+6: 6 3 1 0 
+7: 6 7 1 0 	Page 3 replaced by Page 7
+7: 6 7 1 0 
+7: 6 7 1 0 
+7: 6 7 1 0 
+6: 6 7 1 0 
+7: 6 7 1 0 
+7: 6 7 1 0 
+7: 6 7 1 0 
+8: 6 7 8 0 	Page 1 replaced by Page 8
+8: 6 7 8 0 
+6: 6 7 8 0 
+8: 6 7 8 0 
+9: 6 7 8 9 	Page 0 replaced by Page 9
+9: 6 7 8 9 
+9: 6 7 8 9 
+9: 6 7 8 9 
+0: 0 7 8 9 	Page 6 replaced by Page 0
+9: 0 7 8 9 
+1: 0 1 8 9 	Page 7 replaced by Page 1
+1: 0 1 8 9 
+2: 0 1 2 9 	Page 8 replaced by Page 2
+3: 0 1 2 3 	Page 9 replaced by Page 3
+3: 0 1 2 3 
+3: 0 1 2 3 
+7: 7 1 2 3 	Page 0 replaced by Page 7
+7: 7 1 2 3 
+7: 7 1 2 3 
+7: 7 1 2 3 
+8: 7 8 2 3 	Page 1 replaced by Page 8
+9: 7 8 9 3 	Page 2 replaced by Page 9
+1: 7 8 9 1 	Page 3 replaced by Page 1
+1: 7 8 9 1 
+2: 2 8 9 1 	Page 7 replaced by Page 2
+9: 2 8 9 1 
+6: 2 6 9 1 	Page 8 replaced by Page 6
+3: 2 6 3 1 	Page 9 replaced by Page 3
+2: 2 6 3 1 
+2: 2 6 3 1 
+3: 2 6 3 1 
+4: 2 6 3 4 	Page 1 replaced by Page 4
+9: 9 6 3 4 	Page 2 replaced by Page 9
+8: 9 8 3 4 	Page 6 replaced by Page 8
+8: 9 8 3 4 
+0: 9 8 0 4 	Page 3 replaced by Page 0
+0: 9 8 0 4 
+0: 9 8 0 4 
+Hit Count: 49
+
+LFU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+2: 0 1 2   	Page -1 replaced by Page 2
+8: 0 1 2 8 	Page -1 replaced by Page 8
+7: 7 1 2 8 	Page 0 replaced by Page 7
+6: 6 1 2 8 	Page 7 replaced by Page 6
+0: 0 1 2 8 	Page 6 replaced by Page 0
+1: 0 1 2 8 
+4: 0 1 4 8 	Page 2 replaced by Page 4
+5: 0 1 5 8 	Page 4 replaced by Page 5
+6: 0 1 6 8 	Page 5 replaced by Page 6
+6: 0 1 6 8 
+7: 0 1 6 7 	Page 8 replaced by Page 7
+6: 0 1 6 7 
+5: 5 1 6 7 	Page 0 replaced by Page 5
+5: 5 1 6 7 
+3: 5 3 6 7 	Page 1 replaced by Page 3
+3: 5 3 6 7 
+2: 5 2 6 7 	Page 3 replaced by Page 2
+0: 5 0 6 7 	Page 2 replaced by Page 0
+4: 5 0 6 4 	Page 7 replaced by Page 4
+3: 5 0 6 3 	Page 4 replaced by Page 3
+0: 5 0 6 3 
+1: 1 0 6 3 	Page 5 replaced by Page 1
+9: 9 0 6 3 	Page 1 replaced by Page 9
+9: 9 0 6 3 
+6: 9 0 6 3 
+5: 5 0 6 3 	Page 9 replaced by Page 5
+4: 5 0 6 4 	Page 3 replaced by Page 4
+7: 5 0 6 7 	Page 4 replaced by Page 7
+7: 5 0 6 7 
+4: 4 0 6 7 	Page 5 replaced by Page 4
+5: 5 0 6 7 	Page 4 replaced by Page 5
+7: 5 0 6 7 
+8: 5 8 6 7 	Page 0 replaced by Page 8
+7: 5 8 6 7 
+8: 5 8 6 7 
+9: 5 9 6 7 	Page 8 replaced by Page 9
+0: 5 0 6 7 	Page 9 replaced by Page 0
+1: 1 0 6 7 	Page 5 replaced by Page 1
+1: 1 0 6 7 
+2: 2 0 6 7 	Page 1 replaced by Page 2
+7: 2 0 6 7 
+2: 2 0 6 7 
+2: 2 0 6 7 
+2: 2 0 6 7 
+0: 2 0 6 7 
+8: 2 0 8 7 	Page 6 replaced by Page 8
+1: 2 0 1 7 	Page 8 replaced by Page 1
+3: 3 0 1 7 	Page 2 replaced by Page 3
+1: 3 0 1 7 
+0: 3 0 1 7 
+6: 6 0 1 7 	Page 3 replaced by Page 6
+6: 6 0 1 7 
+7: 6 0 1 7 
+7: 6 0 1 7 
+7: 6 0 1 7 
+7: 6 0 1 7 
+6: 6 0 1 7 
+7: 6 0 1 7 
+7: 6 0 1 7 
+7: 6 0 1 7 
+8: 6 8 1 7 	Page 0 replaced by Page 8
+8: 6 8 1 7 
+6: 6 8 1 7 
+8: 6 8 1 7 
+9: 6 9 1 7 	Page 8 replaced by Page 9
+9: 6 9 1 7 
+9: 6 9 1 7 
+9: 6 9 1 7 
+0: 6 0 1 7 	Page 9 replaced by Page 0
+9: 6 0 9 7 	Page 1 replaced by Page 9
+1: 6 1 9 7 	Page 0 replaced by Page 1
+1: 6 1 9 7 
+2: 6 1 2 7 	Page 9 replaced by Page 2
+3: 6 1 3 7 	Page 2 replaced by Page 3
+3: 6 1 3 7 
+3: 6 1 3 7 
+7: 6 1 3 7 
+7: 6 1 3 7 
+7: 6 1 3 7 
+7: 6 1 3 7 
+8: 6 1 8 7 	Page 3 replaced by Page 8
+9: 6 1 9 7 	Page 8 replaced by Page 9
+1: 6 1 9 7 
+1: 6 1 9 7 
+2: 2 1 9 7 	Page 6 replaced by Page 2
+9: 2 1 9 7 
+6: 6 1 9 7 	Page 2 replaced by Page 6
+3: 3 1 9 7 	Page 6 replaced by Page 3
+2: 2 1 9 7 	Page 3 replaced by Page 2
+2: 2 1 9 7 
+3: 3 1 9 7 	Page 2 replaced by Page 3
+4: 4 1 9 7 	Page 3 replaced by Page 4
+9: 4 1 9 7 
+8: 8 1 9 7 	Page 4 replaced by Page 8
+8: 8 1 9 7 
+0: 0 1 9 7 	Page 8 replaced by Page 0
+0: 0 1 9 7 
+0: 0 1 9 7 
+Hit Count: 50
+
+MFU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+2: 0 1 2   	Page -1 replaced by Page 2
+8: 0 1 2 8 	Page -1 replaced by Page 8
+7: 7 1 2 8 	Page 0 replaced by Page 7
+6: 6 1 2 8 	Page 7 replaced by Page 6
+0: 0 1 2 8 	Page 6 replaced by Page 0
+1: 0 1 2 8 
+4: 4 1 2 8 	Page 0 replaced by Page 4
+5: 4 5 2 8 	Page 1 replaced by Page 5
+6: 6 5 2 8 	Page 4 replaced by Page 6
+6: 6 5 2 8 
+7: 7 5 2 8 	Page 6 replaced by Page 7
+6: 6 5 2 8 	Page 7 replaced by Page 6
+5: 6 5 2 8 
+5: 6 5 2 8 
+3: 3 5 2 8 	Page 6 replaced by Page 3
+3: 3 5 2 8 
+2: 3 5 2 8 
+0: 3 0 2 8 	Page 5 replaced by Page 0
+4: 3 4 2 8 	Page 0 replaced by Page 4
+3: 3 4 2 8 
+0: 0 4 2 8 	Page 3 replaced by Page 0
+1: 1 4 2 8 	Page 0 replaced by Page 1
+9: 9 4 2 8 	Page 1 replaced by Page 9
+9: 9 4 2 8 
+6: 6 4 2 8 	Page 9 replaced by Page 6
+5: 5 4 2 8 	Page 6 replaced by Page 5
+4: 5 4 2 8 
+7: 7 4 2 8 	Page 5 replaced by Page 7
+7: 7 4 2 8 
+4: 7 4 2 8 
+5: 5 4 2 8 	Page 7 replaced by Page 5
+7: 7 4 2 8 	Page 5 replaced by Page 7
+8: 7 4 2 8 
+7: 7 4 2 8 
+8: 7 4 2 8 
+9: 9 4 2 8 	Page 7 replaced by Page 9
+0: 9 0 2 8 	Page 4 replaced by Page 0
+1: 9 1 2 8 	Page 0 replaced by Page 1
+1: 9 1 2 8 
+2: 9 1 2 8 
+7: 9 7 2 8 	Page 1 replaced by Page 7
+2: 9 7 2 8 
+2: 9 7 2 8 
+2: 9 7 2 8 
+0: 9 0 2 8 	Page 7 replaced by Page 0
+8: 9 0 2 8 
+1: 9 1 2 8 	Page 0 replaced by Page 1
+3: 9 3 2 8 	Page 1 replaced by Page 3
+1: 9 3 1 8 	Page 2 replaced by Page 1
+0: 9 3 0 8 	Page 1 replaced by Page 0
+6: 9 3 6 8 	Page 0 replaced by Page 6
+6: 9 3 6 8 
+7: 9 3 7 8 	Page 6 replaced by Page 7
+7: 9 3 7 8 
+7: 9 3 7 8 
+7: 9 3 7 8 
+6: 9 3 6 8 	Page 7 replaced by Page 6
+7: 9 3 7 8 	Page 6 replaced by Page 7
+7: 9 3 7 8 
+7: 9 3 7 8 
+8: 9 3 7 8 
+8: 9 3 7 8 
+6: 9 3 6 8 	Page 7 replaced by Page 6
+8: 9 3 6 8 
+9: 9 3 6 8 
+9: 9 3 6 8 
+9: 9 3 6 8 
+9: 9 3 6 8 
+0: 9 3 0 8 	Page 6 replaced by Page 0
+9: 9 3 0 8 
+1: 1 3 0 8 	Page 9 replaced by Page 1
+1: 1 3 0 8 
+2: 2 3 0 8 	Page 1 replaced by Page 2
+3: 2 3 0 8 
+3: 2 3 0 8 
+3: 2 3 0 8 
+7: 2 3 7 8 	Page 0 replaced by Page 7
+7: 2 3 7 8 
+7: 2 3 7 8 
+7: 2 3 7 8 
+8: 2 3 7 8 
+9: 2 3 9 8 	Page 7 replaced by Page 9
+1: 2 3 1 8 	Page 9 replaced by Page 1
+1: 2 3 1 8 
+2: 2 3 1 8 
+9: 2 3 9 8 	Page 1 replaced by Page 9
+6: 2 3 6 8 	Page 9 replaced by Page 6
+3: 2 3 6 8 
+2: 2 3 6 8 
+2: 2 3 6 8 
+3: 2 3 6 8 
+4: 4 3 6 8 	Page 2 replaced by Page 4
+9: 4 3 9 8 	Page 6 replaced by Page 9
+8: 4 3 9 8 
+8: 4 3 9 8 
+0: 4 3 0 8 	Page 9 replaced by Page 0
+0: 4 3 0 8 
+0: 4 3 0 8 
+Hit Count: 52
+
+LRU: 
+0: 0       	Page -1 replaced by Page 0
+1: 0 1     	Page -1 replaced by Page 1
+2: 0 1 2   	Page -1 replaced by Page 2
+8: 0 1 2 8 	Page -1 replaced by Page 8
+7: 7 1 2 8 	Page 0 replaced by Page 7
+6: 7 6 2 8 	Page 1 replaced by Page 6
+0: 7 6 0 8 	Page 2 replaced by Page 0
+1: 7 6 0 1 	Page 8 replaced by Page 1
+4: 4 6 0 1 	Page 7 replaced by Page 4
+5: 4 5 0 1 	Page 6 replaced by Page 5
+6: 4 5 6 1 	Page 0 replaced by Page 6
+6: 4 5 6 1 
+7: 4 5 6 7 	Page 1 replaced by Page 7
+6: 4 5 6 7 
+5: 4 5 6 7 
+5: 4 5 6 7 
+3: 3 5 6 7 	Page 4 replaced by Page 3
+3: 3 5 6 7 
+2: 3 5 6 2 	Page 7 replaced by Page 2
+0: 3 5 0 2 	Page 6 replaced by Page 0
+4: 3 4 0 2 	Page 5 replaced by Page 4
+3: 3 4 0 2 
+0: 3 4 0 2 
+1: 3 4 0 1 	Page 2 replaced by Page 1
+9: 3 9 0 1 	Page 4 replaced by Page 9
+9: 3 9 0 1 
+6: 6 9 0 1 	Page 3 replaced by Page 6
+5: 6 9 5 1 	Page 0 replaced by Page 5
+4: 6 9 5 4 	Page 1 replaced by Page 4
+7: 6 7 5 4 	Page 9 replaced by Page 7
+7: 6 7 5 4 
+4: 6 7 5 4 
+5: 6 7 5 4 
+7: 6 7 5 4 
+8: 8 7 5 4 	Page 6 replaced by Page 8
+7: 8 7 5 4 
+8: 8 7 5 4 
+9: 8 7 5 9 	Page 4 replaced by Page 9
+0: 8 7 0 9 	Page 5 replaced by Page 0
+1: 8 1 0 9 	Page 7 replaced by Page 1
+1: 8 1 0 9 
+2: 2 1 0 9 	Page 8 replaced by Page 2
+7: 2 1 0 7 	Page 9 replaced by Page 7
+2: 2 1 0 7 
+2: 2 1 0 7 
+2: 2 1 0 7 
+0: 2 1 0 7 
+8: 2 8 0 7 	Page 1 replaced by Page 8
+1: 2 8 0 1 	Page 7 replaced by Page 1
+3: 3 8 0 1 	Page 2 replaced by Page 3
+1: 3 8 0 1 
+0: 3 8 0 1 
+6: 3 6 0 1 	Page 8 replaced by Page 6
+6: 3 6 0 1 
+7: 7 6 0 1 	Page 3 replaced by Page 7
+7: 7 6 0 1 
+7: 7 6 0 1 
+7: 7 6 0 1 
+6: 7 6 0 1 
+7: 7 6 0 1 
+7: 7 6 0 1 
+7: 7 6 0 1 
+8: 7 6 0 8 	Page 1 replaced by Page 8
+8: 7 6 0 8 
+6: 7 6 0 8 
+8: 7 6 0 8 
+9: 7 6 9 8 	Page 0 replaced by Page 9
+9: 7 6 9 8 
+9: 7 6 9 8 
+9: 7 6 9 8 
+0: 0 6 9 8 	Page 7 replaced by Page 0
+9: 0 6 9 8 
+1: 0 1 9 8 	Page 6 replaced by Page 1
+1: 0 1 9 8 
+2: 0 1 9 2 	Page 8 replaced by Page 2
+3: 3 1 9 2 	Page 0 replaced by Page 3
+3: 3 1 9 2 
+3: 3 1 9 2 
+7: 3 1 7 2 	Page 9 replaced by Page 7
+7: 3 1 7 2 
+7: 3 1 7 2 
+7: 3 1 7 2 
+8: 3 8 7 2 	Page 1 replaced by Page 8
+9: 3 8 7 9 	Page 2 replaced by Page 9
+1: 1 8 7 9 	Page 3 replaced by Page 1
+1: 1 8 7 9 
+2: 1 8 2 9 	Page 7 replaced by Page 2
+9: 1 8 2 9 
+6: 1 6 2 9 	Page 8 replaced by Page 6
+3: 3 6 2 9 	Page 1 replaced by Page 3
+2: 3 6 2 9 
+2: 3 6 2 9 
+3: 3 6 2 9 
+4: 3 6 2 4 	Page 9 replaced by Page 4
+9: 3 9 2 4 	Page 6 replaced by Page 9
+8: 3 9 8 4 	Page 2 replaced by Page 8
+8: 3 9 8 4 
+0: 0 9 8 4 	Page 3 replaced by Page 0
+0: 0 9 8 4 
+0: 0 9 8 4 
+Hit Count: 50
+
+
+0 0 1 1 3 3 3 3 5 5 0 7 7 9 9 4 7 7 6 4 7 0 1 1 0 2 2 1 0 1 8 3 4 8 9 0 9 8 3 2 3 1 1 9 9 8 7 8 4 3 3 4 3 3 4 5 6 7 7 1 5 6 9 9 9 9 0 9 9 9 4 4 8 3 1 1 2 2 1 2 3 4 4 4 4 3 4 6 6 6 0 0 6 8 9 8 7 4 3 2 
+
+Random Pick: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+3: 0 1 3   	Page -1 replaced by Page 3
+3: 0 1 3   
+3: 0 1 3   
+3: 0 1 3   
+5: 0 1 3 5 	Page -1 replaced by Page 5
+5: 0 1 3 5 
+0: 0 1 3 5 
+7: 0 1 7 5 	Page 3 replaced by Page 7
+7: 0 1 7 5 
+9: 0 1 9 5 	Page 7 replaced by Page 9
+9: 0 1 9 5 
+4: 0 1 4 5 	Page 9 replaced by Page 4
+7: 7 1 4 5 	Page 0 replaced by Page 7
+7: 7 1 4 5 
+6: 7 6 4 5 	Page 1 replaced by Page 6
+4: 7 6 4 5 
+7: 7 6 4 5 
+0: 7 0 4 5 	Page 6 replaced by Page 0
+1: 7 1 4 5 	Page 0 replaced by Page 1
+1: 7 1 4 5 
+0: 0 1 4 5 	Page 7 replaced by Page 0
+2: 2 1 4 5 	Page 0 replaced by Page 2
+2: 2 1 4 5 
+1: 2 1 4 5 
+0: 0 1 4 5 	Page 2 replaced by Page 0
+1: 0 1 4 5 
+8: 0 8 4 5 	Page 1 replaced by Page 8
+3: 0 8 3 5 	Page 4 replaced by Page 3
+4: 0 8 4 5 	Page 3 replaced by Page 4
+8: 0 8 4 5 
+9: 0 8 4 9 	Page 5 replaced by Page 9
+0: 0 8 4 9 
+9: 0 8 4 9 
+8: 0 8 4 9 
+3: 0 8 3 9 	Page 4 replaced by Page 3
+2: 0 2 3 9 	Page 8 replaced by Page 2
+3: 0 2 3 9 
+1: 0 2 3 1 	Page 9 replaced by Page 1
+1: 0 2 3 1 
+9: 0 9 3 1 	Page 2 replaced by Page 9
+9: 0 9 3 1 
+8: 0 8 3 1 	Page 9 replaced by Page 8
+7: 7 8 3 1 	Page 0 replaced by Page 7
+8: 7 8 3 1 
+4: 7 8 4 1 	Page 3 replaced by Page 4
+3: 7 3 4 1 	Page 8 replaced by Page 3
+3: 7 3 4 1 
+4: 7 3 4 1 
+3: 7 3 4 1 
+3: 7 3 4 1 
+4: 7 3 4 1 
+5: 7 3 5 1 	Page 4 replaced by Page 5
+6: 7 3 5 6 	Page 1 replaced by Page 6
+7: 7 3 5 6 
+7: 7 3 5 6 
+1: 1 3 5 6 	Page 7 replaced by Page 1
+5: 1 3 5 6 
+6: 1 3 5 6 
+9: 1 3 5 9 	Page 6 replaced by Page 9
+9: 1 3 5 9 
+9: 1 3 5 9 
+9: 1 3 5 9 
+0: 0 3 5 9 	Page 1 replaced by Page 0
+9: 0 3 5 9 
+9: 0 3 5 9 
+9: 0 3 5 9 
+4: 0 3 4 9 	Page 5 replaced by Page 4
+4: 0 3 4 9 
+8: 0 8 4 9 	Page 3 replaced by Page 8
+3: 0 8 4 3 	Page 9 replaced by Page 3
+1: 1 8 4 3 	Page 0 replaced by Page 1
+1: 1 8 4 3 
+2: 2 8 4 3 	Page 1 replaced by Page 2
+2: 2 8 4 3 
+1: 2 8 4 1 	Page 3 replaced by Page 1
+2: 2 8 4 1 
+3: 2 8 4 3 	Page 1 replaced by Page 3
+4: 2 8 4 3 
+4: 2 8 4 3 
+4: 2 8 4 3 
+4: 2 8 4 3 
+3: 2 8 4 3 
+4: 2 8 4 3 
+6: 2 6 4 3 	Page 8 replaced by Page 6
+6: 2 6 4 3 
+6: 2 6 4 3 
+0: 0 6 4 3 	Page 2 replaced by Page 0
+0: 0 6 4 3 
+6: 0 6 4 3 
+8: 0 6 4 8 	Page 3 replaced by Page 8
+9: 0 6 4 9 	Page 8 replaced by Page 9
+8: 8 6 4 9 	Page 0 replaced by Page 8
+7: 8 7 4 9 	Page 6 replaced by Page 7
+4: 8 7 4 9 
+3: 8 7 3 9 	Page 4 replaced by Page 3
+2: 8 7 3 2 	Page 9 replaced by Page 2
+Hit Count: 54
+
+FIFO: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+3: 0 1 3   	Page -1 replaced by Page 3
+3: 0 1 3   
+3: 0 1 3   
+3: 0 1 3   
+5: 0 1 3 5 	Page -1 replaced by Page 5
+5: 0 1 3 5 
+0: 0 1 3 5 
+7: 7 1 3 5 	Page 0 replaced by Page 7
+7: 7 1 3 5 
+9: 7 9 3 5 	Page 1 replaced by Page 9
+9: 7 9 3 5 
+4: 7 9 4 5 	Page 3 replaced by Page 4
+7: 7 9 4 5 
+7: 7 9 4 5 
+6: 7 9 4 6 	Page 5 replaced by Page 6
+4: 7 9 4 6 
+7: 7 9 4 6 
+0: 0 9 4 6 	Page 7 replaced by Page 0
+1: 0 1 4 6 	Page 9 replaced by Page 1
+1: 0 1 4 6 
+0: 0 1 4 6 
+2: 0 1 2 6 	Page 4 replaced by Page 2
+2: 0 1 2 6 
+1: 0 1 2 6 
+0: 0 1 2 6 
+1: 0 1 2 6 
+8: 0 1 2 8 	Page 6 replaced by Page 8
+3: 3 1 2 8 	Page 0 replaced by Page 3
+4: 3 4 2 8 	Page 1 replaced by Page 4
+8: 3 4 2 8 
+9: 3 4 9 8 	Page 2 replaced by Page 9
+0: 3 4 9 0 	Page 8 replaced by Page 0
+9: 3 4 9 0 
+8: 8 4 9 0 	Page 3 replaced by Page 8
+3: 8 3 9 0 	Page 4 replaced by Page 3
+2: 8 3 2 0 	Page 9 replaced by Page 2
+3: 8 3 2 0 
+1: 8 3 2 1 	Page 0 replaced by Page 1
+1: 8 3 2 1 
+9: 9 3 2 1 	Page 8 replaced by Page 9
+9: 9 3 2 1 
+8: 9 8 2 1 	Page 3 replaced by Page 8
+7: 9 8 7 1 	Page 2 replaced by Page 7
+8: 9 8 7 1 
+4: 9 8 7 4 	Page 1 replaced by Page 4
+3: 3 8 7 4 	Page 9 replaced by Page 3
+3: 3 8 7 4 
+4: 3 8 7 4 
+3: 3 8 7 4 
+3: 3 8 7 4 
+4: 3 8 7 4 
+5: 3 5 7 4 	Page 8 replaced by Page 5
+6: 3 5 6 4 	Page 7 replaced by Page 6
+7: 3 5 6 7 	Page 4 replaced by Page 7
+7: 3 5 6 7 
+1: 1 5 6 7 	Page 3 replaced by Page 1
+5: 1 5 6 7 
+6: 1 5 6 7 
+9: 1 9 6 7 	Page 5 replaced by Page 9
+9: 1 9 6 7 
+9: 1 9 6 7 
+9: 1 9 6 7 
+0: 1 9 0 7 	Page 6 replaced by Page 0
+9: 1 9 0 7 
+9: 1 9 0 7 
+9: 1 9 0 7 
+4: 1 9 0 4 	Page 7 replaced by Page 4
+4: 1 9 0 4 
+8: 8 9 0 4 	Page 1 replaced by Page 8
+3: 8 3 0 4 	Page 9 replaced by Page 3
+1: 8 3 1 4 	Page 0 replaced by Page 1
+1: 8 3 1 4 
+2: 8 3 1 2 	Page 4 replaced by Page 2
+2: 8 3 1 2 
+1: 8 3 1 2 
+2: 8 3 1 2 
+3: 8 3 1 2 
+4: 4 3 1 2 	Page 8 replaced by Page 4
+4: 4 3 1 2 
+4: 4 3 1 2 
+4: 4 3 1 2 
+3: 4 3 1 2 
+4: 4 3 1 2 
+6: 4 6 1 2 	Page 3 replaced by Page 6
+6: 4 6 1 2 
+6: 4 6 1 2 
+0: 4 6 0 2 	Page 1 replaced by Page 0
+0: 4 6 0 2 
+6: 4 6 0 2 
+8: 4 6 0 8 	Page 2 replaced by Page 8
+9: 9 6 0 8 	Page 4 replaced by Page 9
+8: 9 6 0 8 
+7: 9 7 0 8 	Page 6 replaced by Page 7
+4: 9 7 4 8 	Page 0 replaced by Page 4
+3: 9 7 4 3 	Page 8 replaced by Page 3
+2: 2 7 4 3 	Page 9 replaced by Page 2
+Hit Count: 55
+
+LFU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+3: 0 1 3   	Page -1 replaced by Page 3
+3: 0 1 3   
+3: 0 1 3   
+3: 0 1 3   
+5: 0 1 3 5 	Page -1 replaced by Page 5
+5: 0 1 3 5 
+0: 0 1 3 5 
+7: 0 7 3 5 	Page 1 replaced by Page 7
+7: 0 7 3 5 
+9: 0 9 3 5 	Page 7 replaced by Page 9
+9: 0 9 3 5 
+4: 0 4 3 5 	Page 9 replaced by Page 4
+7: 0 7 3 5 	Page 4 replaced by Page 7
+7: 0 7 3 5 
+6: 0 7 3 6 	Page 5 replaced by Page 6
+4: 0 7 3 4 	Page 6 replaced by Page 4
+7: 0 7 3 4 
+0: 0 7 3 4 
+1: 0 7 3 1 	Page 4 replaced by Page 1
+1: 0 7 3 1 
+0: 0 7 3 1 
+2: 0 7 2 1 	Page 3 replaced by Page 2
+2: 0 7 2 1 
+1: 0 7 2 1 
+0: 0 7 2 1 
+1: 0 7 2 1 
+8: 0 7 8 1 	Page 2 replaced by Page 8
+3: 0 7 3 1 	Page 8 replaced by Page 3
+4: 0 4 3 1 	Page 7 replaced by Page 4
+8: 0 8 3 1 	Page 4 replaced by Page 8
+9: 0 9 3 1 	Page 8 replaced by Page 9
+0: 0 9 3 1 
+9: 0 9 3 1 
+8: 0 8 3 1 	Page 9 replaced by Page 8
+3: 0 8 3 1 
+2: 0 2 3 1 	Page 8 replaced by Page 2
+3: 0 2 3 1 
+1: 0 2 3 1 
+1: 0 2 3 1 
+9: 0 9 3 1 	Page 2 replaced by Page 9
+9: 0 9 3 1 
+8: 0 8 3 1 	Page 9 replaced by Page 8
+7: 0 7 3 1 	Page 8 replaced by Page 7
+8: 0 8 3 1 	Page 7 replaced by Page 8
+4: 0 4 3 1 	Page 8 replaced by Page 4
+3: 0 4 3 1 
+3: 0 4 3 1 
+4: 0 4 3 1 
+3: 0 4 3 1 
+3: 0 4 3 1 
+4: 0 4 3 1 
+5: 0 5 3 1 	Page 4 replaced by Page 5
+6: 0 6 3 1 	Page 5 replaced by Page 6
+7: 0 7 3 1 	Page 6 replaced by Page 7
+7: 0 7 3 1 
+1: 0 7 3 1 
+5: 5 7 3 1 	Page 0 replaced by Page 5
+6: 6 7 3 1 	Page 5 replaced by Page 6
+9: 9 7 3 1 	Page 6 replaced by Page 9
+9: 9 7 3 1 
+9: 9 7 3 1 
+9: 9 7 3 1 
+0: 9 0 3 1 	Page 7 replaced by Page 0
+9: 9 0 3 1 
+9: 9 0 3 1 
+9: 9 0 3 1 
+4: 9 4 3 1 	Page 0 replaced by Page 4
+4: 9 4 3 1 
+8: 9 8 3 1 	Page 4 replaced by Page 8
+3: 9 8 3 1 
+1: 9 8 3 1 
+1: 9 8 3 1 
+2: 9 2 3 1 	Page 8 replaced by Page 2
+2: 9 2 3 1 
+1: 9 2 3 1 
+2: 9 2 3 1 
+3: 9 2 3 1 
+4: 9 4 3 1 	Page 2 replaced by Page 4
+4: 9 4 3 1 
+4: 9 4 3 1 
+4: 9 4 3 1 
+3: 9 4 3 1 
+4: 9 4 3 1 
+6: 9 4 3 6 	Page 1 replaced by Page 6
+6: 9 4 3 6 
+6: 9 4 3 6 
+0: 9 4 3 0 	Page 6 replaced by Page 0
+0: 9 4 3 0 
+6: 9 4 3 6 	Page 0 replaced by Page 6
+8: 9 4 3 8 	Page 6 replaced by Page 8
+9: 9 4 3 8 
+8: 9 4 3 8 
+7: 9 4 3 7 	Page 8 replaced by Page 7
+4: 9 4 3 7 
+3: 9 4 3 7 
+2: 9 4 3 2 	Page 7 replaced by Page 2
+Hit Count: 59
+
+MFU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+3: 0 1 3   	Page -1 replaced by Page 3
+3: 0 1 3   
+3: 0 1 3   
+3: 0 1 3   
+5: 0 1 3 5 	Page -1 replaced by Page 5
+5: 0 1 3 5 
+0: 0 1 3 5 
+7: 0 1 7 5 	Page 3 replaced by Page 7
+7: 0 1 7 5 
+9: 9 1 7 5 	Page 0 replaced by Page 9
+9: 9 1 7 5 
+4: 4 1 7 5 	Page 9 replaced by Page 4
+7: 4 1 7 5 
+7: 4 1 7 5 
+6: 4 1 6 5 	Page 7 replaced by Page 6
+4: 4 1 6 5 
+7: 7 1 6 5 	Page 4 replaced by Page 7
+0: 0 1 6 5 	Page 7 replaced by Page 0
+1: 0 1 6 5 
+1: 0 1 6 5 
+0: 0 1 6 5 
+2: 2 1 6 5 	Page 0 replaced by Page 2
+2: 2 1 6 5 
+1: 2 1 6 5 
+0: 2 0 6 5 	Page 1 replaced by Page 0
+1: 2 1 6 5 	Page 0 replaced by Page 1
+8: 2 8 6 5 	Page 1 replaced by Page 8
+3: 3 8 6 5 	Page 2 replaced by Page 3
+4: 4 8 6 5 	Page 3 replaced by Page 4
+8: 4 8 6 5 
+9: 9 8 6 5 	Page 4 replaced by Page 9
+0: 0 8 6 5 	Page 9 replaced by Page 0
+9: 9 8 6 5 	Page 0 replaced by Page 9
+8: 9 8 6 5 
+3: 3 8 6 5 	Page 9 replaced by Page 3
+2: 2 8 6 5 	Page 3 replaced by Page 2
+3: 3 8 6 5 	Page 2 replaced by Page 3
+1: 1 8 6 5 	Page 3 replaced by Page 1
+1: 1 8 6 5 
+9: 9 8 6 5 	Page 1 replaced by Page 9
+9: 9 8 6 5 
+8: 9 8 6 5 
+7: 7 8 6 5 	Page 9 replaced by Page 7
+8: 7 8 6 5 
+4: 4 8 6 5 	Page 7 replaced by Page 4
+3: 4 3 6 5 	Page 8 replaced by Page 3
+3: 4 3 6 5 
+4: 4 3 6 5 
+3: 4 3 6 5 
+3: 4 3 6 5 
+4: 4 3 6 5 
+5: 4 3 6 5 
+6: 4 3 6 5 
+7: 4 7 6 5 	Page 3 replaced by Page 7
+7: 4 7 6 5 
+1: 4 1 6 5 	Page 7 replaced by Page 1
+5: 4 1 6 5 
+6: 4 1 6 5 
+9: 4 9 6 5 	Page 1 replaced by Page 9
+9: 4 9 6 5 
+9: 4 9 6 5 
+9: 4 9 6 5 
+0: 4 0 6 5 	Page 9 replaced by Page 0
+9: 4 9 6 5 	Page 0 replaced by Page 9
+9: 4 9 6 5 
+9: 4 9 6 5 
+4: 4 9 6 5 
+4: 4 9 6 5 
+8: 4 8 6 5 	Page 9 replaced by Page 8
+3: 3 8 6 5 	Page 4 replaced by Page 3
+1: 1 8 6 5 	Page 3 replaced by Page 1
+1: 1 8 6 5 
+2: 2 8 6 5 	Page 1 replaced by Page 2
+2: 2 8 6 5 
+1: 2 1 6 5 	Page 8 replaced by Page 1
+2: 2 1 6 5 
+3: 2 3 6 5 	Page 1 replaced by Page 3
+4: 2 4 6 5 	Page 3 replaced by Page 4
+4: 2 4 6 5 
+4: 2 4 6 5 
+4: 2 4 6 5 
+3: 2 3 6 5 	Page 4 replaced by Page 3
+4: 2 4 6 5 	Page 3 replaced by Page 4
+6: 2 4 6 5 
+6: 2 4 6 5 
+6: 2 4 6 5 
+0: 2 0 6 5 	Page 4 replaced by Page 0
+0: 2 0 6 5 
+6: 2 0 6 5 
+8: 2 8 6 5 	Page 0 replaced by Page 8
+9: 2 9 6 5 	Page 8 replaced by Page 9
+8: 2 8 6 5 	Page 9 replaced by Page 8
+7: 2 7 6 5 	Page 8 replaced by Page 7
+4: 2 4 6 5 	Page 7 replaced by Page 4
+3: 2 3 6 5 	Page 4 replaced by Page 3
+2: 2 3 6 5 
+Hit Count: 52
+
+LRU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+3: 0 1 3   	Page -1 replaced by Page 3
+3: 0 1 3   
+3: 0 1 3   
+3: 0 1 3   
+5: 0 1 3 5 	Page -1 replaced by Page 5
+5: 0 1 3 5 
+0: 0 1 3 5 
+7: 0 7 3 5 	Page 1 replaced by Page 7
+7: 0 7 3 5 
+9: 0 7 9 5 	Page 3 replaced by Page 9
+9: 0 7 9 5 
+4: 0 7 9 4 	Page 5 replaced by Page 4
+7: 0 7 9 4 
+7: 0 7 9 4 
+6: 6 7 9 4 	Page 0 replaced by Page 6
+4: 6 7 9 4 
+7: 6 7 9 4 
+0: 6 7 0 4 	Page 9 replaced by Page 0
+1: 1 7 0 4 	Page 6 replaced by Page 1
+1: 1 7 0 4 
+0: 1 7 0 4 
+2: 1 7 0 2 	Page 4 replaced by Page 2
+2: 1 7 0 2 
+1: 1 7 0 2 
+0: 1 7 0 2 
+1: 1 7 0 2 
+8: 1 8 0 2 	Page 7 replaced by Page 8
+3: 1 8 0 3 	Page 2 replaced by Page 3
+4: 1 8 4 3 	Page 0 replaced by Page 4
+8: 1 8 4 3 
+9: 9 8 4 3 	Page 1 replaced by Page 9
+0: 9 8 4 0 	Page 3 replaced by Page 0
+9: 9 8 4 0 
+8: 9 8 4 0 
+3: 9 8 3 0 	Page 4 replaced by Page 3
+2: 9 8 3 2 	Page 0 replaced by Page 2
+3: 9 8 3 2 
+1: 1 8 3 2 	Page 9 replaced by Page 1
+1: 1 8 3 2 
+9: 1 9 3 2 	Page 8 replaced by Page 9
+9: 1 9 3 2 
+8: 1 9 3 8 	Page 2 replaced by Page 8
+7: 1 9 7 8 	Page 3 replaced by Page 7
+8: 1 9 7 8 
+4: 4 9 7 8 	Page 1 replaced by Page 4
+3: 4 3 7 8 	Page 9 replaced by Page 3
+3: 4 3 7 8 
+4: 4 3 7 8 
+3: 4 3 7 8 
+3: 4 3 7 8 
+4: 4 3 7 8 
+5: 4 3 5 8 	Page 7 replaced by Page 5
+6: 4 3 5 6 	Page 8 replaced by Page 6
+7: 4 7 5 6 	Page 3 replaced by Page 7
+7: 4 7 5 6 
+1: 1 7 5 6 	Page 4 replaced by Page 1
+5: 1 7 5 6 
+6: 1 7 5 6 
+9: 1 9 5 6 	Page 7 replaced by Page 9
+9: 1 9 5 6 
+9: 1 9 5 6 
+9: 1 9 5 6 
+0: 0 9 5 6 	Page 1 replaced by Page 0
+9: 0 9 5 6 
+9: 0 9 5 6 
+9: 0 9 5 6 
+4: 0 9 4 6 	Page 5 replaced by Page 4
+4: 0 9 4 6 
+8: 0 9 4 8 	Page 6 replaced by Page 8
+3: 3 9 4 8 	Page 0 replaced by Page 3
+1: 3 1 4 8 	Page 9 replaced by Page 1
+1: 3 1 4 8 
+2: 3 1 2 8 	Page 4 replaced by Page 2
+2: 3 1 2 8 
+1: 3 1 2 8 
+2: 3 1 2 8 
+3: 3 1 2 8 
+4: 3 1 2 4 	Page 8 replaced by Page 4
+4: 3 1 2 4 
+4: 3 1 2 4 
+4: 3 1 2 4 
+3: 3 1 2 4 
+4: 3 1 2 4 
+6: 3 6 2 4 	Page 1 replaced by Page 6
+6: 3 6 2 4 
+6: 3 6 2 4 
+0: 3 6 0 4 	Page 2 replaced by Page 0
+0: 3 6 0 4 
+6: 3 6 0 4 
+8: 8 6 0 4 	Page 3 replaced by Page 8
+9: 8 6 0 9 	Page 4 replaced by Page 9
+8: 8 6 0 9 
+7: 8 6 7 9 	Page 0 replaced by Page 7
+4: 8 4 7 9 	Page 6 replaced by Page 4
+3: 8 4 7 3 	Page 9 replaced by Page 3
+2: 2 4 7 3 	Page 8 replaced by Page 2
+Hit Count: 56
+
+
+0 0 1 1 2 2 3 5 0 0 4 9 7 6 0 9 9 1 7 7 3 2 9 9 7 7 7 7 8 7 6 7 3 2 3 6 5 3 2 2 2 2 2 2 2 2 2 2 2 1 1 8 9 0 0 9 0 1 1 1 0 1 7 2 5 4 0 9 8 8 5 4 8 0 1 0 1 2 6 5 9 9 0 1 0 1 9 8 7 7 6 7 5 5 1 2 1 1 5 5 
+
+Random Pick: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+2: 0 1 2   	Page -1 replaced by Page 2
+2: 0 1 2   
+3: 0 1 2 3 	Page -1 replaced by Page 3
+5: 5 1 2 3 	Page 0 replaced by Page 5
+0: 5 1 2 0 	Page 3 replaced by Page 0
+0: 5 1 2 0 
+4: 5 1 2 4 	Page 0 replaced by Page 4
+9: 5 9 2 4 	Page 1 replaced by Page 9
+7: 5 9 2 7 	Page 4 replaced by Page 7
+6: 5 9 6 7 	Page 2 replaced by Page 6
+0: 0 9 6 7 	Page 5 replaced by Page 0
+9: 0 9 6 7 
+9: 0 9 6 7 
+1: 1 9 6 7 	Page 0 replaced by Page 1
+7: 1 9 6 7 
+7: 1 9 6 7 
+3: 1 9 6 3 	Page 7 replaced by Page 3
+2: 2 9 6 3 	Page 1 replaced by Page 2
+9: 2 9 6 3 
+9: 2 9 6 3 
+7: 2 9 7 3 	Page 6 replaced by Page 7
+7: 2 9 7 3 
+7: 2 9 7 3 
+7: 2 9 7 3 
+8: 2 9 8 3 	Page 7 replaced by Page 8
+7: 2 9 8 7 	Page 3 replaced by Page 7
+6: 2 6 8 7 	Page 9 replaced by Page 6
+7: 2 6 8 7 
+3: 2 3 8 7 	Page 6 replaced by Page 3
+2: 2 3 8 7 
+3: 2 3 8 7 
+6: 2 6 8 7 	Page 3 replaced by Page 6
+5: 2 6 8 5 	Page 7 replaced by Page 5
+3: 2 6 3 5 	Page 8 replaced by Page 3
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+2: 2 6 3 5 
+1: 1 6 3 5 	Page 2 replaced by Page 1
+1: 1 6 3 5 
+8: 1 6 3 8 	Page 5 replaced by Page 8
+9: 1 6 9 8 	Page 3 replaced by Page 9
+0: 1 0 9 8 	Page 6 replaced by Page 0
+0: 1 0 9 8 
+9: 1 0 9 8 
+0: 1 0 9 8 
+1: 1 0 9 8 
+1: 1 0 9 8 
+1: 1 0 9 8 
+0: 1 0 9 8 
+1: 1 0 9 8 
+7: 1 0 7 8 	Page 9 replaced by Page 7
+2: 1 0 7 2 	Page 8 replaced by Page 2
+5: 5 0 7 2 	Page 1 replaced by Page 5
+4: 5 0 4 2 	Page 7 replaced by Page 4
+0: 5 0 4 2 
+9: 9 0 4 2 	Page 5 replaced by Page 9
+8: 8 0 4 2 	Page 9 replaced by Page 8
+8: 8 0 4 2 
+5: 8 5 4 2 	Page 0 replaced by Page 5
+4: 8 5 4 2 
+8: 8 5 4 2 
+0: 8 5 4 0 	Page 2 replaced by Page 0
+1: 1 5 4 0 	Page 8 replaced by Page 1
+0: 1 5 4 0 
+1: 1 5 4 0 
+2: 1 5 2 0 	Page 4 replaced by Page 2
+6: 1 5 2 6 	Page 0 replaced by Page 6
+5: 1 5 2 6 
+9: 1 9 2 6 	Page 5 replaced by Page 9
+9: 1 9 2 6 
+0: 1 0 2 6 	Page 9 replaced by Page 0
+1: 1 0 2 6 
+0: 1 0 2 6 
+1: 1 0 2 6 
+9: 1 9 2 6 	Page 0 replaced by Page 9
+8: 8 9 2 6 	Page 1 replaced by Page 8
+7: 8 7 2 6 	Page 9 replaced by Page 7
+7: 8 7 2 6 
+6: 8 7 2 6 
+7: 8 7 2 6 
+5: 8 7 5 6 	Page 2 replaced by Page 5
+5: 8 7 5 6 
+1: 8 1 5 6 	Page 7 replaced by Page 1
+2: 8 2 5 6 	Page 1 replaced by Page 2
+1: 8 1 5 6 	Page 2 replaced by Page 1
+1: 8 1 5 6 
+5: 8 1 5 6 
+5: 8 1 5 6 
+Hit Count: 54
+
+FIFO: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+2: 0 1 2   	Page -1 replaced by Page 2
+2: 0 1 2   
+3: 0 1 2 3 	Page -1 replaced by Page 3
+5: 5 1 2 3 	Page 0 replaced by Page 5
+0: 5 0 2 3 	Page 1 replaced by Page 0
+0: 5 0 2 3 
+4: 5 0 4 3 	Page 2 replaced by Page 4
+9: 5 0 4 9 	Page 3 replaced by Page 9
+7: 7 0 4 9 	Page 5 replaced by Page 7
+6: 7 6 4 9 	Page 0 replaced by Page 6
+0: 7 6 0 9 	Page 4 replaced by Page 0
+9: 7 6 0 9 
+9: 7 6 0 9 
+1: 7 6 0 1 	Page 9 replaced by Page 1
+7: 7 6 0 1 
+7: 7 6 0 1 
+3: 3 6 0 1 	Page 7 replaced by Page 3
+2: 3 2 0 1 	Page 6 replaced by Page 2
+9: 3 2 9 1 	Page 0 replaced by Page 9
+9: 3 2 9 1 
+7: 3 2 9 7 	Page 1 replaced by Page 7
+7: 3 2 9 7 
+7: 3 2 9 7 
+7: 3 2 9 7 
+8: 8 2 9 7 	Page 3 replaced by Page 8
+7: 8 2 9 7 
+6: 8 6 9 7 	Page 2 replaced by Page 6
+7: 8 6 9 7 
+3: 8 6 3 7 	Page 9 replaced by Page 3
+2: 8 6 3 2 	Page 7 replaced by Page 2
+3: 8 6 3 2 
+6: 8 6 3 2 
+5: 5 6 3 2 	Page 8 replaced by Page 5
+3: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+2: 5 6 3 2 
+1: 5 1 3 2 	Page 6 replaced by Page 1
+1: 5 1 3 2 
+8: 5 1 8 2 	Page 3 replaced by Page 8
+9: 5 1 8 9 	Page 2 replaced by Page 9
+0: 0 1 8 9 	Page 5 replaced by Page 0
+0: 0 1 8 9 
+9: 0 1 8 9 
+0: 0 1 8 9 
+1: 0 1 8 9 
+1: 0 1 8 9 
+1: 0 1 8 9 
+0: 0 1 8 9 
+1: 0 1 8 9 
+7: 0 7 8 9 	Page 1 replaced by Page 7
+2: 0 7 2 9 	Page 8 replaced by Page 2
+5: 0 7 2 5 	Page 9 replaced by Page 5
+4: 4 7 2 5 	Page 0 replaced by Page 4
+0: 4 0 2 5 	Page 7 replaced by Page 0
+9: 4 0 9 5 	Page 2 replaced by Page 9
+8: 4 0 9 8 	Page 5 replaced by Page 8
+8: 4 0 9 8 
+5: 5 0 9 8 	Page 4 replaced by Page 5
+4: 5 4 9 8 	Page 0 replaced by Page 4
+8: 5 4 9 8 
+0: 5 4 0 8 	Page 9 replaced by Page 0
+1: 5 4 0 1 	Page 8 replaced by Page 1
+0: 5 4 0 1 
+1: 5 4 0 1 
+2: 2 4 0 1 	Page 5 replaced by Page 2
+6: 2 6 0 1 	Page 4 replaced by Page 6
+5: 2 6 5 1 	Page 0 replaced by Page 5
+9: 2 6 5 9 	Page 1 replaced by Page 9
+9: 2 6 5 9 
+0: 0 6 5 9 	Page 2 replaced by Page 0
+1: 0 1 5 9 	Page 6 replaced by Page 1
+0: 0 1 5 9 
+1: 0 1 5 9 
+9: 0 1 5 9 
+8: 0 1 8 9 	Page 5 replaced by Page 8
+7: 0 1 8 7 	Page 9 replaced by Page 7
+7: 0 1 8 7 
+6: 6 1 8 7 	Page 0 replaced by Page 6
+7: 6 1 8 7 
+5: 6 5 8 7 	Page 1 replaced by Page 5
+5: 6 5 8 7 
+1: 6 5 1 7 	Page 8 replaced by Page 1
+2: 6 5 1 2 	Page 7 replaced by Page 2
+1: 6 5 1 2 
+1: 6 5 1 2 
+5: 6 5 1 2 
+5: 6 5 1 2 
+Hit Count: 52
+
+LFU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+2: 0 1 2   	Page -1 replaced by Page 2
+2: 0 1 2   
+3: 0 1 2 3 	Page -1 replaced by Page 3
+5: 0 1 2 5 	Page 3 replaced by Page 5
+0: 0 1 2 5 
+0: 0 1 2 5 
+4: 0 1 2 4 	Page 5 replaced by Page 4
+9: 0 1 2 9 	Page 4 replaced by Page 9
+7: 0 1 2 7 	Page 9 replaced by Page 7
+6: 0 1 2 6 	Page 7 replaced by Page 6
+0: 0 1 2 6 
+9: 0 1 2 9 	Page 6 replaced by Page 9
+9: 0 1 2 9 
+1: 0 1 2 9 
+7: 0 1 7 9 	Page 2 replaced by Page 7
+7: 0 1 7 9 
+3: 0 3 7 9 	Page 1 replaced by Page 3
+2: 0 2 7 9 	Page 3 replaced by Page 2
+9: 0 2 7 9 
+9: 0 2 7 9 
+7: 0 2 7 9 
+7: 0 2 7 9 
+7: 0 2 7 9 
+7: 0 2 7 9 
+8: 0 8 7 9 	Page 2 replaced by Page 8
+7: 0 8 7 9 
+6: 0 6 7 9 	Page 8 replaced by Page 6
+7: 0 6 7 9 
+3: 0 3 7 9 	Page 6 replaced by Page 3
+2: 0 2 7 9 	Page 3 replaced by Page 2
+3: 0 3 7 9 	Page 2 replaced by Page 3
+6: 0 6 7 9 	Page 3 replaced by Page 6
+5: 0 5 7 9 	Page 6 replaced by Page 5
+3: 0 3 7 9 	Page 5 replaced by Page 3
+2: 2 3 7 9 	Page 0 replaced by Page 2
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+2: 2 3 7 9 
+1: 2 1 7 9 	Page 3 replaced by Page 1
+1: 2 1 7 9 
+8: 2 8 7 9 	Page 1 replaced by Page 8
+9: 2 8 7 9 
+0: 2 0 7 9 	Page 8 replaced by Page 0
+0: 2 0 7 9 
+9: 2 0 7 9 
+0: 2 0 7 9 
+1: 2 0 7 1 	Page 9 replaced by Page 1
+1: 2 0 7 1 
+1: 2 0 7 1 
+0: 2 0 7 1 
+1: 2 0 7 1 
+7: 2 0 7 1 
+2: 2 0 7 1 
+5: 2 5 7 1 	Page 0 replaced by Page 5
+4: 2 4 7 1 	Page 5 replaced by Page 4
+0: 2 0 7 1 	Page 4 replaced by Page 0
+9: 2 0 7 9 	Page 1 replaced by Page 9
+8: 2 0 7 8 	Page 9 replaced by Page 8
+8: 2 0 7 8 
+5: 2 0 7 5 	Page 8 replaced by Page 5
+4: 2 0 7 4 	Page 5 replaced by Page 4
+8: 2 0 7 8 	Page 4 replaced by Page 8
+0: 2 0 7 8 
+1: 2 0 7 1 	Page 8 replaced by Page 1
+0: 2 0 7 1 
+1: 2 0 7 1 
+2: 2 0 7 1 
+6: 2 0 6 1 	Page 7 replaced by Page 6
+5: 2 0 5 1 	Page 6 replaced by Page 5
+9: 2 0 9 1 	Page 5 replaced by Page 9
+9: 2 0 9 1 
+0: 2 0 9 1 
+1: 2 0 9 1 
+0: 2 0 9 1 
+1: 2 0 9 1 
+9: 2 0 9 1 
+8: 2 0 8 1 	Page 9 replaced by Page 8
+7: 2 0 7 1 	Page 8 replaced by Page 7
+7: 2 0 7 1 
+6: 2 0 6 1 	Page 7 replaced by Page 6
+7: 2 0 7 1 	Page 6 replaced by Page 7
+5: 2 0 5 1 	Page 7 replaced by Page 5
+5: 2 0 5 1 
+1: 2 0 5 1 
+2: 2 0 5 1 
+1: 2 0 5 1 
+1: 2 0 5 1 
+5: 2 0 5 1 
+5: 2 0 5 1 
+Hit Count: 57
+
+MFU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+2: 0 1 2   	Page -1 replaced by Page 2
+2: 0 1 2   
+3: 0 1 2 3 	Page -1 replaced by Page 3
+5: 5 1 2 3 	Page 0 replaced by Page 5
+0: 5 0 2 3 	Page 1 replaced by Page 0
+0: 5 0 2 3 
+4: 5 4 2 3 	Page 0 replaced by Page 4
+9: 5 4 9 3 	Page 2 replaced by Page 9
+7: 7 4 9 3 	Page 5 replaced by Page 7
+6: 6 4 9 3 	Page 7 replaced by Page 6
+0: 0 4 9 3 	Page 6 replaced by Page 0
+9: 0 4 9 3 
+9: 0 4 9 3 
+1: 1 4 9 3 	Page 0 replaced by Page 1
+7: 7 4 9 3 	Page 1 replaced by Page 7
+7: 7 4 9 3 
+3: 7 4 9 3 
+2: 2 4 9 3 	Page 7 replaced by Page 2
+9: 2 4 9 3 
+9: 2 4 9 3 
+7: 2 4 7 3 	Page 9 replaced by Page 7
+7: 2 4 7 3 
+7: 2 4 7 3 
+7: 2 4 7 3 
+8: 2 4 8 3 	Page 7 replaced by Page 8
+7: 7 4 8 3 	Page 2 replaced by Page 7
+6: 6 4 8 3 	Page 7 replaced by Page 6
+7: 7 4 8 3 	Page 6 replaced by Page 7
+3: 7 4 8 3 
+2: 2 4 8 3 	Page 7 replaced by Page 2
+3: 2 4 8 3 
+6: 6 4 8 3 	Page 2 replaced by Page 6
+5: 6 4 8 5 	Page 3 replaced by Page 5
+3: 3 4 8 5 	Page 6 replaced by Page 3
+2: 2 4 8 5 	Page 3 replaced by Page 2
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+2: 2 4 8 5 
+1: 1 4 8 5 	Page 2 replaced by Page 1
+1: 1 4 8 5 
+8: 1 4 8 5 
+9: 9 4 8 5 	Page 1 replaced by Page 9
+0: 0 4 8 5 	Page 9 replaced by Page 0
+0: 0 4 8 5 
+9: 9 4 8 5 	Page 0 replaced by Page 9
+0: 0 4 8 5 	Page 9 replaced by Page 0
+1: 1 4 8 5 	Page 0 replaced by Page 1
+1: 1 4 8 5 
+1: 1 4 8 5 
+0: 0 4 8 5 	Page 1 replaced by Page 0
+1: 1 4 8 5 	Page 0 replaced by Page 1
+7: 7 4 8 5 	Page 1 replaced by Page 7
+2: 2 4 8 5 	Page 7 replaced by Page 2
+5: 2 4 8 5 
+4: 2 4 8 5 
+0: 0 4 8 5 	Page 2 replaced by Page 0
+9: 9 4 8 5 	Page 0 replaced by Page 9
+8: 9 4 8 5 
+8: 9 4 8 5 
+5: 9 4 8 5 
+4: 9 4 8 5 
+8: 9 4 8 5 
+0: 0 4 8 5 	Page 9 replaced by Page 0
+1: 1 4 8 5 	Page 0 replaced by Page 1
+0: 0 4 8 5 	Page 1 replaced by Page 0
+1: 1 4 8 5 	Page 0 replaced by Page 1
+2: 2 4 8 5 	Page 1 replaced by Page 2
+6: 6 4 8 5 	Page 2 replaced by Page 6
+5: 6 4 8 5 
+9: 6 4 9 5 	Page 8 replaced by Page 9
+9: 6 4 9 5 
+0: 6 4 0 5 	Page 9 replaced by Page 0
+1: 6 4 1 5 	Page 0 replaced by Page 1
+0: 6 4 0 5 	Page 1 replaced by Page 0
+1: 6 4 1 5 	Page 0 replaced by Page 1
+9: 6 4 9 5 	Page 1 replaced by Page 9
+8: 6 4 8 5 	Page 9 replaced by Page 8
+7: 6 4 7 5 	Page 8 replaced by Page 7
+7: 6 4 7 5 
+6: 6 4 7 5 
+7: 6 4 7 5 
+5: 6 4 7 5 
+5: 6 4 7 5 
+1: 6 4 1 5 	Page 7 replaced by Page 1
+2: 6 4 2 5 	Page 1 replaced by Page 2
+1: 6 4 1 5 	Page 2 replaced by Page 1
+1: 6 4 1 5 
+5: 6 4 1 5 
+5: 6 4 1 5 
+Hit Count: 47
+
+LRU: 
+0: 0       	Page -1 replaced by Page 0
+0: 0       
+1: 0 1     	Page -1 replaced by Page 1
+1: 0 1     
+2: 0 1 2   	Page -1 replaced by Page 2
+2: 0 1 2   
+3: 0 1 2 3 	Page -1 replaced by Page 3
+5: 5 1 2 3 	Page 0 replaced by Page 5
+0: 5 0 2 3 	Page 1 replaced by Page 0
+0: 5 0 2 3 
+4: 5 0 4 3 	Page 2 replaced by Page 4
+9: 5 0 4 9 	Page 3 replaced by Page 9
+7: 7 0 4 9 	Page 5 replaced by Page 7
+6: 7 6 4 9 	Page 0 replaced by Page 6
+0: 7 6 0 9 	Page 4 replaced by Page 0
+9: 7 6 0 9 
+9: 7 6 0 9 
+1: 1 6 0 9 	Page 7 replaced by Page 1
+7: 1 7 0 9 	Page 6 replaced by Page 7
+7: 1 7 0 9 
+3: 1 7 3 9 	Page 0 replaced by Page 3
+2: 1 7 3 2 	Page 9 replaced by Page 2
+9: 9 7 3 2 	Page 1 replaced by Page 9
+9: 9 7 3 2 
+7: 9 7 3 2 
+7: 9 7 3 2 
+7: 9 7 3 2 
+7: 9 7 3 2 
+8: 9 7 8 2 	Page 3 replaced by Page 8
+7: 9 7 8 2 
+6: 9 7 8 6 	Page 2 replaced by Page 6
+7: 9 7 8 6 
+3: 3 7 8 6 	Page 9 replaced by Page 3
+2: 3 7 2 6 	Page 8 replaced by Page 2
+3: 3 7 2 6 
+6: 3 7 2 6 
+5: 3 5 2 6 	Page 7 replaced by Page 5
+3: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+2: 3 5 2 6 
+1: 3 5 2 1 	Page 6 replaced by Page 1
+1: 3 5 2 1 
+8: 3 8 2 1 	Page 5 replaced by Page 8
+9: 9 8 2 1 	Page 3 replaced by Page 9
+0: 9 8 0 1 	Page 2 replaced by Page 0
+0: 9 8 0 1 
+9: 9 8 0 1 
+0: 9 8 0 1 
+1: 9 8 0 1 
+1: 9 8 0 1 
+1: 9 8 0 1 
+0: 9 8 0 1 
+1: 9 8 0 1 
+7: 9 7 0 1 	Page 8 replaced by Page 7
+2: 2 7 0 1 	Page 9 replaced by Page 2
+5: 2 7 5 1 	Page 0 replaced by Page 5
+4: 2 7 5 4 	Page 1 replaced by Page 4
+0: 2 0 5 4 	Page 7 replaced by Page 0
+9: 9 0 5 4 	Page 2 replaced by Page 9
+8: 9 0 8 4 	Page 5 replaced by Page 8
+8: 9 0 8 4 
+5: 9 0 8 5 	Page 4 replaced by Page 5
+4: 9 4 8 5 	Page 0 replaced by Page 4
+8: 9 4 8 5 
+0: 0 4 8 5 	Page 9 replaced by Page 0
+1: 0 4 8 1 	Page 5 replaced by Page 1
+0: 0 4 8 1 
+1: 0 4 8 1 
+2: 0 2 8 1 	Page 4 replaced by Page 2
+6: 0 2 6 1 	Page 8 replaced by Page 6
+5: 5 2 6 1 	Page 0 replaced by Page 5
+9: 5 2 6 9 	Page 1 replaced by Page 9
+9: 5 2 6 9 
+0: 5 0 6 9 	Page 2 replaced by Page 0
+1: 5 0 1 9 	Page 6 replaced by Page 1
+0: 5 0 1 9 
+1: 5 0 1 9 
+9: 5 0 1 9 
+8: 8 0 1 9 	Page 5 replaced by Page 8
+7: 8 7 1 9 	Page 0 replaced by Page 7
+7: 8 7 1 9 
+6: 8 7 6 9 	Page 1 replaced by Page 6
+7: 8 7 6 9 
+5: 8 7 6 5 	Page 9 replaced by Page 5
+5: 8 7 6 5 
+1: 1 7 6 5 	Page 8 replaced by Page 1
+2: 1 7 2 5 	Page 6 replaced by Page 2
+1: 1 7 2 5 
+1: 1 7 2 5 
+5: 1 7 2 5 
+5: 1 7 2 5 
+Hit Count: 52
+
+
+0 9 8 7 9 9 0 4 3 9 9 0 1 2 4 4 3 5 5 4 3 1 2 9 0 7 7 9 0 8 7 3 3 3 4 9 1 1 2 3 3 7 8 9 5 6 1 3 2 1 8 9 4 9 1 2 5 6 7 7 7 0 0 9 0 9 8 9 9 8 9 0 9 9 9 9 5 4 4 4 3 4 5 4 3 7 8 0 9 9 9 0 0 5 5 6 7 1 1 1 
+
+Random Pick: 
+0: 0       	Page -1 replaced by Page 0
+9: 0 9     	Page -1 replaced by Page 9
+8: 0 9 8   	Page -1 replaced by Page 8
+7: 0 9 8 7 	Page -1 replaced by Page 7
+9: 0 9 8 7 
+9: 0 9 8 7 
+0: 0 9 8 7 
+4: 0 4 8 7 	Page 9 replaced by Page 4
+3: 3 4 8 7 	Page 0 replaced by Page 3
+9: 3 4 9 7 	Page 8 replaced by Page 9
+9: 3 4 9 7 
+0: 3 4 0 7 	Page 9 replaced by Page 0
+1: 3 4 0 1 	Page 7 replaced by Page 1
+2: 3 4 2 1 	Page 0 replaced by Page 2
+4: 3 4 2 1 
+4: 3 4 2 1 
+3: 3 4 2 1 
+5: 3 5 2 1 	Page 4 replaced by Page 5
+5: 3 5 2 1 
+4: 3 5 2 4 	Page 1 replaced by Page 4
+3: 3 5 2 4 
+1: 3 5 1 4 	Page 2 replaced by Page 1
+2: 2 5 1 4 	Page 3 replaced by Page 2
+9: 2 5 9 4 	Page 1 replaced by Page 9
+0: 2 5 0 4 	Page 9 replaced by Page 0
+7: 7 5 0 4 	Page 2 replaced by Page 7
+7: 7 5 0 4 
+9: 7 5 0 9 	Page 4 replaced by Page 9
+0: 7 5 0 9 
+8: 7 8 0 9 	Page 5 replaced by Page 8
+7: 7 8 0 9 
+3: 3 8 0 9 	Page 7 replaced by Page 3
+3: 3 8 0 9 
+3: 3 8 0 9 
+4: 4 8 0 9 	Page 3 replaced by Page 4
+9: 4 8 0 9 
+1: 4 1 0 9 	Page 8 replaced by Page 1
+1: 4 1 0 9 
+2: 2 1 0 9 	Page 4 replaced by Page 2
+3: 3 1 0 9 	Page 2 replaced by Page 3
+3: 3 1 0 9 
+7: 7 1 0 9 	Page 3 replaced by Page 7
+8: 7 1 0 8 	Page 9 replaced by Page 8
+9: 7 9 0 8 	Page 1 replaced by Page 9
+5: 7 9 5 8 	Page 0 replaced by Page 5
+6: 7 9 5 6 	Page 8 replaced by Page 6
+1: 7 1 5 6 	Page 9 replaced by Page 1
+3: 7 1 3 6 	Page 5 replaced by Page 3
+2: 7 2 3 6 	Page 1 replaced by Page 2
+1: 1 2 3 6 	Page 7 replaced by Page 1
+8: 1 2 8 6 	Page 3 replaced by Page 8
+9: 1 2 8 9 	Page 6 replaced by Page 9
+4: 4 2 8 9 	Page 1 replaced by Page 4
+9: 4 2 8 9 
+1: 1 2 8 9 	Page 4 replaced by Page 1
+2: 1 2 8 9 
+5: 1 5 8 9 	Page 2 replaced by Page 5
+6: 1 6 8 9 	Page 5 replaced by Page 6
+7: 1 6 7 9 	Page 8 replaced by Page 7
+7: 1 6 7 9 
+7: 1 6 7 9 
+0: 0 6 7 9 	Page 1 replaced by Page 0
+0: 0 6 7 9 
+9: 0 6 7 9 
+0: 0 6 7 9 
+9: 0 6 7 9 
+8: 0 8 7 9 	Page 6 replaced by Page 8
+9: 0 8 7 9 
+9: 0 8 7 9 
+8: 0 8 7 9 
+9: 0 8 7 9 
+0: 0 8 7 9 
+9: 0 8 7 9 
+9: 0 8 7 9 
+9: 0 8 7 9 
+9: 0 8 7 9 
+5: 0 8 7 5 	Page 9 replaced by Page 5
+4: 0 8 4 5 	Page 7 replaced by Page 4
+4: 0 8 4 5 
+4: 0 8 4 5 
+3: 0 8 4 3 	Page 5 replaced by Page 3
+4: 0 8 4 3 
+5: 0 8 4 5 	Page 3 replaced by Page 5
+4: 0 8 4 5 
+3: 0 8 3 5 	Page 4 replaced by Page 3
+7: 0 8 7 5 	Page 3 replaced by Page 7
+8: 0 8 7 5 
+0: 0 8 7 5 
+9: 9 8 7 5 	Page 0 replaced by Page 9
+9: 9 8 7 5 
+9: 9 8 7 5 
+0: 0 8 7 5 	Page 9 replaced by Page 0
+0: 0 8 7 5 
+5: 0 8 7 5 
+5: 0 8 7 5 
+6: 6 8 7 5 	Page 0 replaced by Page 6
+7: 6 8 7 5 
+1: 6 1 7 5 	Page 8 replaced by Page 1
+1: 6 1 7 5 
+1: 6 1 7 5 
+Hit Count: 48
+
+FIFO: 
+0: 0       	Page -1 replaced by Page 0
+9: 0 9     	Page -1 replaced by Page 9
+8: 0 9 8   	Page -1 replaced by Page 8
+7: 0 9 8 7 	Page -1 replaced by Page 7
+9: 0 9 8 7 
+9: 0 9 8 7 
+0: 0 9 8 7 
+4: 4 9 8 7 	Page 0 replaced by Page 4
+3: 4 3 8 7 	Page 9 replaced by Page 3
+9: 4 3 9 7 	Page 8 replaced by Page 9
+9: 4 3 9 7 
+0: 4 3 9 0 	Page 7 replaced by Page 0
+1: 1 3 9 0 	Page 4 replaced by Page 1
+2: 1 2 9 0 	Page 3 replaced by Page 2
+4: 1 2 4 0 	Page 9 replaced by Page 4
+4: 1 2 4 0 
+3: 1 2 4 3 	Page 0 replaced by Page 3
+5: 5 2 4 3 	Page 1 replaced by Page 5
+5: 5 2 4 3 
+4: 5 2 4 3 
+3: 5 2 4 3 
+1: 5 1 4 3 	Page 2 replaced by Page 1
+2: 5 1 2 3 	Page 4 replaced by Page 2
+9: 5 1 2 9 	Page 3 replaced by Page 9
+0: 0 1 2 9 	Page 5 replaced by Page 0
+7: 0 7 2 9 	Page 1 replaced by Page 7
+7: 0 7 2 9 
+9: 0 7 2 9 
+0: 0 7 2 9 
+8: 0 7 8 9 	Page 2 replaced by Page 8
+7: 0 7 8 9 
+3: 0 7 8 3 	Page 9 replaced by Page 3
+3: 0 7 8 3 
+3: 0 7 8 3 
+4: 4 7 8 3 	Page 0 replaced by Page 4
+9: 4 9 8 3 	Page 7 replaced by Page 9
+1: 4 9 1 3 	Page 8 replaced by Page 1
+1: 4 9 1 3 
+2: 4 9 1 2 	Page 3 replaced by Page 2
+3: 3 9 1 2 	Page 4 replaced by Page 3
+3: 3 9 1 2 
+7: 3 7 1 2 	Page 9 replaced by Page 7
+8: 3 7 8 2 	Page 1 replaced by Page 8
+9: 3 7 8 9 	Page 2 replaced by Page 9
+5: 5 7 8 9 	Page 3 replaced by Page 5
+6: 5 6 8 9 	Page 7 replaced by Page 6
+1: 5 6 1 9 	Page 8 replaced by Page 1
+3: 5 6 1 3 	Page 9 replaced by Page 3
+2: 2 6 1 3 	Page 5 replaced by Page 2
+1: 2 6 1 3 
+8: 2 8 1 3 	Page 6 replaced by Page 8
+9: 2 8 9 3 	Page 1 replaced by Page 9
+4: 2 8 9 4 	Page 3 replaced by Page 4
+9: 2 8 9 4 
+1: 1 8 9 4 	Page 2 replaced by Page 1
+2: 1 2 9 4 	Page 8 replaced by Page 2
+5: 1 2 5 4 	Page 9 replaced by Page 5
+6: 1 2 5 6 	Page 4 replaced by Page 6
+7: 7 2 5 6 	Page 1 replaced by Page 7
+7: 7 2 5 6 
+7: 7 2 5 6 
+0: 7 0 5 6 	Page 2 replaced by Page 0
+0: 7 0 5 6 
+9: 7 0 9 6 	Page 5 replaced by Page 9
+0: 7 0 9 6 
+9: 7 0 9 6 
+8: 7 0 9 8 	Page 6 replaced by Page 8
+9: 7 0 9 8 
+9: 7 0 9 8 
+8: 7 0 9 8 
+9: 7 0 9 8 
+0: 7 0 9 8 
+9: 7 0 9 8 
+9: 7 0 9 8 
+9: 7 0 9 8 
+9: 7 0 9 8 
+5: 5 0 9 8 	Page 7 replaced by Page 5
+4: 5 4 9 8 	Page 0 replaced by Page 4
+4: 5 4 9 8 
+4: 5 4 9 8 
+3: 5 4 3 8 	Page 9 replaced by Page 3
+4: 5 4 3 8 
+5: 5 4 3 8 
+4: 5 4 3 8 
+3: 5 4 3 8 
+7: 5 4 3 7 	Page 8 replaced by Page 7
+8: 8 4 3 7 	Page 5 replaced by Page 8
+0: 8 0 3 7 	Page 4 replaced by Page 0
+9: 8 0 9 7 	Page 3 replaced by Page 9
+9: 8 0 9 7 
+9: 8 0 9 7 
+0: 8 0 9 7 
+0: 8 0 9 7 
+5: 8 0 9 5 	Page 7 replaced by Page 5
+5: 8 0 9 5 
+6: 6 0 9 5 	Page 8 replaced by Page 6
+7: 6 7 9 5 	Page 0 replaced by Page 7
+1: 6 7 1 5 	Page 9 replaced by Page 1
+1: 6 7 1 5 
+1: 6 7 1 5 
+Hit Count: 45
+
+LFU: 
+0: 0       	Page -1 replaced by Page 0
+9: 0 9     	Page -1 replaced by Page 9
+8: 0 9 8   	Page -1 replaced by Page 8
+7: 0 9 8 7 	Page -1 replaced by Page 7
+9: 0 9 8 7 
+9: 0 9 8 7 
+0: 0 9 8 7 
+4: 0 9 4 7 	Page 8 replaced by Page 4
+3: 0 9 3 7 	Page 4 replaced by Page 3
+9: 0 9 3 7 
+9: 0 9 3 7 
+0: 0 9 3 7 
+1: 0 9 1 7 	Page 3 replaced by Page 1
+2: 0 9 2 7 	Page 1 replaced by Page 2
+4: 0 9 4 7 	Page 2 replaced by Page 4
+4: 0 9 4 7 
+3: 0 9 4 3 	Page 7 replaced by Page 3
+5: 0 9 4 5 	Page 3 replaced by Page 5
+5: 0 9 4 5 
+4: 0 9 4 5 
+3: 0 9 4 3 	Page 5 replaced by Page 3
+1: 1 9 4 3 	Page 0 replaced by Page 1
+2: 2 9 4 3 	Page 1 replaced by Page 2
+9: 2 9 4 3 
+0: 0 9 4 3 	Page 2 replaced by Page 0
+7: 0 9 4 7 	Page 3 replaced by Page 7
+7: 0 9 4 7 
+9: 0 9 4 7 
+0: 0 9 4 7 
+8: 0 9 4 8 	Page 7 replaced by Page 8
+7: 0 9 4 7 	Page 8 replaced by Page 7
+3: 0 9 3 7 	Page 4 replaced by Page 3
+3: 0 9 3 7 
+3: 0 9 3 7 
+4: 0 9 3 4 	Page 7 replaced by Page 4
+9: 0 9 3 4 
+1: 1 9 3 4 	Page 0 replaced by Page 1
+1: 1 9 3 4 
+2: 2 9 3 4 	Page 1 replaced by Page 2
+3: 2 9 3 4 
+3: 2 9 3 4 
+7: 7 9 3 4 	Page 2 replaced by Page 7
+8: 8 9 3 4 	Page 7 replaced by Page 8
+9: 8 9 3 4 
+5: 5 9 3 4 	Page 8 replaced by Page 5
+6: 6 9 3 4 	Page 5 replaced by Page 6
+1: 1 9 3 4 	Page 6 replaced by Page 1
+3: 1 9 3 4 
+2: 2 9 3 4 	Page 1 replaced by Page 2
+1: 1 9 3 4 	Page 2 replaced by Page 1
+8: 1 9 3 8 	Page 4 replaced by Page 8
+9: 1 9 3 8 
+4: 1 9 3 4 	Page 8 replaced by Page 4
+9: 1 9 3 4 
+1: 1 9 3 4 
+2: 1 9 3 2 	Page 4 replaced by Page 2
+5: 1 9 3 5 	Page 2 replaced by Page 5
+6: 1 9 3 6 	Page 5 replaced by Page 6
+7: 1 9 3 7 	Page 6 replaced by Page 7
+7: 1 9 3 7 
+7: 1 9 3 7 
+0: 0 9 3 7 	Page 1 replaced by Page 0
+0: 0 9 3 7 
+9: 0 9 3 7 
+0: 0 9 3 7 
+9: 0 9 3 7 
+8: 8 9 3 7 	Page 0 replaced by Page 8
+9: 8 9 3 7 
+9: 8 9 3 7 
+8: 8 9 3 7 
+9: 8 9 3 7 
+0: 0 9 3 7 	Page 8 replaced by Page 0
+9: 0 9 3 7 
+9: 0 9 3 7 
+9: 0 9 3 7 
+9: 0 9 3 7 
+5: 0 9 3 5 	Page 7 replaced by Page 5
+4: 0 9 3 4 	Page 5 replaced by Page 4
+4: 0 9 3 4 
+4: 0 9 3 4 
+3: 0 9 3 4 
+4: 0 9 3 4 
+5: 5 9 3 4 	Page 0 replaced by Page 5
+4: 5 9 3 4 
+3: 5 9 3 4 
+7: 7 9 3 4 	Page 5 replaced by Page 7
+8: 8 9 3 4 	Page 7 replaced by Page 8
+0: 0 9 3 4 	Page 8 replaced by Page 0
+9: 0 9 3 4 
+9: 0 9 3 4 
+9: 0 9 3 4 
+0: 0 9 3 4 
+0: 0 9 3 4 
+5: 0 9 5 4 	Page 3 replaced by Page 5
+5: 0 9 5 4 
+6: 0 9 6 4 	Page 5 replaced by Page 6
+7: 0 9 7 4 	Page 6 replaced by Page 7
+1: 0 9 1 4 	Page 7 replaced by Page 1
+1: 0 9 1 4 
+1: 0 9 1 4 
+Hit Count: 52
+
+MFU: 
+0: 0       	Page -1 replaced by Page 0
+9: 0 9     	Page -1 replaced by Page 9
+8: 0 9 8   	Page -1 replaced by Page 8
+7: 0 9 8 7 	Page -1 replaced by Page 7
+9: 0 9 8 7 
+9: 0 9 8 7 
+0: 0 9 8 7 
+4: 0 4 8 7 	Page 9 replaced by Page 4
+3: 3 4 8 7 	Page 0 replaced by Page 3
+9: 9 4 8 7 	Page 3 replaced by Page 9
+9: 9 4 8 7 
+0: 0 4 8 7 	Page 9 replaced by Page 0
+1: 1 4 8 7 	Page 0 replaced by Page 1
+2: 2 4 8 7 	Page 1 replaced by Page 2
+4: 2 4 8 7 
+4: 2 4 8 7 
+3: 2 3 8 7 	Page 4 replaced by Page 3
+5: 2 5 8 7 	Page 3 replaced by Page 5
+5: 2 5 8 7 
+4: 2 4 8 7 	Page 5 replaced by Page 4
+3: 2 3 8 7 	Page 4 replaced by Page 3
+1: 2 1 8 7 	Page 3 replaced by Page 1
+2: 2 1 8 7 
+9: 9 1 8 7 	Page 2 replaced by Page 9
+0: 0 1 8 7 	Page 9 replaced by Page 0
+7: 0 1 8 7 
+7: 0 1 8 7 
+9: 9 1 8 7 	Page 0 replaced by Page 9
+0: 0 1 8 7 	Page 9 replaced by Page 0
+8: 0 1 8 7 
+7: 0 1 8 7 
+3: 3 1 8 7 	Page 0 replaced by Page 3
+3: 3 1 8 7 
+3: 3 1 8 7 
+4: 4 1 8 7 	Page 3 replaced by Page 4
+9: 9 1 8 7 	Page 4 replaced by Page 9
+1: 9 1 8 7 
+1: 9 1 8 7 
+2: 2 1 8 7 	Page 9 replaced by Page 2
+3: 2 3 8 7 	Page 1 replaced by Page 3
+3: 2 3 8 7 
+7: 2 3 8 7 
+8: 2 3 8 7 
+9: 2 9 8 7 	Page 3 replaced by Page 9
+5: 2 5 8 7 	Page 9 replaced by Page 5
+6: 2 5 8 6 	Page 7 replaced by Page 6
+1: 1 5 8 6 	Page 2 replaced by Page 1
+3: 3 5 8 6 	Page 1 replaced by Page 3
+2: 2 5 8 6 	Page 3 replaced by Page 2
+1: 1 5 8 6 	Page 2 replaced by Page 1
+8: 1 5 8 6 
+9: 9 5 8 6 	Page 1 replaced by Page 9
+4: 4 5 8 6 	Page 9 replaced by Page 4
+9: 9 5 8 6 	Page 4 replaced by Page 9
+1: 1 5 8 6 	Page 9 replaced by Page 1
+2: 2 5 8 6 	Page 1 replaced by Page 2
+5: 2 5 8 6 
+6: 2 5 8 6 
+7: 7 5 8 6 	Page 2 replaced by Page 7
+7: 7 5 8 6 
+7: 7 5 8 6 
+0: 0 5 8 6 	Page 7 replaced by Page 0
+0: 0 5 8 6 
+9: 9 5 8 6 	Page 0 replaced by Page 9
+0: 0 5 8 6 	Page 9 replaced by Page 0
+9: 9 5 8 6 	Page 0 replaced by Page 9
+8: 9 5 8 6 
+9: 9 5 8 6 
+9: 9 5 8 6 
+8: 9 5 8 6 
+9: 9 5 8 6 
+0: 0 5 8 6 	Page 9 replaced by Page 0
+9: 9 5 8 6 	Page 0 replaced by Page 9
+9: 9 5 8 6 
+9: 9 5 8 6 
+9: 9 5 8 6 
+5: 9 5 8 6 
+4: 4 5 8 6 	Page 9 replaced by Page 4
+4: 4 5 8 6 
+4: 4 5 8 6 
+3: 3 5 8 6 	Page 4 replaced by Page 3
+4: 4 5 8 6 	Page 3 replaced by Page 4
+5: 4 5 8 6 
+4: 4 5 8 6 
+3: 3 5 8 6 	Page 4 replaced by Page 3
+7: 7 5 8 6 	Page 3 replaced by Page 7
+8: 7 5 8 6 
+0: 0 5 8 6 	Page 7 replaced by Page 0
+9: 9 5 8 6 	Page 0 replaced by Page 9
+9: 9 5 8 6 
+9: 9 5 8 6 
+0: 0 5 8 6 	Page 9 replaced by Page 0
+0: 0 5 8 6 
+5: 0 5 8 6 
+5: 0 5 8 6 
+6: 0 5 8 6 
+7: 7 5 8 6 	Page 0 replaced by Page 7
+1: 1 5 8 6 	Page 7 replaced by Page 1
+1: 1 5 8 6 
+1: 1 5 8 6 
+Hit Count: 47
+
+LRU: 
+0: 0       	Page -1 replaced by Page 0
+9: 0 9     	Page -1 replaced by Page 9
+8: 0 9 8   	Page -1 replaced by Page 8
+7: 0 9 8 7 	Page -1 replaced by Page 7
+9: 0 9 8 7 
+9: 0 9 8 7 
+0: 0 9 8 7 
+4: 0 9 4 7 	Page 8 replaced by Page 4
+3: 0 9 4 3 	Page 7 replaced by Page 3
+9: 0 9 4 3 
+9: 0 9 4 3 
+0: 0 9 4 3 
+1: 0 9 1 3 	Page 4 replaced by Page 1
+2: 0 9 1 2 	Page 3 replaced by Page 2
+4: 0 4 1 2 	Page 9 replaced by Page 4
+4: 0 4 1 2 
+3: 3 4 1 2 	Page 0 replaced by Page 3
+5: 3 4 5 2 	Page 1 replaced by Page 5
+5: 3 4 5 2 
+4: 3 4 5 2 
+3: 3 4 5 2 
+1: 3 4 5 1 	Page 2 replaced by Page 1
+2: 3 4 2 1 	Page 5 replaced by Page 2
+9: 3 9 2 1 	Page 4 replaced by Page 9
+0: 0 9 2 1 	Page 3 replaced by Page 0
+7: 0 9 2 7 	Page 1 replaced by Page 7
+7: 0 9 2 7 
+9: 0 9 2 7 
+0: 0 9 2 7 
+8: 0 9 8 7 	Page 2 replaced by Page 8
+7: 0 9 8 7 
+3: 0 3 8 7 	Page 9 replaced by Page 3
+3: 0 3 8 7 
+3: 0 3 8 7 
+4: 4 3 8 7 	Page 0 replaced by Page 4
+9: 4 3 9 7 	Page 8 replaced by Page 9
+1: 4 3 9 1 	Page 7 replaced by Page 1
+1: 4 3 9 1 
+2: 4 2 9 1 	Page 3 replaced by Page 2
+3: 3 2 9 1 	Page 4 replaced by Page 3
+3: 3 2 9 1 
+7: 3 2 7 1 	Page 9 replaced by Page 7
+8: 3 2 7 8 	Page 1 replaced by Page 8
+9: 3 9 7 8 	Page 2 replaced by Page 9
+5: 5 9 7 8 	Page 3 replaced by Page 5
+6: 5 9 6 8 	Page 7 replaced by Page 6
+1: 5 9 6 1 	Page 8 replaced by Page 1
+3: 5 3 6 1 	Page 9 replaced by Page 3
+2: 2 3 6 1 	Page 5 replaced by Page 2
+1: 2 3 6 1 
+8: 2 3 8 1 	Page 6 replaced by Page 8
+9: 2 9 8 1 	Page 3 replaced by Page 9
+4: 4 9 8 1 	Page 2 replaced by Page 4
+9: 4 9 8 1 
+1: 4 9 8 1 
+2: 4 9 2 1 	Page 8 replaced by Page 2
+5: 5 9 2 1 	Page 4 replaced by Page 5
+6: 5 6 2 1 	Page 9 replaced by Page 6
+7: 5 6 2 7 	Page 1 replaced by Page 7
+7: 5 6 2 7 
+7: 5 6 2 7 
+0: 5 6 0 7 	Page 2 replaced by Page 0
+0: 5 6 0 7 
+9: 9 6 0 7 	Page 5 replaced by Page 9
+0: 9 6 0 7 
+9: 9 6 0 7 
+8: 9 8 0 7 	Page 6 replaced by Page 8
+9: 9 8 0 7 
+9: 9 8 0 7 
+8: 9 8 0 7 
+9: 9 8 0 7 
+0: 9 8 0 7 
+9: 9 8 0 7 
+9: 9 8 0 7 
+9: 9 8 0 7 
+9: 9 8 0 7 
+5: 9 8 0 5 	Page 7 replaced by Page 5
+4: 9 4 0 5 	Page 8 replaced by Page 4
+4: 9 4 0 5 
+4: 9 4 0 5 
+3: 9 4 3 5 	Page 0 replaced by Page 3
+4: 9 4 3 5 
+5: 9 4 3 5 
+4: 9 4 3 5 
+3: 9 4 3 5 
+7: 7 4 3 5 	Page 9 replaced by Page 7
+8: 7 4 3 8 	Page 5 replaced by Page 8
+0: 7 0 3 8 	Page 4 replaced by Page 0
+9: 7 0 9 8 	Page 3 replaced by Page 9
+9: 7 0 9 8 
+9: 7 0 9 8 
+0: 7 0 9 8 
+0: 7 0 9 8 
+5: 5 0 9 8 	Page 7 replaced by Page 5
+5: 5 0 9 8 
+6: 5 0 9 6 	Page 8 replaced by Page 6
+7: 5 0 7 6 	Page 9 replaced by Page 7
+1: 5 1 7 6 	Page 0 replaced by Page 1
+1: 5 1 7 6 
+1: 5 1 7 6 
+Hit Count: 48
+
+
+Hit Ratios:
+Random Pick: 0.53
+FIFO: 0.504
+LFU: 0.538
+MFU: 0.496
+LRU: 0.518
