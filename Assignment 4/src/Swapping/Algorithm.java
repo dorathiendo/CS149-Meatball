@@ -1,6 +1,5 @@
 package Swapping;
 
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -27,6 +26,11 @@ public abstract class Algorithm {
 		while (time < 60) {
 			System.out.println("TIME = " + time);
 			killFinishedProcesses();
+
+			if (time == 30) {// memory compaction
+				runMemoryCompaction();
+			}
+
 			if (!processes.isEmpty()) {
 				Process nextProcess = processes.peek();
 				int hole = findHoleIndex(nextProcess);
@@ -69,6 +73,23 @@ public abstract class Algorithm {
 				running.remove(p);
 			}
 		}
+	}
+
+	public void runMemoryCompaction() {
+		for (int i = 0; i < 100; i++)
+			bitmap[i] = '.';
+		int i = 0; // bitmap index
+		int j = 0; // running arraylist index
+		while (i < 100 && j < running.size()) {
+			Process p = running.get(j);
+			for (int k = 0; k < p.getSize(); k++) {
+				bitmap[i] = p.getName();
+				i++;
+			}
+			j++;
+		}
+		System.out.println("MEMORY COMPACTION: ");
+		printBitmap();
 	}
 
 	public abstract int findHoleIndex(Process p);
