@@ -40,8 +40,6 @@ void SIGALRM_handler(int signo)
     exit(0);
 }
 
-
-
 int main(void)
 {
     FILE *fp;
@@ -83,7 +81,9 @@ int main(void)
             if (i != 4){//first 4 are random producers
                 int msgCounter = 0;
                 for (;;){
-                    sleep(rand() % MAX_SLEEP_TIME);
+                    int sleepTime = rand() % MAX_SLEEP_TIME;
+                    if (sleepTime != 0)
+                        sleep(rand() % MAX_SLEEP_TIME);
                     timeStamp(startTime, message);
                     sprintf(id, ": Child %d Message %d", i, msgCounter);
                     strcat(message, id);
@@ -93,10 +93,12 @@ int main(void)
                 
             }
             else {//last is prompter
-                char input[BUFFER_SIZE];
+                char input[BUFFER_SIZE], *lastChar;
                 for(;;){
                     printf("Type message:");
-                    scanf("%s", input);
+                    fgets(input, BUFFER_SIZE, stdin);
+                    if ((lastChar = strchr(input, '\n')) != NULL)
+                       *lastChar = '\0';
                     timeStamp(startTime, message);
                     strcat(message, ": User Message: ");
                     strcat(message, input);
@@ -108,14 +110,14 @@ int main(void)
             exit(0);
         }
     }
+
     char stampBuffer[10];//buffers for concatenation
     char readBuffer[1024];
     char stampAndRead[1024];
     for (;;)  {//Parent reads inputs to file
         inputfds = inputs;
 
-        result = select(FD_SETSIZE, &inputfds,
-            NULL, NULL, NULL);
+        result = select(FD_SETSIZE, &inputfds, NULL, NULL, NULL);
         switch(result) {
             case -1: {
                 perror("select");
