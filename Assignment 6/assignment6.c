@@ -7,11 +7,31 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
+#include <time.h>
 
-#define BUFFER_SIZE 32
-#define READ_END	0
-#define WRITE_END	1
-#define TIMEOUT 	10 //change to 30
+#define BUFFER_SIZE 64
+#define READ_END    0
+#define WRITE_END   1
+#define TIMEOUT     30
+#define NUMBER_OF_CHILDREN 5
+#define MAX_SLEEP_TIME 3
+
+/**
+    Write a timestamp to the given buffer, representing the time elapsed since startTime
+    in M:SS.sss format.
+*/
+void timeStamp(struct timeval startTime, char* buffer) {
+    struct timeval now;
+    gettimeofday(&now, NULL);
+    //convert to microseconds(us):
+    long int usAtStart = startTime.tv_sec * 1000000 + startTime.tv_usec;
+    long int usNow = now.tv_sec * 1000000 + now.tv_usec;
+    long int delta = usNow - usAtStart;
+    //back to seconds
+    long int seconds = delta/1000000;
+    long int milliseconds = (delta % 1000000) / 1000;
+    sprintf(buffer, "0:%02ld.%03ld", seconds, milliseconds);
+}
 
 void SIGALRM_handler(int signo)
 {
@@ -20,133 +40,102 @@ void SIGALRM_handler(int signo)
     exit(0);
 }
 
+
+
 int main(void)
 {
-	char buf[BUFFER_SIZE];
-	int result, nread;
+    FILE *fp;
+    double elapsedTime;
+    int result, nread;
+    int fds[NUMBER_OF_CHILDREN][2];
+    int pids[NUMBER_OF_CHILDREN];
+    fd_set inputs, inputfds; //file descriptors
+    FD_ZERO(&inputs);    // initialize inputs to the empty set
 
-	fd_set inputs, inputfds; //file descriptors
-	FD_ZERO(&inputs);    // initialize inputs to the empty set
-    FD_SET(0, &inputs);  // set file descriptor 0 (stdin)
-	
-	struct timeval timeout;
-
-	//taken from timer.c
-	struct itimerval tval;
+    struct timeval timeout, startTime, now;
+    struct itimerval tval;
     timerclear(& tval.it_interval);
     timerclear(& tval.it_value);
     tval.it_value.tv_sec = TIMEOUT;
     
     signal(SIGALRM, SIGALRM_handler);
     setitimer(ITIMER_REAL, & tval, NULL); //set timer
+    gettimeofday(&startTime, NULL); //set start time for timestamps
+    fp = fopen("ouput.txt", "w+");
 
-    for (;;)  {
-    	printf("Please enter text:\n");
+    
+    int i;
+    for (i = 0; i < 5; i++) {//Start 5 children
+
+        if (pipe(fds[i]) == -1) { //create pipe
+            fprintf(stderr,"pipe() failed");
+            return 1;
+        }
+        FD_SET(fds[i][READ_END], &inputs);//insert read end
+
+
+        pids[i] = fork();
+
+        if(pids[i] == 0){
+            char message[BUFFER_SIZE];
+            char id[24];
+            close(fds[i][READ_END]);
+            if (i != 4){//first 4 are random producers
+                int msgCounter = 0;
+                for (;;){
+                    sleep(rand() % MAX_SLEEP_TIME);
+                    timeStamp(startTime, message);
+                    sprintf(id, ": Child %d Message %d", i, msgCounter);
+                    strcat(message, id);
+                    write(fds[i][WRITE_END], message, strlen(message)+1);
+                    msgCounter++;
+                }
+                
+            }
+            else {//last is prompter
+                char input[BUFFER_SIZE];
+                for(;;){
+                    printf("Type message:");
+                    scanf("%s", input);
+                    timeStamp(startTime, message);
+                    strcat(message, ": User Message: ");
+                    strcat(message, input);
+                    write(fds[i][WRITE_END], message, strlen(message)+1);
+                }
+
+            }
+            close(fds[i][WRITE_END]);
+            exit(0);
+        }
+    }
+    char stampBuffer[10];//buffers for concatenation
+    char readBuffer[1024];
+    char stampAndRead[1024];
+    for (;;)  {//Parent reads inputs to file
         inputfds = inputs;
 
-        timeout.tv_sec = 2;
-        timeout.tv_usec = 500000;
-
-        // Get select() results.
-        result = select(FD_SETSIZE, &inputfds, 
-                        (fd_set *) 0, (fd_set *) 0, &timeout);
-
-        // Check the results.
-        //   No input:  the program loops again.
-        //   Got input: print what was typed, then terminate.
-        //   Error:     terminate.
+        result = select(FD_SETSIZE, &inputfds,
+            NULL, NULL, NULL);
         switch(result) {
-            case 0: {
-                fflush(stdout);
-                break;
-            }
-            
             case -1: {
                 perror("select");
                 exit(1);
             }
-
-            // If, during the wait, we have some action on the file descriptor,
-            // we read the input on stdin and echo it whenever an 
-            // <end of line> character is received, until that input is Ctrl-D.
             default: {
-                if (FD_ISSET(0, &inputfds)) {
-                    ioctl(0,FIONREAD,&nread);
-                    
-                    if (nread == 0) {
-                        printf("Keyboard input done.\n");
-                        exit(0);
+                for(i = 0; i < 5; i++){
+                    if (FD_ISSET(fds[i][READ_END], &inputfds)) {
+                        ioctl(fds[i][READ_END],FIONREAD,&nread);
+
+                        nread = read(fds[i][READ_END],readBuffer,nread);
+                        readBuffer[nread] = 0;
+                        timeStamp(startTime, stampBuffer);
+                        sprintf(stampAndRead, "%s || %s", stampBuffer, readBuffer);
+                        fprintf(fp, "%s\n", stampAndRead);
                     }
-                    
-                    nread = read(0, buf, BUFFER_SIZE);
-					printf("Read from the pipe: %s\n", buf);
-				}
+                }
                 break;
             }
         }
+    }
 }
 
-
-// //regular pipe stuff + timeout
-// int main(void)
-// {
-// 	char buf[BUFFER_SIZE];
-
-// 	//taken from timer.c
-// 	struct itimerval tval;
-//     timerclear(& tval.it_interval);
-//     timerclear(& tval.it_value);
-//     tval.it_value.tv_sec = TIMEOUT;
-    
-//     signal(SIGALRM, SIGALRM_handler);
-//     setitimer(ITIMER_REAL, & tval, NULL); //set timer
-
-//     pid_t pid; //child proccess id
-// 	int fd[2]; //file descriptors
-
-//     //Create the pipe.
-//     if (pipe(fd) == -1) {
-//         fprintf(stderr,"pipe() failed");
-//         return 1;
-//     }
-
-//     // Fifth child repeatedly prompts at terminal (stdout) and reads one line of input (stdin)
-// 	for (;;) {
-
-// 		/* WITHOUT FORK, comment this out if you want to try with fork down below */
-// 		printf("Please enter text:\n");
-// 		char *output = fgets(buf, BUFFER_SIZE, stdin);
-
-// 		write(fd[WRITE_END], output, strlen(output)+1);
-// 		printf("\nWriting to the pipe: %s", output);
-
-//   		read(fd[READ_END], buf, BUFFER_SIZE);
-// 		printf("Read from the pipe: %s\n", buf);
-
-
-// 		/* Attempt with fork, doesn't work at all.. didn't do select() yet...
-// 		   DON'T RUN THIS UNLESS YOU FIXED IT!
-// 		   Right now, after running it in Debian.. it will eventually say
-// 		   		-bash: fork: retry: Resource temporarily unavailable */
-
-// 		// printf("Please enter text:\n");
-// 		// char *output = fgets(buf, BUFFER_SIZE, stdin);
-
-// 		// pid = fork();
-// 		// if (pid > 0) { //parent reads from pipe
-// 		// 	close(fd[WRITE_END]);
-
-//   		// 	read(fd[READ_END], buf, BUFFER_SIZE);
-// 		// 	printf("Read from the pipe: %s\n", buf);
-
-// 		// 	close(fd[READ_END]);
-// 		// } else if (pid == 0) { //child writes to pipe
-// 		// 	close(fd[READ_END]);
-
-// 		// 	write(fd[WRITE_END], output, strlen(output)+1);
-// 		// 	printf("Writing to the pipe: %s\n", output);
-
-// 		// 	close(fd[WRITE_END]);
-// 		// }
-// 	}
-}
