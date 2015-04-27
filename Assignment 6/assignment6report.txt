@@ -4,10 +4,6 @@ Team Meatball:
   Andres Chorro-Dahlgren
   Dora Do
 
-A big problem we ran into for the assignment was the random number generator.  All four producer-children seem to generate the same sleep time as the other children at the same time.  This makes sense: they're sharing a random seed.  However, even when we tried reseeding after the fork(), they would still generate very similar numbers.
+A big problem we ran into for the assignment was the random number generator.  All four producer-children seemed to generate the same sleep time as the other children at the same time.  This makes sense: they're sharing a random seed.  However, even when we tried reseeding after the fork(), they would still generate very similar numbers.
 
-<<<<<<< HEAD
 Also, a frustrating/interesting problem happened during the development of the program:  we had printf statements in all the processes for debugging purposes.  For some reason, this would cause the parent to wait on the children before proceeding.  So the children would run, and then at the very end of the 30 seconds, the parent would do all its work at once.  This was fixed by removing all the printf statements from the children.
-=======
-Also, a frustrating/interesting problem happened during the developement of the program:  We had printf statements in all the processes for debugging purposes.  For some reason, this would cause the parent to wait on the chidren before proceding.  So the children would run, and then at the very end of the 30s the parent would do all its work at once.  This was fixed by removing all the printf statements from the children, after hours of trying other solutions that had nothing to do with the problem.
->>>>>>> parent of 17d9c6a... spell checked report
